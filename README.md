@@ -9,12 +9,14 @@ genetics (DNA) that mutates and is passed on to their offspring. Care for them, 
 language, keep them healthy, and grow a living, evolving world that runs entirely in your
 browser.
 
-This project faithfully recreates the original engine using modern web technologies. It runs
-locally: a small launcher serves the game to your browser — there's no account, no telemetry,
-and nothing is uploaded.
+This project faithfully recreates the original engine using modern web technologies. Play it
+straight in your browser at **[creatures.world](https://creatures.world)**, or run it locally
+with the desktop launcher — either way there's no account, no telemetry, and nothing is
+uploaded: your assets and save games stay on your own machine.
 
-> ⚠️ **You must own the original game assets.** This download contains only the rebuilt engine
-> — no copyrighted art, sounds, or creature data. See **Asset Packs** below.
+> ⚠️ **You must own the original game assets.** Neither the website nor this download contains
+> any copyrighted art, sounds, or creature data — only the rebuilt engine. See **Asset Packs**
+> below.
 
 ---
 
@@ -61,6 +63,28 @@ every layer of the simulation:
 ---
 
 ## How to Install
+
+### Option 1 — Play in your browser (recommended, nothing to install)
+
+Just point your browser to:
+
+> ### 👉 **https://creatures.world**
+
+That's it. The first visit opens the **Launcher** page, where you import your own copy of the
+game assets (see **Adding your assets** below) — after that, click an asset pack and play.
+
+- Everything — imported assets, worlds, creatures, settings — is stored **in your browser's
+  local storage**, on your device. Nothing is uploaded anywhere.
+- Because storage belongs to the browser: don't "clear site data" for creatures.world without
+  exporting your worlds first (the Launcher's **Maintenance** section has backup buttons), and
+  note that a different browser or device starts fresh.
+- Works on Windows, macOS, Linux, and tablets — any modern browser (Chrome, Edge, Firefox;
+  recent Safari).
+
+### Option 2 — Run locally with the desktop Launcher
+
+Prefer a fully self-hosted setup, or want to serve the game to tablets on your own network?
+Install the desktop package:
 
 ### Requirements
 
@@ -111,14 +135,35 @@ The game needs the original **copyrighted** assets (sprites, sounds, genetics), 
 
 ### Adding your assets
 
+#### On creatures.world (browser)
+
+The Launcher page's **Asset packs** section has three import buttons — use whichever fits how
+you have the game:
+
+1. **Import pack (.zip)…** — pick a zip of your game folder. Make the zip yourself: go to your
+   Steam install (see **Where Steam installs the game** below), zip the **`Creatures 3`** or
+   **`Docking Station`** folder (right-click → *Compress* / *Send to → Compressed folder*), then
+   select that zip.
+2. **Import folder…** — skip the zipping and pick the game folder (e.g. `Docking Station`)
+   directly. Easiest when playing on the same machine the game is installed on.
+3. **Import from URL** — paste a direct link to a pack zip you host yourself (a NAS, a private
+   cloud link). The hosting server must allow cross-origin downloads (CORS).
+
+A progress bar tracks the import (a couple hundred MB, typically well under a minute), the pack
+index is generated automatically if needed, and the pack appears as a tile marked
+**Index ready** — click the tile to play. Import one or both packs; Docking Station builds on
+Creatures 3, so installing both gives the fullest experience.
+
+> 💾 The page will ask the browser for **persistent storage** so your packs and saves survive;
+> the storage meter under the buttons shows how much space is used.
+
+#### With the desktop Launcher
+
 - Put your purchased game folder(s) — named exactly **`Creatures 3`** and/or
   **`Docking Station`** — inside the `Assets/` directory of the unzipped package, **or** point
   the Launcher at another location via **Setup → Assets → Browse…**.
 - The Launcher can also **Import…** a game installation for you, then **Generate Index** to
   make each pack playable.
-
-You can install one or both packs; Docking Station builds on Creatures 3, so installing both
-gives the fullest experience.
 
 #### Where Steam installs the game
 
@@ -139,6 +184,72 @@ exact folder.
 > files still live at the `steamapps/common/Creatures Docking Station/` path above. There is no
 > native **macOS** build, so Mac users typically copy the assets from a Windows/Linux install
 > (the assets themselves are platform-independent data).
+
+## The Launcher page (creatures.world)
+
+On creatures.world, the Launcher is the page you land on before the game starts. Besides the
+asset-pack tiles it has three collapsible sections:
+
+### Configuration
+
+Click **Configuration** to expand it. The options:
+
+| Option | What it does |
+| --- | --- |
+| **Default pack** | Pick a pack to skip the Launcher entirely — the game then boots straight into that pack on every visit. Leave on *(ask every time)* to land on the Launcher. |
+| **Debug mode** | Enables the developer overlays (F3) and verbose logging — the same debug tooling described in **The Debugger** above. Off for normal play. |
+| **NornAI companion** | Enables the experimental LLM-driven creature variant. Requires a remote endpoint (below); leave off otherwise. |
+| **NornAI remote endpoint** | Address of a server providing the NornAI service (`https://…`). Empty = NornAI unavailable, which is the normal state for the hosted game. |
+| **Advanced overrides (JSON)** | Free-form engine settings merged into the game's configuration — the keys are documented in the in-game wiki article **"Configuration Options (GlobalConfig)"**. For experts; leave empty otherwise. |
+
+Click **Save configuration** to apply. Settings are stored in your browser (per device) and
+most take effect immediately; a few need a page reload.
+
+### Maintenance
+
+Backup tools for everything you'd hate to lose: **Export worlds & creatures** downloads a zip
+of all your saves, **Restore backup** puts one back, and the **World saves** list lets you
+download or upload individual worlds per pack (newest first, with their last-played date).
+Back up before clearing browser data — clearing site data for creatures.world deletes your
+packs *and* saves.
+
+### How to get back to the Launcher
+
+If you've set a **Default pack**, the game boots directly and skips the Launcher. Two ways
+back:
+
+- **In the game**: open the burger menu (☰) and click **🚀 Launcher** in the **World** section
+  (you'll be asked to confirm — save your world first, leaving the game discards unsaved
+  progress).
+- **By URL**: open **https://creatures.world/?launcher=1** — worth bookmarking. This always
+  shows the Launcher, whatever the configuration.
+
+The Launcher also reappears on its own whenever no valid asset pack is available.
+
+---
+
+### Your settings — the `Rebuild` folder
+
+*(Desktop Launcher installs only — on creatures.world the equivalent settings live in your
+browser's storage and are included in the Maintenance backups.)*
+
+The game automatically creates a **`Rebuild/`** folder inside each asset pack's directory
+(e.g. `Assets/Docking Station/Rebuild/`). This folder holds your personal settings for that
+pack, saved as plain JSON files:
+
+| File | What it stores |
+| --- | --- |
+| `ui-settings.json` | General UI preferences — floating menu state, popout window positions, volume, UI spacers |
+| `graph-layout.json` | Your Graph tab setup — graph tabs, selected metrics, creature bindings, time window, and averaging window |
+| `console-settings.json` | Debug Console preferences — per-module log levels, category filters, collapsed-group state |
+
+These files are created and managed by the game itself — you never need to edit them, and the
+original engine never touches them. Each asset pack keeps its own `Rebuild/` folder, so your
+Creatures 3 and Docking Station settings are independent.
+
+> 💾 **Back up this folder!** If you reinstall, move, or re-import your assets, copy the
+> `Rebuild/` folder somewhere safe first and restore it afterwards — otherwise your UI layout,
+> graph configurations, and console preferences will be reset to defaults.
 
 ---
 
@@ -161,9 +272,10 @@ in your tablet's browser (via the Launcher's **External URL**) and use:
 **Does the game work on Windows, Mac, Linux, iPad, and Android?**
 
 Yes — the game is full JavaScript, meaning it is compatible with any device that can run a
-modern browser like Chrome, Firefox, or Safari. (The Launcher that serves the game runs on a
-Windows/macOS/Linux computer; tablets and phones such as iPad and Android then connect to it
-over your local network using the **External URL** the Launcher shows.)
+modern browser like Chrome, Firefox, or Safari. The simplest way is to open
+**https://creatures.world** directly on the device. (With the desktop Launcher instead, the
+game is served from a Windows/macOS/Linux computer and tablets/phones connect over your local
+network using the **External URL** the Launcher shows.)
 
 **Does the game work on touchscreens?**
 
@@ -171,6 +283,20 @@ Yes! The engine automatically detects that your device supports touch inputs. Yo
 one-finger tap to left click, a two-finger tap to right click, a one-finger swipe to move the
 cursor, and a two-finger swipe to move the camera. A new button will show next to the burger
 menu to open the virtual keyboard for text input.
+
+**Where can I get documentation?**
+
+The game ships with a full **wiki** packed with gameplay articles — creature biology, brain and
+genetics deep-dives, game systems, tools, and Web Rebuild specifics. Open it from inside the
+game: click the **burger menu** (☰) and select **Help**. The wiki opens in a new tab with a
+browsable table of contents and full-text search.
+
+**How to configure the engine options?**
+
+Please consult the in-game wiki article **"Configuration Options (GlobalConfig)"** — it is a
+complete reference for every engine setting, what it does, its default value, and how to change
+it. (Open the wiki via the **burger menu (☰) → Help**, then find the article in the
+**Web Rebuild** section.)
 
 **I found a zip online with the assets — can I use it?**
 
@@ -182,6 +308,18 @@ Open an issue on [GitHub](../../issues). Include a detailed description of the p
 context (what you were doing, which asset pack, your browser/OS), and — ideally — share a save
 file so we can reproduce it. The version string shown in the in-game floating menu and the
 asset-pack picker is helpful to include too.
+
+---
+
+## Where to get support?
+
+Join the **Modern Creatures** Discord server — it's the place to ask questions, get help with
+setup, share your worlds and Norns, and follow the project's development:
+
+👉 **https://discord.gg/vSPfBbB28R**
+
+To report a bug, please use the [GitHub issues](../../issues) function (see **FAQ** above for
+what to include).
 
 ---
 
