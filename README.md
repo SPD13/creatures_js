@@ -157,6 +157,11 @@ Creatures 3, so installing both gives the fullest experience.
 > 💾 The page will ask the browser for **persistent storage** so your packs and saves survive;
 > the storage meter under the buttons shows how much space is used.
 
+**Playing on a tablet too?** Import once on your desktop, then click **⬇** on the pack tile to
+export the pack as a zip (it includes your worlds and settings), transfer the file to the
+tablet (AirDrop, cloud drive, USB…), and import it there at creatures.world. Each device keeps
+its own independent copy in its browser storage.
+
 #### With the desktop Launcher
 
 - Put your purchased game folder(s) — named exactly **`Creatures 3`** and/or
@@ -313,10 +318,10 @@ asset-pack picker is helpful to include too.
 
 ## Where to get support?
 
-Join the **Modern Creatures** Discord server — it's the place to ask questions, get help with
+Join the **Creatures World** Discord server — it's the place to ask questions, get help with
 setup, share your worlds and Norns, and follow the project's development:
 
-👉 **https://discord.gg/vSPfBbB28R**
+👉 **https://discord.gg/4zUg9VvYaG**
 
 To report a bug, please use the [GitHub issues](../../issues) function (see **FAQ** above for
 what to include).
