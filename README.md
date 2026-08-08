@@ -20,6 +20,19 @@ uploaded: your assets and save games stay on your own machine.
 
 ---
 
+## Screenshots
+
+### Launcher
+![Launcher](screenshots/creatures_launcher.png)
+
+### Creatures 3
+![Creatures 3](screenshots/creatures_3.png)
+
+### Docking Station
+![Docking Station](screenshots/creatures_ds.png)
+
+---
+
 ## New Features
 
 The rebuild stays faithful to the original game, but running in a modern browser makes room
