@@ -22,6 +22,8 @@ uploaded: your assets and save games stay on your own machine.
 
 ## Screenshots
 
+🎬 **[Presentation of the project](https://youtu.be/i_-hINH7pLU)** (YouTube)
+
 ### Launcher
 ![Launcher](screenshots/creatures_launcher.png)
 
