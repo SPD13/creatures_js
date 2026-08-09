@@ -240,6 +240,7 @@ Click **Configuration** to expand it. The options:
 | --- | --- |
 | **Default pack** | Pick a pack to skip the Launcher entirely — the game then boots straight into that pack on every visit. Leave on *(ask every time)* to land on the Launcher. |
 | **Debug mode** | Enables the developer overlays (F3) and verbose logging — the same debug tooling described in **The Debugger** above. Off for normal play. |
+| **Share anonymous usage statistics** | On by default. Sends anonymous player counts and page views to Google Analytics so we know how many people play. Untick to opt out — nothing is sent at all. Details in **Privacy & anonymous usage statistics** below. |
 | **NornAI companion** | Enables the experimental LLM-driven creature variant. Requires a remote endpoint (below); leave off otherwise. |
 | **NornAI remote endpoint** | Address of a server providing the NornAI service (`https://…`). Empty = NornAI unavailable, which is the normal state for the hosted game. |
 | **Advanced overrides (JSON)** | Free-form engine settings merged into the game's configuration — the keys are documented in the in-game wiki article **"Configuration Options (GlobalConfig)"**. For experts; leave empty otherwise. |
@@ -292,6 +293,27 @@ Creatures 3 and Docking Station settings are independent.
 > 💾 **Back up this folder!** If you reinstall, move, or re-import your assets, copy the
 > `Rebuild/` folder somewhere safe first and restore it afterwards — otherwise your UI layout,
 > graph configurations, and console preferences will be reset to defaults.
+
+---
+
+## Privacy & anonymous usage statistics
+
+The game reports **anonymous usage statistics** through Google Analytics so we can see how many
+people actually play: page views, a "game started" event with the asset pack used, and the
+coarse geography Google derives. No account, no personal data, no gameplay content — your
+worlds, creatures, and settings never leave your machine.
+
+**Statistics are ON by default.** Any ONE of these switches them off:
+
+| Where you play | How to opt out |
+| --- | --- |
+| **creatures.world (browser)** | Launcher page → **Configuration** → untick **Share anonymous usage statistics** → **Save configuration**. Applies immediately, stored per browser. |
+| **Desktop Launcher** | **Setup** tab → **Privacy** card → untick **Share anonymous usage statistics**, then restart the server. Covers everyone who plays through that server. |
+| **Any game URL** | Add `?analytics=false` to the address (e.g. `…/?analytics=false`). |
+
+The game also honors your browser's **Global Privacy Control** signal automatically, and if you
+use an ad-blocker it most likely blocks Google Analytics on its own — the game runs exactly the
+same either way.
 
 ---
 
