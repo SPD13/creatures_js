@@ -22,7 +22,7 @@ uploaded: your assets and save games stay on your own machine.
 
 ## Screenshots
 
-🎬 **[Presentation of the project](https://youtu.be/i_-hINH7pLU)** (YouTube)
+🎬 <strong><a href="https://youtu.be/i_-hINH7pLU" target="_blank" rel="noopener">Presentation of the project</a></strong> (YouTube)
 
 ### Launcher
 ![Launcher](screenshots/creatures_launcher.png)
@@ -78,6 +78,28 @@ every layer of the simulation:
 ---
 
 ## How to Install
+
+### Which option should I choose?
+
+| | **Option 1 — Browser (creatures.world)** | **Option 2 — Desktop Launcher** |
+| --- | --- | --- |
+| Setup | Nothing to install — open the site and play | Install Node.js, unzip, `npm install` |
+| Where your data lives | In the **web browser's storage** on that device | As **regular files on your computer's disk** |
+| Durability | Can be **wiped if you clear the browser's site data** (backups available, see below) | Permanent — survives browser cleanups, easy to back up like any folder |
+| Network play | Each device keeps its own independent copy | **Share over your network**: assets, save games and settings live on one machine; tablets/phones connect via the Launcher's External URL |
+
+**Option 1** is the quicker and more convenient way to play — but remember that everything
+(imported assets, worlds, creatures, settings) lives inside the browser: clearing site data
+for creatures.world deletes it all, and there is **no direct way to share a save file between
+multiple devices on your network** — each device has its own separate storage (moving a world
+means downloading it on one device and uploading it on the other via the Maintenance
+section). The Launcher's **Maintenance** section also lets you download your save games and
+settings as backup zips (and restore them later), so back up anything you care about.
+
+**Option 2** stores your save games and settings permanently as ordinary files on the
+computer where it's installed, and adds network flexibility: the assets, saves and settings
+are hosted from that one machine, and any device on your network (tablet, phone, laptop) can
+play the same worlds through the Launcher's **External URL**.
 
 ### Option 1 — Play in your browser (recommended, nothing to install)
 
