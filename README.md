@@ -159,6 +159,9 @@ The Launcher checks for new releases automatically and shows an **Update availab
 the Run tab. Click **Update now** and it downloads and installs the new version in place,
 **keeping your assets, settings, and configuration**.
 
+If the automatic update ever fails, see **"The automatic update failed — how do I update
+manually?"** in the **FAQ** below.
+
 ---
 
 ## Asset Packs
@@ -369,6 +372,31 @@ it. (Open the wiki via the **burger menu (☰) → Help**, then find the article
 **I found a zip online with the assets — can I use it?**
 
 Please, **no**. The game assets are copyrighted material — buy the game on Steam.
+
+**The automatic update failed — how do I update manually?**
+
+Rarely, the desktop Launcher's in-place update can fail (aggressive antivirus, a network
+hiccup, locked files) — the Launcher restarts on the previous version, shows a warning in the
+update card, or doesn't start at all. A manual update always works:
+
+1. **Close the Launcher** — and any terminal window open inside the install folder.
+2. **Rename** your current install folder, e.g. `creatures-js` → `creatures-js-old`.
+3. **Download** the latest `creatures-js-v*.zip` from the [Releases page](../../releases) and
+   unzip it where the old folder was.
+4. **Carry over your data** from the old folder into the new one:
+   - the contents of the `Assets` folder (your imported asset packs, worlds, and settings);
+   - `Main_Game/config.dev.js`, if present (your engine configuration).
+5. In the new folder, run `npm install`, then `npm start`.
+6. Once everything works, delete the old folder.
+
+**Special case:** if the Launcher won't start right after an automatic update with an error
+like `'electron' is not recognized as an internal or external command`, the update itself
+applied but its dependencies didn't finish installing — no need for the full manual update.
+Just open a terminal in the install folder, run `npm install`, then `npm start`.
+
+When reporting an update problem, include the updater log:
+`%APPDATA%\creatures3-web\logs\c3-update.log` on Windows,
+`~/Library/Logs/creatures3-web/c3-update.log` on macOS.
 
 **How can I report a bug?**
 
