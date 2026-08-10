@@ -115,8 +115,11 @@ game assets (see **Adding your assets** below) — after that, click an asset pa
 - Because storage belongs to the browser: don't "clear site data" for creatures.world without
   exporting your worlds first (the Launcher's **Maintenance** section has backup buttons), and
   note that a different browser or device starts fresh.
-- Works on Windows, macOS, Linux, and tablets — any modern browser (Chrome, Edge, Firefox;
-  recent Safari).
+- Works on Windows, macOS, Linux, and tablets — any modern browser. **Chrome is the
+  preferred browser**: it's what the game is developed and tested on, and it has the most
+  robust support for the in-browser storage the game relies on. Other Chromium browsers
+  (Edge, Brave, Opera) are equally good; Firefox and recent Safari work but see less
+  testing.
 
 ### Option 2 — Run locally with the desktop Launcher
 
@@ -336,7 +339,8 @@ in your tablet's browser (via the Launcher's **External URL**) and use:
 **Does the game work on Windows, Mac, Linux, iPad, and Android?**
 
 Yes — the game is full JavaScript, meaning it is compatible with any device that can run a
-modern browser like Chrome, Firefox, or Safari. The simplest way is to open
+modern browser. **Chrome (or another Chromium browser like Edge) is preferred** — it's the
+best-tested; Firefox and Safari work too. The simplest way is to open
 **https://creatures.world** directly on the device. (With the desktop Launcher instead, the
 game is served from a Windows/macOS/Linux computer and tablets/phones connect over your local
 network using the **External URL** the Launcher shows.)
