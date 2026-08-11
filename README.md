@@ -153,6 +153,24 @@ Install the desktop package:
 
 Works on **Windows, macOS, and Linux** from the same download.
 
+### Playing from another device (tablet, phone, laptop)
+
+By default the Launcher's server is reachable **only from the computer it runs on** — local
+network access is **off**, so no other device can connect. This keeps things safe out of the
+box. To play on another device on your home network (for example a tablet), turn it on:
+
+1. **Run tab → Server** — tick **Allow other devices on my local network to connect**.
+2. **Restart the server** (**Stop Server**, then **Start Server**) so the change takes effect.
+3. The **External URL** shown on the Run tab becomes active — open that address in the other
+   device's browser. (While network access is off, that URL reads *Disabled (localhost only)*.)
+
+> ⚠️ **Network-security warning.** Enabling this exposes the game server to **every device on
+> the same network**, and the server has **no password or authentication of any kind**. Only
+> turn it on when you are on a network you own and trust — your own home Wi-Fi, **not** a public,
+> shared, café, hotel, workplace, or guest network. Before switching it on, make sure your
+> router/Wi-Fi is properly secured (a strong password and WPA2/WPA3 encryption), and turn the
+> option back off when you no longer need to serve the game to other devices.
+
 ### Updating
 
 The Launcher checks for new releases automatically and shows an **Update available** notice on
@@ -326,7 +344,9 @@ same either way.
 ## Note on Tablets (iOS, Android)
 
 Touch devices have no mouse, so the game maps finger gestures to mouse actions. Open the game
-in your tablet's browser (via the Launcher's **External URL**) and use:
+in your tablet's browser via the Launcher's **External URL** — with the desktop Launcher this
+first requires enabling **local network access** (off by default; see **Playing from another
+device** and its security warning under *How to Install → Option 2*). Then use:
 
 | Gesture | Action |
 | --- | --- |
@@ -346,7 +366,9 @@ modern browser. **Chrome (or another Chromium browser like Edge) is preferred** 
 best-tested; Firefox and Safari work too. The simplest way is to open
 **https://creatures.world** directly on the device. (With the desktop Launcher instead, the
 game is served from a Windows/macOS/Linux computer and tablets/phones connect over your local
-network using the **External URL** the Launcher shows.)
+network using the **External URL** the Launcher shows — which requires turning on **local
+network access** first; it is off by default. See **Playing from another device** under
+*How to Install → Option 2*.)
 
 **Does the game work on touchscreens?**
 
@@ -354,6 +376,17 @@ Yes! The engine automatically detects that your device supports touch inputs. Yo
 one-finger tap to left click, a two-finger tap to right click, a one-finger swipe to move the
 cursor, and a two-finger swipe to move the camera. A new button will show next to the burger
 menu to open the virtual keyboard for text input.
+
+**What keyboard shortcuts are available?**
+
+- **Arrow keys** — scroll the camera (screen-edge scrolling, the mouse wheel, and middle-drag
+  work too, like the original game).
+- **Ctrl+`** (the backtick key) — open/close the **debug console**: logs, the CAOS debugger,
+  and engine inspectors. **F12** does the same, but in a browser it usually opens the
+  browser's own developer tools instead, so prefer **Ctrl+`**.
+- **F3** — toggle the **debug overlays** (performance stats, room boundaries, agent bounds).
+- In debug worlds (the engine's debug keys enabled): **Pause** pauses/resumes the game and
+  **Space** advances a single tick while paused — mirroring the original engine.
 
 **Where can I get documentation?**
 
