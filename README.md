@@ -171,6 +171,12 @@ box. To play on another device on your home network (for example a tablet), turn
 > router/Wi-Fi is properly secured (a strong password and WPA2/WPA3 encryption), and turn the
 > option back off when you no longer need to serve the game to other devices.
 
+> ⚖️ **Copyright reminder.** The game's assets are copyrighted material. Making the server
+> reachable over the **public internet** — giving access to people who have **not purchased**
+> the game and its assets — is a **violation of copyright**. Network access is intended solely
+> for **your own personal use** of a **legitimately purchased copy** of the assets, on devices
+> you own within your private network.
+
 ### Updating
 
 The Launcher checks for new releases automatically and shows an **Update available** notice on
@@ -317,6 +323,57 @@ Creatures 3 and Docking Station settings are independent.
 > 💾 **Back up this folder!** If you reinstall, move, or re-import your assets, copy the
 > `Rebuild/` folder somewhere safe first and restore it afterwards — otherwise your UI layout,
 > graph configurations, and console preferences will be reset to defaults.
+
+---
+
+## Advanced configuration
+
+> ⚠️ **For advanced users.** Normal play never needs this — the Launcher's **Configuration**
+> section covers the common options. Only read on if you want to tune the engine itself.
+
+Beyond the Launcher options, the engine reads an optional configuration file named
+**`config.dev.js`** at game start. It can override any engine setting — physics, rendering,
+CAOS execution, debugging, NornAI, and more. Every available key is documented in the in-game
+wiki article **"Configuration Options (GlobalConfig)"** (burger menu ☰ → **Help** →
+**Web Rebuild** section).
+
+### How the file works
+
+The file is created from a shipped template in which **every setting is commented out**,
+shown at its engine default. To override a setting, uncomment its line and change the value:
+
+```js
+engine: {
+    // tickRate: 20,        // ← commented: the engine default applies (also after updates)
+    timeScale: 2.0,         // ← uncommented: your override wins
+},
+```
+
+- Anything left commented keeps following the **engine defaults, including after game
+  updates** — so only uncomment what you actually want to pin.
+- If you uncomment a **list** (an `[...]` value), your copy replaces the built-in list
+  entirely and won't pick up entries added by future updates — prefer leaving lists commented
+  unless you need to change them.
+- URL parameters (e.g. `?physics=false`) still override the file for one session.
+
+### Where to edit it
+
+| Where you play | How to edit |
+| --- | --- |
+| **creatures.world (browser)** | Launcher page → **Maintenance** → **📝 Edit config.dev.js…** (edits are validated before saving; **⬇ Download** / **⬆ Upload** let you move the file between devices). |
+| **Desktop Launcher** | **Setup** tab → **Config file** card → **Open** — the file (`Main_Game/config.dev.js` in the install folder) opens in your text editor. Restart the game page to apply changes. |
+
+### Restoring the defaults
+
+If your configuration ever gets into a bad state — or you just want a clean slate — restore
+the file from the template to get back the default initial configuration:
+
+- **creatures.world**: Launcher page → **Maintenance** → **↺ Reset from template**.
+- **Desktop Launcher**: **Setup** tab → **Config file** card → **Restore from template**
+  (your previous file is kept next to it as `config.dev.js.bak`).
+
+Since the template ships with everything commented out, a restored configuration simply
+follows the engine defaults again.
 
 ---
 
