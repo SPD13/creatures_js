@@ -1,0 +1,275 @@
+CREATURES WEB REBUILD — END USER LICENCE AGREEMENT
+Version 1.0 — 08/14/2026
+
+IMPORTANT — READ CAREFULLY. By installing, copying, or using the Software you
+agree to be bound by this Agreement. If you do not agree, do not install or use
+the Software, and delete all copies in your possession.
+
+This Software is provided FREE OF CHARGE. No fee is charged for it, and none may
+be charged by anyone else for its distribution.
+
+
+1. DEFINITIONS
+
+1.1  "Licensor", "we", "us" means SPD13, the individual developer of this fan
+     project, publishing under that name at https://github.com/SPD13 and at the
+     associated website https://creatures.world. SPD13 is a pseudonym of a
+     private individual, who is the author and copyright owner of the Software
+     and who reserves all rights in it under that name.
+
+1.2  "Software" means the Creatures Web Rebuild package: the game engine
+     distributed in compiled, minified and obfuscated form, the desktop
+     Launcher, the local server component, the bundled reference tools (wiki,
+     script documentation, chemical documentation), the accompanying data files,
+     documentation, and any updates or new versions we make available.
+
+1.3  "Game Assets" means the artwork, sprites, sounds, music, genomes, scripts,
+     catalogues and other data files originally published as part of
+     "Creatures 3" and "Docking Station". Game Assets are NOT part of the
+     Software and are NOT distributed with it.
+
+1.4  "You" means the individual or entity accepting this Agreement.
+
+
+2. LICENCE GRANT
+
+Subject to your compliance with this Agreement, we grant you a personal,
+non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free
+licence to:
+
+2.1  install and use the Software on any number of devices that you own or
+     control, for your own personal, non-commercial use;
+
+2.2  run the Software's local server component and access it from other devices
+     on a private network that you own and control, solely for your own personal
+     use; and
+
+2.3  make one copy of the Software for backup purposes.
+
+No other rights are granted. All rights not expressly granted are reserved.
+
+
+3. RESTRICTIONS
+
+Except to the extent that the restrictions below are prohibited by applicable
+law (see clause 3.9), you may not:
+
+3.1  distribute, publish, sell, rent, lease, lend, sublicense, or otherwise make
+     the Software available to any third party, whether or not for a fee;
+
+3.2  host the Software, or make its local server component reachable, on the
+     public internet or on any network you do not own and control;
+
+3.3  modify, adapt, translate, or create derivative works of the Software;
+
+3.4  reverse engineer, decompile, disassemble, deobfuscate, or otherwise attempt
+     to derive the source code, underlying ideas, or algorithms of the Software;
+
+3.5  circumvent, disable, or interfere with any technical protection,
+     obfuscation, or licence-enforcement measure in the Software;
+
+3.6  remove, obscure, or alter any copyright, trademark, or other proprietary
+     notice contained in or displayed by the Software;
+
+3.7  use the Software to reproduce, distribute, or otherwise make Game Assets
+     available to any person who does not independently hold a lawful copy of
+     them;
+
+3.8  use the Software for any unlawful purpose, or in any way that infringes the
+     intellectual property or other rights of any third party.
+
+3.9  Nothing in this clause 3 restricts any act that you are entitled to perform
+     under mandatory applicable law that cannot be excluded by contract —
+     including, for users in the European Union and the United Kingdom, the
+     rights to observe, study, and test the functioning of the Software, and to
+     decompile it for interoperability purposes, under Articles 5 and 6 of
+     Directive 2009/24/EC and the equivalent national implementing legislation.
+
+
+4. GAME ASSETS — YOUR RESPONSIBILITY
+
+4.1  The Software contains NO Game Assets. It is an engine only, and requires
+     Game Assets supplied by you in order to run.
+
+4.2  Game Assets are the copyrighted property of their respective rights
+     holders. You are solely responsible for ensuring that you hold a lawful
+     copy of any Game Assets you use with the Software, and that your use of
+     them complies with the terms under which you obtained them.
+
+4.3  We grant you no rights whatsoever in or to the Game Assets, make no
+     representation as to your entitlement to use them, and accept no
+     responsibility for your use of them.
+
+4.4  Making Game Assets available to persons who do not hold a lawful copy of
+     them — including by exposing the Software's server component to the public
+     internet — may infringe copyright. You must not do so.
+
+
+5. OWNERSHIP
+
+The Software is licensed, not sold. We and our licensors retain all right,
+title, and interest in and to the Software, including all intellectual property
+rights in it. This Agreement transfers no ownership.
+
+
+6. THIRD-PARTY COMPONENTS
+
+The Software includes, and its installation procedure obtains, third-party
+components that are licensed under their own terms. Those terms govern your use
+of those components and, to the extent of any conflict, take precedence over
+this Agreement in respect of them. See the accompanying file
+THIRD-PARTY-NOTICES.txt.
+
+
+7. NO AFFILIATION; TRADEMARKS
+
+The Software is an independent, unofficial project. It is not affiliated with,
+authorised, sponsored, or endorsed by Cyberlife Technology, Creature Labs,
+Gameware Development, or any current rights holder in the Creatures series.
+"Creatures", "Docking Station", "Norn", and related names and logos are the
+trademarks of their respective owners and are used only to identify the game
+with which the Software is compatible, as nominative fair use. No trademark
+licence is granted.
+
+
+8. UPDATES
+
+8.1  The Software may check for, download, and install updates automatically.
+     By using the Software you consent to this. Updates are governed by this
+     Agreement unless accompanied by different terms, in which case those terms
+     apply to that update.
+
+8.2  We are under no obligation to provide updates, support, or maintenance, and
+     may discontinue the Software at any time.
+
+
+9. PRIVACY AND ANONYMOUS USAGE STATISTICS
+
+9.1  The Software reports anonymous usage statistics (page views, a "game
+     started" event identifying the asset pack used, and the coarse geographic
+     region derived by the analytics provider) via Google Analytics. No account
+     information, no personal data you enter, and no gameplay content is
+     transmitted.
+
+9.2  Statistics are enabled by default and may be disabled at any time via the
+     Launcher configuration, the Launcher's Privacy setting, or the
+     "?analytics=false" URL parameter. The Software honours the browser's Global
+     Privacy Control signal automatically.
+
+9.3  Your worlds, creatures, settings, and Game Assets are stored locally on your
+     own device and are never uploaded to us.
+
+9.4  Full details are set out in the accompanying README and privacy notice.
+
+
+10. OPTIONAL AI COMPANION FEATURE
+
+If the optional "NornAI" feature is present and you enable it, the Software
+transmits in-game text to a third-party language-model endpoint that you
+configure. That endpoint is operated by a third party under its own terms and
+privacy policy. You are responsible for the endpoint you choose, for any
+credentials you supply, for any charges you incur, and for the content
+transmitted. We provide no such endpoint and accept no responsibility for it.
+
+
+11. TERM AND TERMINATION
+
+11.1 This Agreement takes effect when you first install or use the Software and
+     continues until terminated.
+
+11.2 It terminates automatically and immediately if you breach any of its terms.
+     You may terminate it at any time by deleting all copies of the Software.
+
+11.3 On termination you must cease all use of the Software and delete all copies
+     in your possession. Clauses 3, 5, 7, 12, 13, and 15 survive termination.
+
+
+12. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", FREE OF CHARGE, WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY
+APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+WE DO NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, SECURE,
+OR THAT DEFECTS WILL BE CORRECTED, OR THAT IT WILL BE COMPATIBLE WITH ANY
+PARTICULAR HARDWARE, SOFTWARE, OR GAME ASSETS.
+
+YOU ARE RESPONSIBLE FOR BACKING UP YOUR DATA. WE ARE NOT RESPONSIBLE FOR ANY
+LOSS OF SAVED WORLDS, CREATURES, SETTINGS, OR OTHER DATA.
+
+Some jurisdictions do not allow the exclusion of implied warranties or the
+limitation of incidental or consequential damages, so some of the exclusions and
+limitations in clauses 12 and 13 may not apply to you. In that case they apply to
+the fullest extent permitted by applicable law, and your statutory rights are
+unaffected.
+
+
+13. LIMITATION OF LIABILITY
+
+13.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE SHALL NOT BE LIABLE
+     FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES,
+     OR FOR ANY LOSS OF DATA, PROFITS, GOODWILL, OR BUSINESS, ARISING OUT OF OR
+     IN CONNECTION WITH THE SOFTWARE OR THIS AGREEMENT, EVEN IF ADVISED OF THE
+     POSSIBILITY OF SUCH DAMAGES.
+
+13.2 OUR TOTAL AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS
+     AGREEMENT SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE, WHICH IS
+     ZERO.
+
+13.3 Nothing in this Agreement excludes or limits our liability for death or
+     personal injury caused by negligence, for fraud or fraudulent
+     misrepresentation, or for any other liability that cannot lawfully be
+     excluded or limited.
+
+13.4 If you are a consumer, nothing in this Agreement affects your mandatory
+     statutory rights under the law of your country of residence, and clauses 12
+     and 13 apply only to the extent permitted by that law.
+
+
+14. EXPORT AND SANCTIONS
+
+You may not use or export the Software in violation of any applicable export
+control or sanctions laws.
+
+
+15. GENERAL
+
+15.1 Governing law. This Agreement is governed by the laws of the State of
+     California, United States of America, excluding its conflict-of-laws rules,
+     and the state and federal courts located in the State of California have
+     exclusive jurisdiction. If you are a consumer
+     resident in the European Union or the United Kingdom, you retain the
+     protection of the mandatory provisions of the law of your country of
+     residence and may bring proceedings in its courts.
+
+15.2 Severability. If any provision is held unenforceable, it shall be modified
+     to the minimum extent necessary, or severed, and the remainder shall
+     continue in full force.
+
+15.3 No waiver. Failure to enforce any provision is not a waiver of it.
+
+15.4 Changes. We may amend this Agreement for future versions of the Software.
+     The version accompanying a given release governs that release. Continuing
+     to use a new version after an update constitutes acceptance of the terms
+     accompanying it.
+
+15.5 Entire agreement. This Agreement, together with THIRD-PARTY-NOTICES.txt and
+     the accompanying README, is the entire agreement between you and us
+     concerning the Software, and supersedes all prior understandings.
+
+
+16. NOTICES AND TAKEDOWN
+
+Questions about this Agreement, and any claim that the Software infringes your
+rights, should be raised on the project's GitHub issue tracker:
+
+     https://github.com/SPD13/creatures_js/issues
+
+Please note that GitHub issues are publicly visible. Rights holders who prefer a
+private channel may instead use GitHub's own copyright complaint process at
+https://github.com/contact/dmca, which will reach us.
+
+We will respond promptly to any substantiated rights-holder complaint.
+
+
+Copyright (c) 2026 SPD13. All rights reserved.
