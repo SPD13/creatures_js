@@ -1,0 +1,92 @@
+CREATURES WEB REBUILD — THIRD-PARTY NOTICES
+
+The Creatures Web Rebuild is proprietary software licensed under the terms of
+LICENSE.txt. It includes, and its installation procedure obtains, the
+third-party components listed below. Each is licensed under its own terms, which
+govern your use of that component and take precedence over LICENSE.txt in
+respect of it.
+
+
+================================================================================
+PART A — COMPONENTS REDISTRIBUTED IN THIS PACKAGE
+================================================================================
+
+The following component is included in this download, in the dist/vendor/
+directory.
+
+--------------------------------------------------------------------------------
+pako 2.1.0 — https://github.com/nodeca/pako
+SPDX: MIT AND Zlib
+--------------------------------------------------------------------------------
+
+(C) 2014-2017 Vitaly Puzrin and Andrey Tupitsin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+pako additionally incorporates portions of zlib, licensed under the zlib
+licence. See https://github.com/nodeca/pako for the complete notice.
+
+
+================================================================================
+PART B — COMPONENTS OBTAINED AT INSTALL TIME
+================================================================================
+
+The following components are NOT redistributed in this download. They are
+downloaded from the npm registry onto your own machine when you run
+"npm install", directly from their publishers and under their own licences. They
+are listed here for transparency.
+
+  Component        Version   Licence   Project
+  ---------------  --------  --------  ---------------------------------------
+  electron         ^43.3.0   MIT       https://github.com/electron/electron
+  electron-store   ^8.1.0    MIT       https://github.com/sindresorhus/electron-store
+  adm-zip          ^0.6.0    MIT       https://github.com/cthackers/adm-zip
+  express          ^4.18.2   MIT       https://github.com/expressjs/express
+  cors             ^2.8.5    MIT       https://github.com/expressjs/cors
+  pako             ^2.1.0    MIT/Zlib  https://github.com/nodeca/pako
+  @anthropic-ai/sdk (optional)  MIT    https://github.com/anthropics/anthropic-sdk-typescript
+
+Each package's full licence text is installed into the node_modules/ directory
+alongside it and can be read there.
+
+Electron embeds the Chromium browser engine and the Node.js runtime, which
+incorporate a large number of further open-source components under their own
+licences. Those licences are available inside your installed Electron
+distribution (LICENSES.chromium.html) and at
+https://github.com/electron/electron/blob/main/LICENSE.
+
+The optional @anthropic-ai/sdk component is installed only if present and is
+used solely by the optional NornAI feature. Use of any language-model service
+through it is subject to that service provider's own terms.
+
+
+================================================================================
+PART C — TRADEMARKS AND GAME ASSETS
+================================================================================
+
+This package contains no Creatures 3 or Docking Station game assets. Artwork,
+sprites, sounds, music, genomes, and scripts from those games remain the
+property of their respective rights holders and must be supplied by you from a
+copy you lawfully own.
+
+"Creatures", "Docking Station", "Norn", and related names and logos are
+trademarks of their respective owners. This project is not affiliated with,
+authorised, sponsored, or endorsed by Cyberlife Technology, Creature Labs,
+Gameware Development, or any current rights holder. Trademarks are used only to
+identify the game with which this software is compatible.
