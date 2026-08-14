@@ -414,6 +414,20 @@ device** and its security warning under *How to Install → Option 2*). Then use
 
 ---
 
+## Known problems
+
+These are known problems but it's not clear if they are specific to the rebuild engine or they
+already existed in the original implementation of the game.
+
+- In Docking Station, after some time, the creatures are wandering and getting stuck at the top
+  level, apparently they are attracted by a food smell and enter in a locking state. The analysis is stating: Your norns can still park next to a correct food gradient whose only ascent is a lift link, receive GO_RIGHT → stimulus 54 → nothing, and starve. Every part of that is faithful to the original, so fixing it is a deliberate divergence. A solution is to diverge from the original and make WhichDirectionToFollowCA classify a cross-floor link as GO_UP/GO_DOWN instead of by the |dx| vs |dy| ratio.
+- When creatures are spawned in Docking Station from the standard genome, they twitch and
+  shiver. They are not doing this in the original game, but all investigations are pointing
+  toward a legitimate behavior or reaction due to a cold environment. More investigation is
+  needed.
+
+---
+
 ## FAQ
 
 **Does the game work on Windows, Mac, Linux, iPad, and Android?**
@@ -508,6 +522,20 @@ To report a bug, please use the [GitHub issues](../../issues) function (see **FA
 what to include).
 
 ---
+
+## Licence
+
+This software is **proprietary and free of charge**. By playing at creatures.world, or by
+installing and using the desktop Launcher, **you agree to the
+[End User Licence Agreement](LICENSE.txt)** — please read it.
+
+In short: you may use it for your own personal, non-commercial play, on any device you own,
+and serve it across your own private network. You may not redistribute it, sell it, host it
+on the public internet, or reverse-engineer it. It contains **no game assets** — you must own
+a lawful copy of Creatures 3 / Docking Station (see **Asset Packs** above).
+
+Third-party components and their licences are listed in
+[THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
 
 ## Notes
 
