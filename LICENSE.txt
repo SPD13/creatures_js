@@ -263,7 +263,7 @@ control or sanctions laws.
 Questions about this Agreement, and any claim that the Software infringes your
 rights, should be raised on the project's GitHub issue tracker:
 
-     https://github.com/SPD13/creatures_js/issues
+     https://github.com/SPD13/creatures_world/issues
 
 Please note that GitHub issues are publicly visible. Rights holders who prefer a
 private channel may instead use GitHub's own copyright complaint process at
