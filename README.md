@@ -249,8 +249,14 @@ inside your Steam library's `steamapps/common`. The default locations are:
 | **Linux** | `~/.steam/steam/steamapps/common/Creatures Docking Station/` (or `~/.local/share/Steam/steamapps/common/…`) |
 
 If you installed Steam (or this game) on another drive/library, the path differs. The reliable
-way to find it: in Steam, **right-click the game → Manage → Browse local files** — that opens the
-exact folder.
+way to find it: in Steam, open the game's page in your Library and click the **gear icon (⚙)** on
+the right — then **Manage → Browse local files**. (Right-clicking the game in the Library list
+gives you the same menu.) That opens the exact folder, whatever the path:
+
+![Browsing the local files of Creatures Docking Station in Steam](screenshots/creatures_steam_files.png)
+
+The folder that opens is the **`Creatures Docking Station`** folder itself — the one containing
+the `Creatures 3` and `Docking Station` subfolders you need to import.
 
 > The game is a native **Windows** title. On **Linux** it runs through Proton, but the asset
 > files still live at the `steamapps/common/Creatures Docking Station/` path above. There is no
@@ -360,7 +366,7 @@ engine: {
 
 | Where you play | How to edit |
 | --- | --- |
-| **creatures.world (browser)** | Launcher page → **Maintenance** → **📝 Edit config.dev.js…** (edits are validated before saving; **⬇ Download** / **⬆ Upload** let you move the file between devices). |
+| **creatures.world (browser)** | Launcher page → **Configuration** → **📝 Edit config.dev.js…** (edits are validated before saving; **⬇ Download** / **⬆ Upload** let you move the file between devices). |
 | **Desktop Launcher** | **Setup** tab → **Config file** card → **Open** — the file (`Main_Game/config.dev.js` in the install folder) opens in your text editor. Restart the game page to apply changes. |
 
 ### Restoring the defaults
@@ -368,7 +374,7 @@ engine: {
 If your configuration ever gets into a bad state — or you just want a clean slate — restore
 the file from the template to get back the default initial configuration:
 
-- **creatures.world**: Launcher page → **Maintenance** → **↺ Reset from template**.
+- **creatures.world**: Launcher page → **Configuration** → **↺ Reset from template**.
 - **Desktop Launcher**: **Setup** tab → **Config file** card → **Restore from template**
   (your previous file is kept next to it as `config.dev.js.bak`).
 
@@ -428,6 +434,154 @@ already existed in the original implementation of the game.
 
 ---
 
+## Troubleshooting
+
+### The game runs slowly / the frame rate is poor
+
+**Check your browser's hardware acceleration first.** The game draws the whole world through
+an HTML canvas, and browsers only render that on the graphics card when hardware acceleration
+is enabled. It is *supposed* to be on by default in every modern browser — but it is routinely
+switched off without you noticing: a driver blocklist entry, an old or generic graphics driver,
+a power-saving profile, running in a virtual machine or a remote-desktop session, or simply a
+setting somebody turned off long ago. When it falls back to software rendering the game still
+works perfectly, just far slower.
+
+#### Google Chrome (and Edge, Brave, Opera, Vivaldi)
+
+**1. Check whether it is actually on.** Type this in the address bar:
+
+```
+chrome://gpu
+```
+
+At the top, under **Graphics Feature Status**, look at the **Canvas** and **Compositing**
+lines. You want them to read **Hardware accelerated**. If they say *Software only, hardware
+acceleration unavailable*, that is your performance problem.
+
+**2. Turn it on.** Open:
+
+```
+chrome://settings/system
+```
+
+Enable **Use graphics acceleration when available**, then **restart the browser** (fully quit
+and reopen it — a page reload is not enough). Go back to `chrome://gpu` to confirm the lines
+now read *Hardware accelerated*.
+
+> On the other Chromium browsers the same pages exist under their own prefix — `edge://gpu`
+> and `edge://settings/system`, `brave://gpu` and `brave://settings/system`, and so on.
+
+If it still reports software rendering after restarting, your GPU or its driver is on the
+browser's blocklist — the fix is to **update your graphics drivers** (and your OS), then
+restart and check again.
+
+#### Mozilla Firefox
+
+**1. Check whether it is actually on.** Type this in the address bar:
+
+```
+about:support
+```
+
+Scroll to the **Graphics** section and look at **Compositing**:
+
+| Value | Meaning |
+| --- | --- |
+| `WebRender` | ✅ Hardware acceleration is active. |
+| `WebRender (Software)` | ⚠️ Software rendering — this is what makes the game slow. |
+| `Basic` | ⚠️ Software rendering (older fallback path). |
+
+Further down the same section, the **Decision Log** explains *why* something was disabled
+(usually a blocklisted graphics driver) — useful when reporting a problem.
+
+**2. Turn it on.** Open **Settings** (☰ menu → Settings) → **General**, scroll to
+**Performance**, and:
+
+1. Untick **Use recommended performance settings** (this reveals the hidden options).
+2. Tick **Use hardware acceleration when available**.
+3. **Restart Firefox**, then re-check `about:support` → Graphics → Compositing.
+
+**3. If it is still software.** Advanced users can force it: open `about:config`, accept the
+warning, and set:
+
+| Preference | Value |
+| --- | --- |
+| `gfx.webrender.all` | `true` |
+| `layers.acceleration.disabled` | `false` |
+| `gfx.canvas.accelerated` | `true` |
+
+Restart Firefox afterwards. If Firefox overrides these back to software, the cause is again a
+driver blocklist entry — **update your graphics drivers** and try once more.
+
+#### Other things to check
+
+- **Use Chrome if you can.** The game is developed and tested on Chrome, and it is the fastest
+  and most reliable option. Firefox and Safari work, but see far less testing.
+- **Close the debug console and overlays** while playing. The debugger, the live graphs, and
+  the F3 debug overlays all cost frames — they are development tools, not gameplay features.
+  Also leave **Debug mode** off in the Launcher's **Configuration** section for normal play.
+- **Zoom out less.** A wide zoomed-out view means far more of the world to draw each frame.
+- **Close other heavy tabs and applications** — the browser shares your GPU with everything else.
+- **On a laptop, plug it in.** Battery-saver modes throttle the GPU aggressively, and some
+  systems switch the browser to the slower integrated graphics chip when unplugged.
+- **On tablets and phones**, expect lower performance than on a desktop — this is normal.
+
+If performance is still poor after all of this, open an issue on
+[GitHub](../../issues) and include the contents of your `chrome://gpu` or `about:support`
+Graphics section, along with your OS and device.
+
+### The game behaves strangely — reset your configuration to the defaults
+
+If the game starts misbehaving in ways that look wrong rather than merely slow — creatures or
+objects not moving or falling, the simulation running far too fast or too slow, scripts not
+firing, features missing or acting oddly — the most likely cause is a **leftover setting in
+your engine configuration**, not a bug. The engine reads an optional `config.dev.js` file that
+can override *any* internal setting (physics, rendering, CAOS execution, timing, and more), and
+a single option left switched on from an earlier experiment is enough to make the game look
+broken.
+
+**Before reporting a bug, revert your configuration to the defaults.** The template ships with
+every setting commented out, so a restored file simply follows the engine defaults again —
+your **assets, worlds, creatures and save games are not touched** by this.
+
+#### On creatures.world (the browser Launcher)
+
+1. Go to the Launcher page — from inside the game, burger menu (☰) → **🚀 Launcher**, or open
+   **https://creatures.world/?launcher=1** directly.
+2. Expand the **Configuration** section.
+3. Click **↺ Reset from template**, and confirm.
+4. While you are there, also clear anything you had set by hand in that same section: empty the
+   **Advanced overrides (JSON)** box, untick **Debug mode**, then click
+   **Save configuration**. These are stored separately from `config.dev.js` and override it.
+5. Reload the game page.
+
+> 💡 Want to keep a copy of your current file first? Click **⬇ Download config.dev.js** before
+> resetting — you can put it back later with **⬆ Upload config.dev.js…**.
+
+#### With the desktop Launcher (Electron)
+
+1. Open the Launcher and go to the **Setup** tab.
+2. Find the **Config file** card (it shows the status of `config.dev.js`).
+3. Click **Restore from template**, and confirm.
+   Your previous file is **kept next to it as `config.dev.js.bak`**, in case you want anything
+   back from it.
+4. Restart the server (**Run** tab → **Stop Server**, then **Start Server**) and reload the
+   game page.
+
+#### Also check the address bar
+
+Engine settings can be overridden **for a single session** by URL parameters — for example
+`?physics=false` or `?debug=true`. If you are opening the game from a bookmark or a link you
+saved while testing something, those parameters come back every time and silently override both
+the Launcher settings and `config.dev.js`. Open the plain address
+(**https://creatures.world**, or the Launcher's own **Open in Browser** button) and re-bookmark
+that instead.
+
+If the odd behaviour survives a full configuration reset, then it is worth reporting — please
+open an issue on [GitHub](../../issues) with a description and, ideally, a save file.
+
+---
+
 ## FAQ
 
 **Does the game work on Windows, Mac, Linux, iPad, and Android?**
@@ -447,6 +601,15 @@ Yes! The engine automatically detects that your device supports touch inputs. Yo
 one-finger tap to left click, a two-finger tap to right click, a one-finger swipe to move the
 cursor, and a two-finger swipe to move the camera. A new button will show next to the burger
 menu to open the virtual keyboard for text input.
+
+**Can the game support multiple screens?**
+
+Yes. Extend your display (rather than mirroring it), then stretch the Chrome window holding the
+game across all the screens you want to use. Open the **burger menu (☰) → Config** and define a
+space on the **left**, **right**, **top**, or **bottom** side of the play area, in pixels. That
+space is left blank and the play area shrinks to fit beside it — giving you somewhere to move
+your floating windows (minimap, performance, debug console, Ask Claude) without hiding any of
+the game.
 
 **What keyboard shortcuts are available?**
 
