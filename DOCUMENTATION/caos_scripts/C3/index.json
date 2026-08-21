@@ -1,0 +1,1618 @@
+[
+  {
+    "name": "!C3_game variables",
+    "title": "!C3_game variables",
+    "docFile": "!C3_game variables.md",
+    "scriptFile": "!C3_game variables.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "!map (000 Switcher)",
+    "title": "!map (000 Switcher)",
+    "docFile": "!map (000 Switcher).md",
+    "scriptFile": "!map.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "!map (001 World)",
+    "title": "!map (001 World)",
+    "docFile": "!map (001 World).md",
+    "scriptFile": "!map.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Blueprint Agent Export As Pray File",
+    "title": "Blueprint Agent Export As Pray File",
+    "docFile": "Blueprint Agent Export As Pray File.md",
+    "scriptFile": "Blueprint Agent Export As Pray File.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Butterfly",
+    "title": "Butterfly",
+    "docFile": "Butterfly.md",
+    "scriptFile": "Butterfly.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "CAOS command line",
+    "title": "CAOS command line",
+    "docFile": "CAOS command line.md",
+    "scriptFile": "CAOS command line.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Carrot",
+    "title": "Carrot",
+    "docFile": "Carrot.md",
+    "scriptFile": "Carrot.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Corridor Doors",
+    "title": "Corridor Doors",
+    "docFile": "Corridor Doors.md",
+    "scriptFile": "Corridor Doors.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Creator",
+    "title": "Creator",
+    "docFile": "Creator.md",
+    "scriptFile": "Creator.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Creature detector",
+    "title": "Creature detector",
+    "docFile": "Creature detector.md",
+    "scriptFile": "Creature detector.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Ettin area environment",
+    "title": "Ettin area environment",
+    "docFile": "Ettin area environment.md",
+    "scriptFile": "Ettin area environment.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Frame rater",
+    "title": "Frame rater",
+    "docFile": "Frame rater.md",
+    "scriptFile": "Frame rater.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "GUI 1",
+    "title": "GUI 1",
+    "docFile": "GUI 1.md",
+    "scriptFile": "GUI 1.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Genetic splicer panel2",
+    "title": "Genetic splicer panel2",
+    "docFile": "Genetic splicer panel2.md",
+    "scriptFile": "Genetic splicer panel2.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Grendel Area environment",
+    "title": "Grendel Area environment",
+    "docFile": "Grendel Area environment.md",
+    "scriptFile": "Grendel Area environment.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Grendel and Ettin Egg maker",
+    "title": "Grendel and Ettin Egg maker",
+    "docFile": "Grendel and Ettin Egg maker.md",
+    "scriptFile": "Grendel and Ettin Egg maker.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Hatchery2",
+    "title": "Hatchery2",
+    "docFile": "Hatchery2.md",
+    "scriptFile": "Hatchery2.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Hawk",
+    "title": "Hawk",
+    "docFile": "Hawk.md",
+    "scriptFile": "Hawk.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "HoldingHandsControlScripts",
+    "title": "HoldingHandsControlScripts",
+    "docFile": "HoldingHandsControlScripts.md",
+    "scriptFile": "HoldingHandsControlScripts.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Home smell emitters",
+    "title": "Home smell emitters",
+    "docFile": "Home smell emitters.md",
+    "scriptFile": "Home smell emitters.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Hummingbird",
+    "title": "Hummingbird",
+    "docFile": "Hummingbird.md",
+    "scriptFile": "Hummingbird.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Knowledge Stones",
+    "title": "Knowledge Stones",
+    "docFile": "Knowledge Stones.md",
+    "scriptFile": "Knowledge Stones.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Kobold",
+    "title": "Kobold",
+    "docFile": "Kobold.md",
+    "scriptFile": "Kobold.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Lifts",
+    "title": "Lifts",
+    "docFile": "Lifts.md",
+    "scriptFile": "Lifts.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "NOT gate",
+    "title": "NOT gate",
+    "docFile": "NOT gate.md",
+    "scriptFile": "NOT gate.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Norn Egg layer",
+    "title": "Norn Egg layer",
+    "docFile": "Norn Egg layer.md",
+    "scriptFile": "Norn Egg layer.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Norn seed launcher",
+    "title": "Norn seed launcher",
+    "docFile": "Norn seed launcher.md",
+    "scriptFile": "Norn seed launcher.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "PLANT MODEL - foxglove Flower",
+    "title": "PLANT MODEL - foxglove Flower",
+    "docFile": "PLANT MODEL - foxglove Flower.md",
+    "scriptFile": "PLANT MODEL - foxglove Flower.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "PLANT MODEL - foxglove Leaf",
+    "title": "PLANT MODEL - foxglove Leaf",
+    "docFile": "PLANT MODEL - foxglove Leaf.md",
+    "scriptFile": "PLANT MODEL - foxglove Leaf.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "PLANT MODEL - foxglove Seed",
+    "title": "PLANT MODEL - foxglove Seed",
+    "docFile": "PLANT MODEL - foxglove Seed.md",
+    "scriptFile": "PLANT MODEL - foxglove Seed.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "PLANT MODEL - foxglove plant",
+    "title": "PLANT MODEL - foxglove plant",
+    "docFile": "PLANT MODEL - foxglove plant.md",
+    "scriptFile": "PLANT MODEL - foxglove plant.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Pointer scripts",
+    "title": "Pointer scripts",
+    "docFile": "Pointer scripts.md",
+    "scriptFile": "Pointer scripts.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Robin2",
+    "title": "Robin2",
+    "docFile": "Robin2.md",
+    "scriptFile": "Robin2.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Rock cutaway Norn terrarium",
+    "title": "Rock cutaway Norn terrarium",
+    "docFile": "Rock cutaway Norn terrarium.md",
+    "scriptFile": "Rock cutaway Norn terrarium.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "SeaLift",
+    "title": "SeaLift",
+    "docFile": "SeaLift.md",
+    "scriptFile": "SeaLift.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Toilet Control",
+    "title": "Toilet Control",
+    "docFile": "Toilet Control.md",
+    "scriptFile": "Toilet Control.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Uglee",
+    "title": "Uglee",
+    "docFile": "Uglee.md",
+    "scriptFile": "Uglee.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "Water smell emitter",
+    "title": "Water smell emitter",
+    "docFile": "Water smell emitter.md",
+    "scriptFile": "Water smell emitter.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "XBioenergy incrementer",
+    "title": "XBioenergy incrementer",
+    "docFile": "XBioenergy incrementer.md",
+    "scriptFile": "XBioenergy incrementer.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "XEfficiency indicator",
+    "title": "XEfficiency indicator",
+    "docFile": "XEfficiency indicator.md",
+    "scriptFile": "XEfficiency indicator.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "XY tool",
+    "title": "XY tool",
+    "docFile": "XY tool.md",
+    "scriptFile": "XY tool.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "agent help",
+    "title": "Agent help",
+    "docFile": "agent help.md",
+    "scriptFile": "agent help.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "airlock agent",
+    "title": "Airlock agent",
+    "docFile": "airlock agent.md",
+    "scriptFile": "airlock agent.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "all Engineering airlock",
+    "title": "All Engineering airlock",
+    "docFile": "all Engineering airlock.md",
+    "scriptFile": "all Engineering airlock.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "all bridge airlock",
+    "title": "All bridge airlock",
+    "docFile": "all bridge airlock.md",
+    "scriptFile": "all bridge airlock.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "angel fish",
+    "title": "Angel fish",
+    "docFile": "angel fish.md",
+    "scriptFile": "angel fish.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ant",
+    "title": "Ant",
+    "docFile": "ant.md",
+    "scriptFile": "ant.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "anti-bacterial spray",
+    "title": "Anti-bacterial spray",
+    "docFile": "anti-bacterial spray.md",
+    "scriptFile": "anti-bacterial spray.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "antigen detector",
+    "title": "Antigen detector",
+    "docFile": "antigen detector.md",
+    "scriptFile": "antigen detector.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "apples",
+    "title": "Apples",
+    "docFile": "apples.md",
+    "scriptFile": "apples.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "aquamite_maker",
+    "title": "Aquamite_maker",
+    "docFile": "aquamite_maker.md",
+    "scriptFile": "aquamite_maker.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "aquamites",
+    "title": "Aquamites",
+    "docFile": "aquamites.md",
+    "scriptFile": "aquamites.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "aquatic tunnel gates",
+    "title": "Aquatic tunnel gates",
+    "docFile": "aquatic tunnel gates.md",
+    "scriptFile": "aquatic tunnel gates.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "aquatic_launcher",
+    "title": "Aquatic_launcher",
+    "docFile": "aquatic_launcher.md",
+    "scriptFile": "aquatic_launcher.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "aquatic_patches",
+    "title": "Aquatic_patches",
+    "docFile": "aquatic_patches.md",
+    "scriptFile": "aquatic_patches.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "aquatic_population_monitoring_device",
+    "title": "Aquatic_population_monitoring_device",
+    "docFile": "aquatic_population_monitoring_device.md",
+    "scriptFile": "aquatic_population_monitoring_device.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "autosave",
+    "title": "Autosave",
+    "docFile": "autosave.md",
+    "scriptFile": "autosave.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "bacteria",
+    "title": "Bacteria",
+    "docFile": "bacteria.md",
+    "scriptFile": "bacteria.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ball",
+    "title": "Ball",
+    "docFile": "ball.md",
+    "scriptFile": "ball.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "balloon bug",
+    "title": "Balloon bug",
+    "docFile": "balloon bug.md",
+    "scriptFile": "balloon bug.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "beatbox",
+    "title": "Beatbox",
+    "docFile": "beatbox.md",
+    "scriptFile": "beatbox.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "bee",
+    "title": "Bee",
+    "docFile": "bee.md",
+    "scriptFile": "bee.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "beetle",
+    "title": "Beetle",
+    "docFile": "beetle.md",
+    "scriptFile": "beetle.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "bluebell",
+    "title": "Bluebell",
+    "docFile": "bluebell.md",
+    "scriptFile": "bluebell.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "blueprint agent scripts",
+    "title": "Blueprint agent scripts",
+    "docFile": "blueprint agent scripts.md",
+    "scriptFile": "blueprint agent scripts.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "bongo_drums",
+    "title": "Bongo_drums",
+    "docFile": "bongo_drums.md",
+    "scriptFile": "bongo_drums.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "cacbana",
+    "title": "Cacbana",
+    "docFile": "cacbana.md",
+    "scriptFile": "cacbana.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "camera unit",
+    "title": "Camera unit",
+    "docFile": "camera unit.md",
+    "scriptFile": "camera unit.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "choppertoy",
+    "title": "Choppertoy",
+    "docFile": "choppertoy.md",
+    "scriptFile": "choppertoy.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "clown fish",
+    "title": "Clown fish",
+    "docFile": "clown fish.md",
+    "scriptFile": "clown fish.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "connecting agent pointer change",
+    "title": "Connecting agent pointer change",
+    "docFile": "connecting agent pointer change.md",
+    "scriptFile": "connecting agent pointer change.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "contact sensor",
+    "title": "Contact sensor",
+    "docFile": "contact sensor.md",
+    "scriptFile": "contact sensor.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "count gate",
+    "title": "Count gate",
+    "docFile": "count gate.md",
+    "scriptFile": "count gate.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creature history",
+    "title": "Creature history",
+    "docFile": "creature history.md",
+    "scriptFile": "creature history.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureBreeding",
+    "title": "CreatureBreeding",
+    "docFile": "creatureBreeding.md",
+    "scriptFile": "creatureBreeding.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureBubbles",
+    "title": "CreatureBubbles",
+    "docFile": "creatureBubbles.md",
+    "scriptFile": "creatureBubbles.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureDecisions",
+    "title": "CreatureDecisions",
+    "docFile": "creatureDecisions.md",
+    "scriptFile": "creatureDecisions.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureDoneTo",
+    "title": "CreatureDoneTo",
+    "docFile": "creatureDoneTo.md",
+    "scriptFile": "creatureDoneTo.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureInvoluntary",
+    "title": "CreatureInvoluntary",
+    "docFile": "creatureInvoluntary.md",
+    "scriptFile": "creatureInvoluntary.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureObjectVariables",
+    "title": "CreatureObjectVariables",
+    "docFile": "creatureObjectVariables.md",
+    "scriptFile": "creatureObjectVariables.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creatureToCreature",
+    "title": "CreatureToCreature",
+    "docFile": "creatureToCreature.md",
+    "scriptFile": "creatureToCreature.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "creaturesAffectingHand",
+    "title": "CreaturesAffectingHand",
+    "docFile": "creaturesAffectingHand.md",
+    "scriptFile": "creaturesAffectingHand.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "crypt3",
+    "title": "Crypt3",
+    "docFile": "crypt3.md",
+    "scriptFile": "crypt3.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "cuttlefish",
+    "title": "Cuttlefish",
+    "docFile": "cuttlefish.md",
+    "scriptFile": "cuttlefish.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "death",
+    "title": "Death",
+    "docFile": "death.md",
+    "scriptFile": "death.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "delay gate",
+    "title": "Delay gate",
+    "docFile": "delay gate.md",
+    "scriptFile": "delay gate.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "desert grass",
+    "title": "Desert grass",
+    "docFile": "desert grass.md",
+    "scriptFile": "desert grass.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "disable debug keys (000 Switcher)",
+    "title": "Disable debug keys (000 Switcher)",
+    "docFile": "disable debug keys (000 Switcher).md",
+    "scriptFile": "disable debug keys.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "disable debug keys (001 World)",
+    "title": "Disable debug keys (001 World)",
+    "docFile": "disable debug keys (001 World).md",
+    "scriptFile": "disable debug keys.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "dragonfly",
+    "title": "Dragonfly",
+    "docFile": "dragonfly.md",
+    "scriptFile": "dragonfly.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "dragonfly_patch",
+    "title": "Dragonfly_patch",
+    "docFile": "dragonfly_patch.md",
+    "scriptFile": "dragonfly_patch.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "engineering scenery",
+    "title": "Engineering scenery",
+    "docFile": "engineering scenery.md",
+    "scriptFile": "engineering scenery.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "environmental controls",
+    "title": "Environmental controls",
+    "docFile": "environmental controls.md",
+    "scriptFile": "environmental controls.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ettin accessways",
+    "title": "Ettin accessways",
+    "docFile": "ettin accessways.md",
+    "scriptFile": "ettin accessways.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ettin seed bank",
+    "title": "Ettin seed bank",
+    "docFile": "ettin seed bank.md",
+    "scriptFile": "ettin seed bank.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ettin_muscle_paralyser",
+    "title": "Ettin_muscle_paralyser",
+    "docFile": "ettin_muscle_paralyser.md",
+    "scriptFile": "ettin_muscle_paralyser.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "favourite places",
+    "title": "Favourite places",
+    "docFile": "favourite places.md",
+    "scriptFile": "favourite places.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "fixed position fish egg launcher",
+    "title": "Fixed position fish egg launcher",
+    "docFile": "fixed position fish egg launcher.md",
+    "scriptFile": "fixed position fish egg launcher.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "fungi",
+    "title": "Fungi",
+    "docFile": "fungi.md",
+    "scriptFile": "fungi.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "garbage spewer",
+    "title": "Garbage spewer",
+    "docFile": "garbage spewer.md",
+    "scriptFile": "garbage spewer.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "gene pod",
+    "title": "Gene pod",
+    "docFile": "gene pod.md",
+    "scriptFile": "gene pod.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "gene splicer overlay",
+    "title": "Gene splicer overlay",
+    "docFile": "gene splicer overlay.md",
+    "scriptFile": "gene splicer overlay.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "gnarler",
+    "title": "Gnarler",
+    "docFile": "gnarler.md",
+    "scriptFile": "gnarler.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "gnats",
+    "title": "Gnats",
+    "docFile": "gnats.md",
+    "scriptFile": "gnats.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "grass",
+    "title": "Grass",
+    "docFile": "grass.md",
+    "scriptFile": "grass.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "grasshopper",
+    "title": "Grasshopper",
+    "docFile": "grasshopper.md",
+    "scriptFile": "grasshopper.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "grazer2",
+    "title": "Grazer2",
+    "docFile": "grazer2.md",
+    "scriptFile": "grazer2.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "grendel scenery",
+    "title": "Grendel scenery",
+    "docFile": "grendel scenery.md",
+    "scriptFile": "grendel scenery.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "grendel seed bank",
+    "title": "Grendel seed bank",
+    "docFile": "grendel seed bank.md",
+    "scriptFile": "grendel seed bank.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "gumin grass",
+    "title": "Gumin grass",
+    "docFile": "gumin grass.md",
+    "scriptFile": "gumin grass.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "handlefish",
+    "title": "Handlefish",
+    "docFile": "handlefish.md",
+    "scriptFile": "handlefish.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "hedgehog",
+    "title": "Hedgehog",
+    "docFile": "hedgehog.md",
+    "scriptFile": "hedgehog.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "hoppity",
+    "title": "Hoppity",
+    "docFile": "hoppity.md",
+    "scriptFile": "hoppity.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "hover vehicle",
+    "title": "Hover vehicle",
+    "docFile": "hover vehicle.md",
+    "scriptFile": "hover vehicle.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "infinite_cheese_machine",
+    "title": "Infinite_cheese_machine",
+    "docFile": "infinite_cheese_machine.md",
+    "scriptFile": "infinite_cheese_machine.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "internal terrarium door",
+    "title": "Internal terrarium door",
+    "docFile": "internal terrarium door.md",
+    "scriptFile": "internal terrarium door.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "jungle_patches",
+    "title": "Jungle_patches",
+    "docFile": "jungle_patches.md",
+    "scriptFile": "jungle_patches.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "keyboard handler",
+    "title": "Keyboard handler",
+    "docFile": "keyboard handler.md",
+    "scriptFile": "keyboard handler.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "kingfisher",
+    "title": "Kingfisher",
+    "docFile": "kingfisher.md",
+    "scriptFile": "kingfisher.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "learning_machine",
+    "title": "Learning_machine",
+    "docFile": "learning_machine.md",
+    "scriptFile": "learning_machine.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "life event factory",
+    "title": "Life event factory",
+    "docFile": "life event factory.md",
+    "scriptFile": "life event factory.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "light & heat emitters NT",
+    "title": "Light & heat emitters NT",
+    "docFile": "light & heat emitters NT.md",
+    "scriptFile": "light & heat emitters NT.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "lightbox",
+    "title": "Lightbox",
+    "docFile": "lightbox.md",
+    "scriptFile": "lightbox.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "lightmodule",
+    "title": "Lightmodule",
+    "docFile": "lightmodule.md",
+    "scriptFile": "lightmodule.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "logicgate",
+    "title": "Logicgate",
+    "docFile": "logicgate.md",
+    "scriptFile": "logicgate.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "lung overlay",
+    "title": "Lung overlay",
+    "docFile": "lung overlay.md",
+    "scriptFile": "lung overlay.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "lung",
+    "title": "Lung",
+    "docFile": "lung.md",
+    "scriptFile": "lung.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "magic profiler",
+    "title": "Magic profiler",
+    "docFile": "magic profiler.md",
+    "scriptFile": "magic profiler.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "man-o-war",
+    "title": "Man-o-war",
+    "docFile": "man-o-war.md",
+    "scriptFile": "man-o-war.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "map display",
+    "title": "Map display",
+    "docFile": "map display.md",
+    "scriptFile": "map display.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "marine cave water",
+    "title": "Marine cave water",
+    "docFile": "marine cave water.md",
+    "scriptFile": "marine cave water.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "marine room cutout",
+    "title": "Marine room cutout",
+    "docFile": "marine room cutout.md",
+    "scriptFile": "marine room cutout.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "marine_airlocks",
+    "title": "Marine_airlocks",
+    "docFile": "marine_airlocks.md",
+    "scriptFile": "marine_airlocks.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "medical pod and screens",
+    "title": "Medical pod and screens",
+    "docFile": "medical pod and screens.md",
+    "scriptFile": "medical pod and screens.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "medical scanner",
+    "title": "Medical scanner",
+    "docFile": "medical scanner.md",
+    "scriptFile": "medical scanner.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "medicine maker",
+    "title": "Medicine maker",
+    "docFile": "medicine maker.md",
+    "scriptFile": "medicine maker.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "mediporter",
+    "title": "Mediporter",
+    "docFile": "mediporter.md",
+    "scriptFile": "mediporter.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "meerk",
+    "title": "Meerk",
+    "docFile": "meerk.md",
+    "scriptFile": "meerk.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "meerk_fix",
+    "title": "Meerk_fix",
+    "docFile": "meerk_fix.md",
+    "scriptFile": "meerk_fix.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "mosquito",
+    "title": "Mosquito",
+    "docFile": "mosquito.md",
+    "scriptFile": "mosquito.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "nature_patches",
+    "title": "Nature_patches",
+    "docFile": "nature_patches.md",
+    "scriptFile": "nature_patches.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "neon fish",
+    "title": "Neon fish",
+    "docFile": "neon fish.md",
+    "scriptFile": "neon fish.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "norn atmosphere machine",
+    "title": "Norn atmosphere machine",
+    "docFile": "norn atmosphere machine.md",
+    "scriptFile": "norn atmosphere machine.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "norn cutaways 01",
+    "title": "Norn cutaways 01",
+    "docFile": "norn cutaways 01.md",
+    "scriptFile": "norn cutaways 01.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "norn indicator",
+    "title": "Norn indicator",
+    "docFile": "norn indicator.md",
+    "scriptFile": "norn indicator.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "norn platform",
+    "title": "Norn platform",
+    "docFile": "norn platform.md",
+    "scriptFile": "norn platform.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "norn to grendel door",
+    "title": "Norn to grendel door",
+    "docFile": "norn to grendel door.md",
+    "scriptFile": "norn to grendel door.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "nudibranch",
+    "title": "Nudibranch",
+    "docFile": "nudibranch.md",
+    "scriptFile": "nudibranch.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "numeric output tool",
+    "title": "Numeric output tool",
+    "docFile": "numeric output tool.md",
+    "scriptFile": "numeric output tool.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "object of attention indicator",
+    "title": "Object of attention indicator",
+    "docFile": "object of attention indicator.md",
+    "scriptFile": "object of attention indicator.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ocean surface",
+    "title": "Ocean surface",
+    "docFile": "ocean surface.md",
+    "scriptFile": "ocean surface.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "ocean_pod",
+    "title": "Ocean_pod",
+    "docFile": "ocean_pod.md",
+    "scriptFile": "ocean_pod.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "opal sponge",
+    "title": "Opal sponge",
+    "docFile": "opal sponge.md",
+    "scriptFile": "opal sponge.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "orange sponge",
+    "title": "Orange sponge",
+    "docFile": "orange sponge.md",
+    "scriptFile": "orange sponge.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "output display device",
+    "title": "Output display device",
+    "docFile": "output display device.md",
+    "scriptFile": "output display device.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "palmplant",
+    "title": "Palmplant",
+    "docFile": "palmplant.md",
+    "scriptFile": "palmplant.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "pick-ups",
+    "title": "Pick-ups",
+    "docFile": "pick-ups.md",
+    "scriptFile": "pick-ups.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "piranha",
+    "title": "Piranha",
+    "docFile": "piranha.md",
+    "scriptFile": "piranha.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "plusminus switch",
+    "title": "Plusminus switch",
+    "docFile": "plusminus switch.md",
+    "scriptFile": "plusminus switch.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "pointer activate stimming norns",
+    "title": "Pointer activate stimming norns",
+    "docFile": "pointer activate stimming norns.md",
+    "scriptFile": "pointer activate stimming norns.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "pointer",
+    "title": "Pointer",
+    "docFile": "pointer.md",
+    "scriptFile": "pointer.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "pregnancy indication device",
+    "title": "Pregnancy indication device",
+    "docFile": "pregnancy indication device.md",
+    "scriptFile": "pregnancy indication device.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "pumperspikel",
+    "title": "Pumperspikel",
+    "docFile": "pumperspikel.md",
+    "scriptFile": "pumperspikel.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "radio machines",
+    "title": "Radio machines",
+    "docFile": "radio machines.md",
+    "scriptFile": "radio machines.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "rainbow_sharkling",
+    "title": "Rainbow_sharkling",
+    "docFile": "rainbow_sharkling.md",
+    "scriptFile": "rainbow_sharkling.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "recycler overlay",
+    "title": "Recycler overlay",
+    "docFile": "recycler overlay.md",
+    "scriptFile": "recycler overlay.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "recycler2",
+    "title": "Recycler2",
+    "docFile": "recycler2.md",
+    "scriptFile": "recycler2.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "replicator",
+    "title": "Replicator",
+    "docFile": "replicator.md",
+    "scriptFile": "replicator.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "rocklice",
+    "title": "Rocklice",
+    "docFile": "rocklice.md",
+    "scriptFile": "rocklice.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "scroll settings",
+    "title": "Scroll settings",
+    "docFile": "scroll settings.md",
+    "scriptFile": "scroll settings.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "sepulchre",
+    "title": "Sepulchre",
+    "docFile": "sepulchre.md",
+    "scriptFile": "sepulchre.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "single chemical graphing gadget",
+    "title": "Single chemical graphing gadget",
+    "docFile": "single chemical graphing gadget.md",
+    "scriptFile": "single chemical graphing gadget.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "siren",
+    "title": "Siren",
+    "docFile": "siren.md",
+    "scriptFile": "siren.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "sludge gun",
+    "title": "Sludge gun",
+    "docFile": "sludge gun.md",
+    "scriptFile": "sludge gun.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "smell emitter + detector",
+    "title": "Smell emitter + detector",
+    "docFile": "smell emitter + detector.md",
+    "scriptFile": "smell emitter + detector.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "snail",
+    "title": "Snail",
+    "docFile": "snail.md",
+    "scriptFile": "snail.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "space toy",
+    "title": "Space toy",
+    "docFile": "space toy.md",
+    "scriptFile": "space toy.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "speech bubble factory",
+    "title": "Speech bubble factory",
+    "docFile": "speech bubble factory.md",
+    "scriptFile": "speech bubble factory.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "starplant",
+    "title": "Starplant",
+    "docFile": "starplant.md",
+    "scriptFile": "starplant.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "stars and pickup panel",
+    "title": "Stars and pickup panel",
+    "docFile": "stars and pickup panel.md",
+    "scriptFile": "stars and pickup panel.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "stickleback",
+    "title": "Stickleback",
+    "docFile": "stickleback.md",
+    "scriptFile": "stickleback.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "switch",
+    "title": "Switch",
+    "docFile": "switch.md",
+    "scriptFile": "switch.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "teleporter",
+    "title": "Teleporter",
+    "docFile": "teleporter.md",
+    "scriptFile": "teleporter.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "tendril",
+    "title": "Tendril",
+    "docFile": "tendril.md",
+    "scriptFile": "tendril.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "textentry",
+    "title": "Textentry",
+    "docFile": "textentry.md",
+    "scriptFile": "textentry.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "toolbar",
+    "title": "Toolbar",
+    "docFile": "toolbar.md",
+    "scriptFile": "toolbar.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "trapdoor",
+    "title": "Trapdoor",
+    "docFile": "trapdoor.md",
+    "scriptFile": "trapdoor.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "vents",
+    "title": "Vents",
+    "docFile": "vents.md",
+    "scriptFile": "vents.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "volcano",
+    "title": "Volcano",
+    "docFile": "volcano.md",
+    "scriptFile": "volcano.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "wasp",
+    "title": "Wasp",
+    "docFile": "wasp.md",
+    "scriptFile": "wasp.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "waterplant",
+    "title": "Waterplant",
+    "docFile": "waterplant.md",
+    "scriptFile": "waterplant.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "welcome screen",
+    "title": "Welcome screen",
+    "docFile": "welcome screen.md",
+    "scriptFile": "welcome screen.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "wetness monitor and designator",
+    "title": "Wetness monitor and designator",
+    "docFile": "wetness monitor and designator.md",
+    "scriptFile": "wetness monitor and designator.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "wolf control",
+    "title": "Wolf control",
+    "docFile": "wolf control.md",
+    "scriptFile": "wolf control.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "wolf_patch",
+    "title": "Wolf_patch",
+    "docFile": "wolf_patch.md",
+    "scriptFile": "wolf_patch.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "woodpigeon2",
+    "title": "Woodpigeon2",
+    "docFile": "woodpigeon2.md",
+    "scriptFile": "woodpigeon2.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "world switcher",
+    "title": "World switcher",
+    "docFile": "world switcher.md",
+    "scriptFile": "world switcher.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "wysts",
+    "title": "Wysts",
+    "docFile": "wysts.md",
+    "scriptFile": "wysts.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "z_agent smells",
+    "title": "Z_agent smells",
+    "docFile": "z_agent smells.md",
+    "scriptFile": "z_agent smells.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "z_creaturesAffectingAnimals",
+    "title": "Z_creaturesAffectingAnimals",
+    "docFile": "z_creaturesAffectingAnimals.md",
+    "scriptFile": "z_creaturesAffectingAnimals.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  },
+  {
+    "name": "zzz_grendel_upgrade_c3",
+    "title": "Zzz_grendel_upgrade_c3",
+    "docFile": "zzz_grendel_upgrade_c3.md",
+    "scriptFile": "zzz_grendel_upgrade_c3.cos",
+    "scriptDir": "001 World Patches",
+    "hasScript": true
+  },
+  {
+    "name": "zzz_move camera",
+    "title": "Zzz_move camera",
+    "docFile": "zzz_move camera.md",
+    "scriptFile": "zzz_move camera.cos",
+    "scriptDir": "001 World",
+    "hasScript": true
+  }
+]

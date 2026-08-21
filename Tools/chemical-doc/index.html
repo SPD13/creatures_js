@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Docs - Creatures 3</title>
+    <link rel="stylesheet" href="../shared-nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chemical-doc-app">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-panel active" id="chemicalsPanel">
+                <div class="sidebar-search">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" class="sidebar-search-input" placeholder="Search chemicals..." autofocus>
+                        <button class="search-clear hidden" id="searchClear">&times;</button>
+                    </div>
+                    <div class="search-count" id="searchCount"></div>
+                </div>
+                <div class="chemical-list" id="chemicalList"></div>
+            </div>
+        </div>
+
+        <!-- Main Panel -->
+        <div class="main-panel">
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">&#129514;</div>
+                <h2>Chemical Documentation Viewer</h2>
+                <p>Select a chemical from the sidebar to view its role and description.</p>
+            </div>
+
+            <div id="contentArea" class="hidden">
+                <div class="panel-header">
+                    <h1 id="chemicalTitle"></h1>
+                    <p class="panel-meta" id="chemicalMeta"></p>
+                </div>
+
+                <div class="docs-content" id="docsContent">
+                    <p class="loading-message">Loading documentation...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../shared-nav.js"></script>
+    <script src="../wiki/lib/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

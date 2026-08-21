@@ -1,0 +1,349 @@
+/**
+ * CAOS Preview CSS - Shared styling for CAOS syntax highlighting
+ * Extracted from caos-catalog tool for reuse across multiple tools
+ */
+
+/* CAOS Syntax Highlighting Base Styles */
+.caos-line {
+    margin: 2px 0;
+    padding: 2px 0;
+    font-family: 'Courier New', Monaco, monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    white-space: pre-wrap;  /* Preserve whitespace including tabs */
+    tab-size: 4;  /* Set tab width to 4 spaces */
+}
+
+.caos-line-number {
+    display: inline-block;
+    width: 50px;
+    color: #a0aec0;
+    text-align: right;
+    margin-right: 15px;
+    user-select: none;
+    border-right: 1px solid #4a5568;
+    padding-right: 10px;
+}
+
+/* CAOS Syntax Element Styles - Dark Theme */
+.caos-comment {
+    color: #68d391;
+    font-style: italic;
+    white-space: pre;  /* Preserve whitespace in comments */
+}
+
+.caos-command {
+    color: #c678dd;
+    font-weight: bold;
+    white-space: pre;  /* Preserve whitespace in commands */
+}
+
+.caos-clickable-command {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.caos-clickable-command:hover {
+    color: #d19aff;
+    background-color: rgba(198, 120, 221, 0.2);
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.caos-keyword {
+    color: #f6ad55;
+    font-weight: bold;
+    white-space: pre;  /* Preserve whitespace in keywords */
+}
+
+.caos-operator {
+    color: #e2e8f0;
+    font-weight: bold;
+    white-space: pre;  /* Preserve whitespace in operators */
+}
+
+.caos-string {
+    color: #fc8181;
+    white-space: pre;  /* Preserve whitespace in strings */
+}
+
+.caos-number {
+    color: #fbb6ce;
+    white-space: pre;  /* Preserve whitespace in numbers */
+}
+
+.caos-byte_string {
+    color: #9f7aea;
+    font-weight: bold;
+    white-space: pre;  /* Preserve whitespace in byte strings */
+    background-color: rgba(159, 122, 234, 0.1);
+    padding: 1px 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(159, 122, 234, 0.3);
+}
+
+.caos-classifier {
+    color: #d53f8c;
+    font-weight: bold;
+    white-space: pre;  /* Preserve whitespace in classifiers */
+}
+
+.caos-normal {
+    color: #e2e8f0;
+    white-space: pre;  /* Preserve whitespace in normal text */
+}
+
+.caos-label {
+    color: #fbbf24;  /* Amber/golden color for labels */
+    font-style: italic;
+    font-weight: 500;
+    white-space: pre;  /* Preserve whitespace in labels */
+}
+
+/* CAOS Content Container Styles */
+.caos-content {
+    background: #2d3748;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Courier New', Monaco, monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border: 1px solid #4a5568;
+    overflow-x: auto;
+}
+
+/* Dark theme variant */
+.caos-content.dark {
+    background: #2d3748;
+    color: #e2e8f0;
+    border-color: #4a5568;
+}
+
+.dark .caos-line-number {
+    color: #a0aec0;
+    border-right-color: #4a5568;
+}
+
+.dark .caos-comment {
+    color: #68d391;
+}
+
+.dark .caos-command {
+    color: #c678dd;
+}
+
+.dark .caos-clickable-command:hover {
+    background-color: rgba(198, 120, 221, 0.2);
+    color: #d19aff;
+}
+
+.dark .caos-keyword {
+    color: #f6ad55;
+}
+
+.dark .caos-string {
+    color: #fc8181;
+}
+
+.dark .caos-number {
+    color: #fbb6ce;
+}
+
+.dark .caos-classifier {
+    color: #d53f8c;
+}
+
+/* Compact variant for smaller displays */
+.caos-content.compact .caos-line {
+    margin: 1px 0;
+    padding: 1px 0;
+}
+
+.caos-content.compact .caos-line-number {
+    width: 35px;
+    margin-right: 10px;
+    padding-right: 5px;
+    font-size: 0.8rem;
+}
+
+.caos-content.compact {
+    padding: 15px;
+    font-size: 0.85rem;
+}
+
+/* Search highlighting */
+.caos-highlight {
+    background-color: #744210;
+    color: #fef5e7;
+    padding: 1px 2px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+/* Section styling (for organized CAOS content) */
+.caos-section-header {
+    background: #667eea;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px -10px 10px -10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.caos-section-header:first-child {
+    margin-top: 0;
+}
+
+.caos-section-header .toggle-icon {
+    transition: transform 0.2s ease;
+}
+
+.caos-section-header.collapsed .toggle-icon {
+    transform: rotate(-90deg);
+}
+
+.caos-section-content {
+    margin-left: 20px;
+    border-left: 2px solid #4a5568;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.caos-section-content.collapsed {
+    display: none;
+}
+
+.dark .caos-section-header {
+    background: #4c51bf;
+}
+
+.dark .caos-section-content {
+    border-left-color: #4a5568;
+}
+
+/* Error and warning states */
+.caos-error {
+    color: #e53e3e;
+    background-color: rgba(229, 62, 62, 0.1);
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
+.caos-warning {
+    color: #d69e2e;
+    background-color: rgba(214, 158, 46, 0.1);
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
+.dark .caos-error {
+    color: #fc8181;
+    background-color: rgba(252, 129, 129, 0.2);
+}
+
+.dark .caos-warning {
+    color: #f6e05e;
+    background-color: rgba(246, 224, 94, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .caos-line-number {
+        width: 35px;
+        margin-right: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .caos-content {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+    
+    .caos-section-header {
+        padding: 8px 12px;
+        margin: 15px -8px 8px -8px;
+        font-size: 0.9rem;
+    }
+    
+    .caos-section-content {
+        margin-left: 15px;
+        padding-left: 10px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .caos-content {
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: none;
+    }
+    
+    .caos-clickable-command {
+        text-decoration: none;
+        cursor: default;
+    }
+    
+    .caos-clickable-command:hover {
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .caos-section-header {
+        background: #f0f0f0;
+        color: #333;
+    }
+}
+
+/* Accessibility improvements */
+.caos-clickable-command:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .caos-comment {
+        color: #006600;
+        font-weight: bold;
+    }
+    
+    .caos-command {
+        color: #0000cc;
+        font-weight: bold;
+    }
+    
+    .caos-keyword {
+        color: #cc0000;
+        font-weight: bold;
+    }
+    
+    .caos-string {
+        color: #990099;
+        font-weight: bold;
+    }
+    
+    .caos-number {
+        color: #cc6600;
+        font-weight: bold;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .caos-clickable-command {
+        transition: none;
+    }
+    
+    .caos-section-header .toggle-icon {
+        transition: none;
+    }
+}

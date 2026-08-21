@@ -1,0 +1,466 @@
+/**
+ * CAOS Command Modal - Shared Styles
+ * Modal styles for CAOS command details display
+ * Shared between Tools/caos-catalog and Main Game debug console
+ */
+
+/* Modal Backdrop */
+.caos-command-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Modal Content Container */
+.caos-modal-content {
+    background: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal Header */
+.caos-modal-header {
+    background: #3498db;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.caos-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Courier New', monospace;
+}
+
+/* Modal Close Button */
+.caos-modal-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.caos-modal-close:hover {
+    opacity: 1;
+}
+
+/* Modal Body */
+.caos-modal-body {
+    padding: 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Command Details Container */
+.caos-command-details {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Command Header */
+.caos-command-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e1e5e9;
+    flex-wrap: wrap;
+}
+
+.caos-command-name {
+    font-size: 2rem;
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: bold;
+}
+
+.caos-command-type {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.caos-command-type[data-type="command"] { background: #4CAF50; color: white; }
+.caos-command-type[data-type="integerRV"] { background: #2196F3; color: white; }
+.caos-command-type[data-type="floatRV"] { background: #FF9800; color: white; }
+.caos-command-type[data-type="stringRV"] { background: #9C27B0; color: white; }
+.caos-command-type[data-type="agentRV"] { background: #F44336; color: white; }
+.caos-command-type[data-type="variable"] { background: #607D8B; color: white; }
+
+.caos-command-category {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #f8f9fa;
+    color: #666;
+    border: 1px solid #e1e5e9;
+}
+
+/* Command Sections */
+.caos-command-syntax,
+.caos-command-parameters,
+.caos-command-description,
+.caos-command-example,
+.caos-command-implementation {
+    margin-bottom: 25px;
+}
+
+.caos-command-syntax h4,
+.caos-command-parameters h4,
+.caos-command-description h4,
+.caos-command-example h4,
+.caos-command-implementation h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Syntax Display */
+.caos-syntax-code {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    border-left: 4px solid #3498db;
+    display: block;
+    color: #2c3e50;
+}
+
+/* Parameter List */
+.caos-parameter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.caos-parameter-item {
+    background: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 3px solid #3498db;
+}
+
+.caos-param-name {
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.caos-param-type {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.caos-param-description {
+    color: #555;
+    display: block;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+/* Description */
+.caos-description-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Example Code */
+.caos-example-code {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-line;
+    overflow-x: auto;
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Implementation Handler */
+.caos-handler-code {
+    background: #e8f4fd;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    display: block;
+    word-break: break-all;
+}
+
+/* Error Message */
+.caos-command-error {
+    text-align: center;
+    padding: 40px;
+    color: #e74c3c;
+    font-size: 1.1rem;
+}
+
+/* Classification-specific Styles */
+.classification-hierarchy {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.classification-hierarchy .family-info,
+.classification-hierarchy .genus-info,
+.classification-hierarchy .species-info,
+.classification-hierarchy .wildcard-info {
+    display: block;
+    margin: 8px 0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.classification-hierarchy .family-info {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 3px solid #3498db;
+}
+
+.classification-hierarchy .genus-info {
+    background: rgba(39, 174, 96, 0.1);
+    border-left: 3px solid #27ae60;
+}
+
+.classification-hierarchy .species-info {
+    background: rgba(230, 126, 34, 0.1);
+    border-left: 3px solid #e67e22;
+}
+
+.classification-hierarchy .wildcard-info {
+    background: rgba(142, 68, 173, 0.1);
+    border-left: 3px solid #8e44ad;
+}
+
+/* Classifier Search Container */
+.classifier-search-container {
+    margin-top: 15px;
+}
+
+.classifier-search-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.classifier-search-input {
+    padding: 10px;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.classifier-search-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.classifier-search-stats {
+    color: #666;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.classifier-results-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e1e5e9;
+    border-radius: 6px;
+}
+
+/* Matching Classifiers */
+.matching-classifiers {
+    display: flex;
+    flex-direction: column;
+}
+
+.classifier-match {
+    padding: 12px;
+    border-bottom: 1px solid #e1e5e9;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.classifier-match:hover {
+    background: #f8f9fa;
+}
+
+.classifier-match:last-child {
+    border-bottom: none;
+}
+
+.classifier-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.classifier-class-number {
+    background: #3498db;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.classifier-name {
+    font-weight: 600;
+    color: #2c3e50;
+    flex: 1;
+}
+
+.classifier-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.classifier-hierarchy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.75rem;
+}
+
+.classifier-hierarchy .family-info,
+.classifier-hierarchy .genus-info,
+.classifier-hierarchy .species-info {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: none;
+    margin: 0;
+}
+
+.classifier-contributor {
+    display: flex;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.contributor-label {
+    font-style: italic;
+}
+
+.contributor-name {
+    font-weight: 500;
+}
+
+.no-classifiers {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Warning styles for undocumented classifiers */
+.warning {
+    color: #e67e22;
+    font-weight: 500;
+}
+
+/* Clickable classification styles in CAOS preview */
+.caos-clickable-classification {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1px 3px;
+    transition: background-color 0.2s ease;
+}
+
+.caos-clickable-classification:hover {
+    background: rgba(52, 152, 219, 0.1);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .caos-modal-content {
+        margin: 10% auto;
+        width: 95%;
+    }
+    
+    .caos-modal-header,
+    .caos-modal-body {
+        padding: 20px;
+    }
+    
+    .caos-command-name {
+        font-size: 1.5rem;
+    }
+    
+    .caos-command-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .caos-syntax-code,
+    .caos-example-code {
+        font-size: 0.85rem;
+    }
+    
+    .classifier-search-controls {
+        gap: 8px;
+    }
+    
+    .classifier-hierarchy {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .classifier-results-container {
+        max-height: 200px;
+    }
+}

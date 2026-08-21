@@ -1,0 +1,1108 @@
+[
+  {
+    "name": "001 - Lactate",
+    "title": "Lactate",
+    "id": 1,
+    "role": "Long-lived damage marker; feeds the organ injury locus, produced from Muscle toxin",
+    "docFile": "001 - Lactate.md"
+  },
+  {
+    "name": "002 - Pyruvate",
+    "title": "Pyruvate",
+    "id": 2,
+    "role": "Central metabolic hub where the carb, fat and protein branches meet",
+    "docFile": "002 - Pyruvate.md"
+  },
+  {
+    "name": "003 - Glucose",
+    "title": "Glucose",
+    "id": 3,
+    "role": "Blood sugar; burned by glycolysis, stored as Glycogen",
+    "docFile": "003 - Glucose.md"
+  },
+  {
+    "name": "004 - Glycogen",
+    "title": "Glycogen",
+    "id": 4,
+    "role": "Dense short-term sugar store; its level is what the engine reports as \"health\"",
+    "docFile": "004 - Glycogen.md"
+  },
+  {
+    "name": "005 - Starch",
+    "title": "Starch",
+    "id": 5,
+    "role": "Dietary carbohydrate from food; digested into Glucose",
+    "docFile": "005 - Starch.md"
+  },
+  {
+    "name": "006 - Fatty Acid",
+    "title": "Fatty Acid",
+    "id": 6,
+    "role": "Burnable free fat between the fat stores and Pyruvate/ATP",
+    "docFile": "006 - Fatty Acid.md"
+  },
+  {
+    "name": "007 - Cholesterol",
+    "title": "Cholesterol",
+    "id": 7,
+    "role": "Non-fuel carbon reservoir built from surplus Pyruvate and dietary fat",
+    "docFile": "007 - Cholesterol.md"
+  },
+  {
+    "name": "008 - Triglyceride",
+    "title": "Triglyceride",
+    "id": 8,
+    "role": "Mid-density fat in transit between Fatty Acid and Adipose Tissue",
+    "docFile": "008 - Triglyceride.md"
+  },
+  {
+    "name": "009 - Adipose Tissue",
+    "title": "Adipose Tissue",
+    "id": 9,
+    "role": "Long-term body-fat vault; the deepest energy reserve",
+    "docFile": "009 - Adipose Tissue.md"
+  },
+  {
+    "name": "010 - Fat",
+    "title": "Fat",
+    "id": 10,
+    "role": "Dietary fat from food; the only lipid input to the body",
+    "docFile": "010 - Fat.md"
+  },
+  {
+    "name": "011 - Muscle Tissue",
+    "title": "Muscle Tissue",
+    "id": 11,
+    "role": "Protein store grown by exercise, broken back down when protein is needed",
+    "docFile": "011 - Muscle Tissue.md"
+  },
+  {
+    "name": "012 - Protein",
+    "title": "Protein",
+    "id": 12,
+    "role": "Dietary protein from food; digested into Amino Acid",
+    "docFile": "012 - Protein.md"
+  },
+  {
+    "name": "013 - Amino Acid",
+    "title": "Amino Acid",
+    "id": 13,
+    "role": "Circulating protein currency; builds muscle or burns for Glucose",
+    "docFile": "013 - Amino Acid.md"
+  },
+  {
+    "name": "017 - Downatrophin",
+    "title": "Downatrophin",
+    "id": 17,
+    "role": "Downhill gait signal; switches the walk animation while descending",
+    "docFile": "017 - Downatrophin.md"
+  },
+  {
+    "name": "018 - Upatrophin",
+    "title": "Upatrophin",
+    "id": 18,
+    "role": "Uphill gait signal; switches the walk animation while climbing",
+    "docFile": "018 - Upatrophin.md"
+  },
+  {
+    "name": "024 - Dissolved carbon dioxide",
+    "title": "Dissolved carbon dioxide",
+    "id": 24,
+    "role": "Respiration waste; no receptors read it, reactions clear it",
+    "docFile": "024 - Dissolved carbon dioxide.md"
+  },
+  {
+    "name": "025 - Urea",
+    "title": "Urea",
+    "id": 25,
+    "role": "Nitrogen waste endpoint of protein burning; high levels trigger Pistle",
+    "docFile": "025 - Urea.md"
+  },
+  {
+    "name": "026 - Ammonia",
+    "title": "Ammonia",
+    "id": 26,
+    "role": "Toxic nitrogen intermediate from burning protein; converted onward to Urea",
+    "docFile": "026 - Ammonia.md"
+  },
+  {
+    "name": "029 - Air",
+    "title": "Air",
+    "id": 29,
+    "role": "Inhaled-gas reserve; combined with Water to manufacture Oxygen",
+    "docFile": "029 - Air.md"
+  },
+  {
+    "name": "030 - Oxygen",
+    "title": "Oxygen",
+    "id": 30,
+    "role": "Blood oxidant that makes aerobic respiration possible",
+    "docFile": "030 - Oxygen.md"
+  },
+  {
+    "name": "033 - Water",
+    "title": "Water",
+    "id": 33,
+    "role": "Body-water pool used by respiration, nitrogen disposal, cooling and illness",
+    "docFile": "033 - Water.md"
+  },
+  {
+    "name": "034 - Energy",
+    "title": "Energy",
+    "id": 34,
+    "role": "Short-lived respiration output, immediately cashed into ATP",
+    "docFile": "034 - Energy.md"
+  },
+  {
+    "name": "035 - ATP",
+    "title": "ATP",
+    "id": 35,
+    "role": "Universal energy currency; every organ tick spends it or takes damage",
+    "docFile": "035 - ATP.md"
+  },
+  {
+    "name": "036 - ADP",
+    "title": "ADP",
+    "id": 36,
+    "role": "Discharged ATP, recharged by metabolism",
+    "docFile": "036 - ADP.md"
+  },
+  {
+    "name": "039 - Arousal Potential",
+    "title": "Arousal Potential",
+    "id": 39,
+    "role": "Internal \"I am fertile\" signal; with the mate pheromone it becomes Sex drive",
+    "docFile": "039 - Arousal Potential.md"
+  },
+  {
+    "name": "040 - Libido lowerer",
+    "title": "Libido lowerer",
+    "id": 40,
+    "role": "Emitted while infertile; destroys Sex drive and Arousal Potential",
+    "docFile": "040 - Libido lowerer.md"
+  },
+  {
+    "name": "041 - Opposite Sex Pheromone",
+    "title": "Opposite Sex Pheromone",
+    "id": 41,
+    "role": "Smelled from a nearby mate; gates Arousal Potential into Sex drive",
+    "docFile": "041 - Opposite Sex Pheromone.md"
+  },
+  {
+    "name": "046 - Oestrogen",
+    "title": "Oestrogen",
+    "id": 46,
+    "role": "Female cycle hormone; drives ovulation through a hysteresis loop",
+    "docFile": "046 - Oestrogen.md"
+  },
+  {
+    "name": "048 - Progesterone",
+    "title": "Progesterone",
+    "id": 48,
+    "role": "Pregnancy hormone; blocks ovulation, swells the body, triggers egg laying",
+    "docFile": "048 - Progesterone.md"
+  },
+  {
+    "name": "053 - Testosterone",
+    "title": "Testosterone",
+    "id": 53,
+    "role": "Male cycle hormone; drives sperm production on the same wiring as Oestrogen",
+    "docFile": "053 - Testosterone.md"
+  },
+  {
+    "name": "054 - Inhibin",
+    "title": "Inhibin",
+    "id": 54,
+    "role": "Reserved fertility-brake slot; unwired in the stock genome",
+    "docFile": "054 - Inhibin.md"
+  },
+  {
+    "name": "066 - Heavy Metals",
+    "title": "Heavy Metals",
+    "id": 66,
+    "role": "Environmental poison that never decays; only EDTA clears it",
+    "docFile": "066 - Heavy Metals.md"
+  },
+  {
+    "name": "067 - Cyanide",
+    "title": "Cyanide",
+    "id": 67,
+    "role": "Catalytically destroys Energy without being consumed itself",
+    "docFile": "067 - Cyanide.md"
+  },
+  {
+    "name": "068 - Belladonna",
+    "title": "Belladonna",
+    "id": 68,
+    "role": "Slows organ clock rates — a paralysing rather than damaging toxin",
+    "docFile": "068 - Belladonna.md"
+  },
+  {
+    "name": "069 - Geddonase",
+    "title": "Geddonase",
+    "id": 69,
+    "role": "Fat-destroying toxin; liquefies Adipose Tissue into a lossy Glucose burst",
+    "docFile": "069 - Geddonase.md"
+  },
+  {
+    "name": "070 - Glycotoxin",
+    "title": "Glycotoxin",
+    "id": 70,
+    "role": "Bacterial toxin; raids the Glycogen store and injures an organ (antidote: Arnica)",
+    "docFile": "070 - Glycotoxin.md"
+  },
+  {
+    "name": "071 - Sleep toxin",
+    "title": "Sleep toxin",
+    "id": 71,
+    "role": "Bacterial toxin that burns down into the Sleepiness drive",
+    "docFile": "071 - Sleep toxin.md"
+  },
+  {
+    "name": "072 - Fever toxin",
+    "title": "Fever toxin",
+    "id": 72,
+    "role": "Bacterial toxin; burns Water into Hotness and hijacks an organ's clock rate",
+    "docFile": "072 - Fever toxin.md"
+  },
+  {
+    "name": "073 - Histamine A",
+    "title": "Histamine A",
+    "id": 73,
+    "role": "Inflammation signal: a bacterial toxin and the by-product of the Antigen 1 response",
+    "docFile": "073 - Histamine A.md"
+  },
+  {
+    "name": "074 - Histamine B",
+    "title": "Histamine B",
+    "id": 74,
+    "role": "Inflammation signal: a bacterial toxin and the by-product of the Antigen 0 response",
+    "docFile": "074 - Histamine B.md"
+  },
+  {
+    "name": "075 - Alcohol",
+    "title": "Alcohol",
+    "id": 75,
+    "role": "Intoxicant; forces a drunken gait, detoxified by Dehydrogenase into Glucose and Pain",
+    "docFile": "075 - Alcohol.md"
+  },
+  {
+    "name": "078 - ATP Decoupler",
+    "title": "ATP Decoupler",
+    "id": 78,
+    "role": "Catalytically turns ATP into ADP, starving every organ (antidote: Medicine one)",
+    "docFile": "078 - ATP Decoupler.md"
+  },
+  {
+    "name": "079 - Carbon monoxide",
+    "title": "Carbon monoxide",
+    "id": 79,
+    "role": "Annihilates Oxygen 1:1 and suffocates (antidote: Anti-oxidant)",
+    "docFile": "079 - Carbon monoxide.md"
+  },
+  {
+    "name": "080 - Fear toxin",
+    "title": "Fear toxin",
+    "id": 80,
+    "role": "Bacterial toxin that converts entirely into the Fear drive",
+    "docFile": "080 - Fear toxin.md"
+  },
+  {
+    "name": "081 - Muscle toxin",
+    "title": "Muscle toxin",
+    "id": 81,
+    "role": "Damage toxin; injures organs directly and becomes Lactate",
+    "docFile": "081 - Muscle toxin.md"
+  },
+  {
+    "name": "082 - Antigen 0",
+    "title": "Antigen 0",
+    "id": 82,
+    "role": "Infection marker for bacterium strain 0; the liver answers it with Antibody 0",
+    "docFile": "082 - Antigen 0.md"
+  },
+  {
+    "name": "083 - Antigen 1",
+    "title": "Antigen 1",
+    "id": 83,
+    "role": "Infection marker for bacterium strain 1; the liver answers it with Antibody 1",
+    "docFile": "083 - Antigen 1.md"
+  },
+  {
+    "name": "084 - Antigen 2",
+    "title": "Antigen 2",
+    "id": 84,
+    "role": "Infection marker for bacterium strain 2; the liver answers it with Antibody 2",
+    "docFile": "084 - Antigen 2.md"
+  },
+  {
+    "name": "085 - Antigen 3",
+    "title": "Antigen 3",
+    "id": 85,
+    "role": "Infection marker for bacterium strain 3; the liver answers it with Antibody 3",
+    "docFile": "085 - Antigen 3.md"
+  },
+  {
+    "name": "086 - Antigen 4",
+    "title": "Antigen 4",
+    "id": 86,
+    "role": "Infection marker for bacterium strain 4; the liver answers it with Antibody 4",
+    "docFile": "086 - Antigen 4.md"
+  },
+  {
+    "name": "087 - Antigen 5",
+    "title": "Antigen 5",
+    "id": 87,
+    "role": "Infection marker for bacterium strain 5; the liver answers it with Antibody 5",
+    "docFile": "087 - Antigen 5.md"
+  },
+  {
+    "name": "088 - Antigen 6",
+    "title": "Antigen 6",
+    "id": 88,
+    "role": "Infection marker for bacterium strain 6; the liver answers it with Antibody 6",
+    "docFile": "088 - Antigen 6.md"
+  },
+  {
+    "name": "089 - Antigen 7",
+    "title": "Antigen 7",
+    "id": 89,
+    "role": "Infection marker for bacterium strain 7; the liver answers it with Antibody 7",
+    "docFile": "089 - Antigen 7.md"
+  },
+  {
+    "name": "092 - Medicine one",
+    "title": "Medicine one",
+    "id": 92,
+    "role": "Antidote to ATP Decoupler (the \"cures cyanide\" label on it is wrong)",
+    "docFile": "092 - Medicine one.md"
+  },
+  {
+    "name": "093 - Anti-oxidant",
+    "title": "Anti-oxidant",
+    "id": 93,
+    "role": "Sacrificial 1:1 neutraliser of Carbon monoxide",
+    "docFile": "093 - Anti-oxidant.md"
+  },
+  {
+    "name": "094 - Prostaglandin",
+    "title": "Prostaglandin",
+    "id": 94,
+    "role": "Sets how fast every organ repairs its short-term life force",
+    "docFile": "094 - Prostaglandin.md"
+  },
+  {
+    "name": "095 - EDTA",
+    "title": "EDTA",
+    "id": 95,
+    "role": "Chelator; the only pathway that clears Heavy Metals",
+    "docFile": "095 - EDTA.md"
+  },
+  {
+    "name": "096 - Sodium thiosulphite",
+    "title": "Sodium thiosulphite",
+    "id": 96,
+    "role": "Specific antidote to Cyanide, and nothing else",
+    "docFile": "096 - Sodium thiosulphite.md"
+  },
+  {
+    "name": "097 - Arnica",
+    "title": "Arnica",
+    "id": 97,
+    "role": "Specific antidote to Glycotoxin, and nothing else",
+    "docFile": "097 - Arnica.md"
+  },
+  {
+    "name": "098 - Vitamin E",
+    "title": "Vitamin E",
+    "id": 98,
+    "role": "Inert placeholder; no reaction, receptor or emitter touches it",
+    "docFile": "098 - Vitamin E.md"
+  },
+  {
+    "name": "099 - Vitamin C",
+    "title": "Vitamin C",
+    "id": 99,
+    "role": "Externally supplied catalyst; modulates eight reaction rates and an organ clock",
+    "docFile": "099 - Vitamin C.md"
+  },
+  {
+    "name": "100 - Antihistamine",
+    "title": "Antihistamine",
+    "id": 100,
+    "role": "Externally supplied antidote to both histamines",
+    "docFile": "100 - Antihistamine.md"
+  },
+  {
+    "name": "102 - Antibody 0",
+    "title": "Antibody 0",
+    "id": 102,
+    "role": "Immune response that clears Antigen 0",
+    "docFile": "102 - Antibody 0.md"
+  },
+  {
+    "name": "103 - Antibody 1",
+    "title": "Antibody 1",
+    "id": 103,
+    "role": "Immune response that clears Antigen 1",
+    "docFile": "103 - Antibody 1.md"
+  },
+  {
+    "name": "104 - Antibody 2",
+    "title": "Antibody 2",
+    "id": 104,
+    "role": "Immune response that clears Antigen 2",
+    "docFile": "104 - Antibody 2.md"
+  },
+  {
+    "name": "105 - Antibody 3",
+    "title": "Antibody 3",
+    "id": 105,
+    "role": "Immune response that clears Antigen 3",
+    "docFile": "105 - Antibody 3.md"
+  },
+  {
+    "name": "106 - Antibody 4",
+    "title": "Antibody 4",
+    "id": 106,
+    "role": "Immune response that clears Antigen 4",
+    "docFile": "106 - Antibody 4.md"
+  },
+  {
+    "name": "107 - Antibody 5",
+    "title": "Antibody 5",
+    "id": 107,
+    "role": "Immune response that clears Antigen 5",
+    "docFile": "107 - Antibody 5.md"
+  },
+  {
+    "name": "108 - Antibody 6",
+    "title": "Antibody 6",
+    "id": 108,
+    "role": "Immune response that clears Antigen 6",
+    "docFile": "108 - Antibody 6.md"
+  },
+  {
+    "name": "109 - Antibody 7",
+    "title": "Antibody 7",
+    "id": 109,
+    "role": "Immune response that clears Antigen 7",
+    "docFile": "109 - Antibody 7.md"
+  },
+  {
+    "name": "112 - Anabolic steroid",
+    "title": "Anabolic steroid",
+    "id": 112,
+    "role": "Exercise hormone; converts Amino Acid into Muscle Tissue",
+    "docFile": "112 - Anabolic steroid.md"
+  },
+  {
+    "name": "113 - Pistle",
+    "title": "Pistle",
+    "id": 113,
+    "role": "High-Urea alarm; purges Urea, speeds the reaction organ and sheds heat",
+    "docFile": "113 - Pistle.md"
+  },
+  {
+    "name": "114 - Insulin",
+    "title": "Insulin",
+    "id": 114,
+    "role": "Vestigial; glucose storage is wired directly, without the hormone",
+    "docFile": "114 - Insulin.md"
+  },
+  {
+    "name": "115 - Glycolase",
+    "title": "Glycolase",
+    "id": 115,
+    "role": "Vestigial; glycolysis runs as one reaction, without the enzyme",
+    "docFile": "115 - Glycolase.md"
+  },
+  {
+    "name": "116 - Dehydrogenase",
+    "title": "Dehydrogenase",
+    "id": 116,
+    "role": "Detoxifies Alcohol into Glucose plus Pain — the hangover",
+    "docFile": "116 - Dehydrogenase.md"
+  },
+  {
+    "name": "117 - Adrenalin",
+    "title": "Adrenalin",
+    "id": 117,
+    "role": "Fight-or-flight amplifier; grows Fear/Anger and dumps Glycogen as Glucose",
+    "docFile": "117 - Adrenalin.md"
+  },
+  {
+    "name": "118 - Grendel nitrate",
+    "title": "Grendel nitrate",
+    "id": 118,
+    "role": "Reserved Grendel-waste slot; unwired in the stock genome",
+    "docFile": "118 - Grendel nitrate.md"
+  },
+  {
+    "name": "119 - Ettin nitrate",
+    "title": "Ettin nitrate",
+    "id": 119,
+    "role": "Reserved Ettin-waste slot; unwired in the stock genome",
+    "docFile": "119 - Ettin nitrate.md"
+  },
+  {
+    "name": "124 - Activase",
+    "title": "Activase",
+    "id": 124,
+    "role": "Reserved enzyme slot; unwired in the stock genome",
+    "docFile": "124 - Activase.md"
+  },
+  {
+    "name": "125 - Life",
+    "title": "Life",
+    "id": 125,
+    "role": "The lifespan clock; its slow decay advances the seven life stages",
+    "docFile": "125 - Life.md"
+  },
+  {
+    "name": "127 - Injury",
+    "title": "Injury",
+    "id": 127,
+    "role": "Whole-body damage total; rises as organs are hurt, falls as they repair",
+    "docFile": "127 - Injury.md"
+  },
+  {
+    "name": "128 - Stress",
+    "title": "Stress",
+    "id": 128,
+    "role": "Aggregate distress hormone; rises while any drive stays high",
+    "docFile": "128 - Stress.md"
+  },
+  {
+    "name": "129 - Sleepase",
+    "title": "Sleepase",
+    "id": 129,
+    "role": "Enzyme converting the Sleepiness reservoir into the Sleepiness drive",
+    "docFile": "129 - Sleepase.md"
+  },
+  {
+    "name": "131 - Pain backup",
+    "title": "Pain backup",
+    "id": 131,
+    "role": "Chronic reservoir that drips into the Pain drive",
+    "docFile": "131 - Pain backup.md"
+  },
+  {
+    "name": "132 - Hunger for protein backup",
+    "title": "Hunger for protein backup",
+    "id": 132,
+    "role": "Chronic reservoir that drips into the Hunger for protein drive",
+    "docFile": "132 - Hunger for protein backup.md"
+  },
+  {
+    "name": "133 - Hunger for carb backup",
+    "title": "Hunger for carb backup",
+    "id": 133,
+    "role": "Chronic reservoir that drips into the Hunger for carbohydrate drive",
+    "docFile": "133 - Hunger for carb backup.md"
+  },
+  {
+    "name": "134 - Hunger for fat backup",
+    "title": "Hunger for fat backup",
+    "id": 134,
+    "role": "Chronic reservoir that drips into the Hunger for fat drive",
+    "docFile": "134 - Hunger for fat backup.md"
+  },
+  {
+    "name": "135 - Coldness backup",
+    "title": "Coldness backup",
+    "id": 135,
+    "role": "Chronic reservoir that drips into the Coldness drive",
+    "docFile": "135 - Coldness backup.md"
+  },
+  {
+    "name": "136 - Hotness backup",
+    "title": "Hotness backup",
+    "id": 136,
+    "role": "Chronic reservoir that drips into the Hotness drive",
+    "docFile": "136 - Hotness backup.md"
+  },
+  {
+    "name": "137 - Tiredness backup",
+    "title": "Tiredness backup",
+    "id": 137,
+    "role": "Chronic reservoir that drips into the Tiredness drive",
+    "docFile": "137 - Tiredness backup.md"
+  },
+  {
+    "name": "138 - Sleepiness backup",
+    "title": "Sleepiness backup",
+    "id": 138,
+    "role": "Chronic reservoir converted into the Sleepiness drive by Sleepase",
+    "docFile": "138 - Sleepiness backup.md"
+  },
+  {
+    "name": "139 - Loneliness backup",
+    "title": "Loneliness backup",
+    "id": 139,
+    "role": "Chronic reservoir that drips into the Loneliness drive",
+    "docFile": "139 - Loneliness backup.md"
+  },
+  {
+    "name": "140 - Crowded backup",
+    "title": "Crowded backup",
+    "id": 140,
+    "role": "Chronic reservoir that drips into the Crowded drive",
+    "docFile": "140 - Crowded backup.md"
+  },
+  {
+    "name": "141 - Fear backup",
+    "title": "Fear backup",
+    "id": 141,
+    "role": "Unwired reservoir slot; no path to the Fear drive",
+    "docFile": "141 - Fear backup.md"
+  },
+  {
+    "name": "142 - Boredom backup",
+    "title": "Boredom backup",
+    "id": 142,
+    "role": "Chronic reservoir that drips into the Boredom drive",
+    "docFile": "142 - Boredom backup.md"
+  },
+  {
+    "name": "143 - Anger backup",
+    "title": "Anger backup",
+    "id": 143,
+    "role": "Unwired reservoir slot; no path to the Anger drive",
+    "docFile": "143 - Anger backup.md"
+  },
+  {
+    "name": "144 - Sex drive backup",
+    "title": "Sex drive backup",
+    "id": 144,
+    "role": "Chronic reservoir that drips into the Sex drive",
+    "docFile": "144 - Sex drive backup.md"
+  },
+  {
+    "name": "145 - Comfort backup",
+    "title": "Comfort backup",
+    "id": 145,
+    "role": "Unwired reservoir slot; no path to the Comfort drive",
+    "docFile": "145 - Comfort backup.md"
+  },
+  {
+    "name": "148 - Pain",
+    "title": "Pain",
+    "id": 148,
+    "role": "Drive: physical hurt; the brain reacts to it directly",
+    "docFile": "148 - Pain.md"
+  },
+  {
+    "name": "149 - Hunger for protein",
+    "title": "Hunger for protein",
+    "id": 149,
+    "role": "Drive: needs protein-rich food",
+    "docFile": "149 - Hunger for protein.md"
+  },
+  {
+    "name": "150 - Hunger for carbohydrate",
+    "title": "Hunger for carbohydrate",
+    "id": 150,
+    "role": "Drive: needs sugary food",
+    "docFile": "150 - Hunger for carbohydrate.md"
+  },
+  {
+    "name": "151 - Hunger for fat",
+    "title": "Hunger for fat",
+    "id": 151,
+    "role": "Drive: needs fatty food",
+    "docFile": "151 - Hunger for fat.md"
+  },
+  {
+    "name": "152 - Coldness",
+    "title": "Coldness",
+    "id": 152,
+    "role": "Drive: too cold, seeks warmth",
+    "docFile": "152 - Coldness.md"
+  },
+  {
+    "name": "153 - Hotness",
+    "title": "Hotness",
+    "id": 153,
+    "role": "Drive: too hot, seeks cool",
+    "docFile": "153 - Hotness.md"
+  },
+  {
+    "name": "154 - Tiredness",
+    "title": "Tiredness",
+    "id": 154,
+    "role": "Drive: physical exhaustion; wants to rest",
+    "docFile": "154 - Tiredness.md"
+  },
+  {
+    "name": "155 - Sleepiness",
+    "title": "Sleepiness",
+    "id": 155,
+    "role": "Drive: needs to sleep",
+    "docFile": "155 - Sleepiness.md"
+  },
+  {
+    "name": "156 - Loneliness",
+    "title": "Loneliness",
+    "id": 156,
+    "role": "Drive: wants company of its own kind",
+    "docFile": "156 - Loneliness.md"
+  },
+  {
+    "name": "157 - Crowded",
+    "title": "Crowded",
+    "id": 157,
+    "role": "Drive: too many creatures nearby",
+    "docFile": "157 - Crowded.md"
+  },
+  {
+    "name": "158 - Fear",
+    "title": "Fear",
+    "id": 158,
+    "role": "Drive: threat and alarm",
+    "docFile": "158 - Fear.md"
+  },
+  {
+    "name": "159 - Boredom",
+    "title": "Boredom",
+    "id": 159,
+    "role": "Drive: needs novelty and stimulation",
+    "docFile": "159 - Boredom.md"
+  },
+  {
+    "name": "160 - Anger",
+    "title": "Anger",
+    "id": 160,
+    "role": "Drive: aggression and frustration",
+    "docFile": "160 - Anger.md"
+  },
+  {
+    "name": "161 - Sex drive",
+    "title": "Sex drive",
+    "id": 161,
+    "role": "Drive: urge to court and mate",
+    "docFile": "161 - Sex drive.md"
+  },
+  {
+    "name": "162 - Comfort",
+    "title": "Comfort",
+    "id": 162,
+    "role": "Drive: contentment, emitted from the womb while pregnant",
+    "docFile": "162 - Comfort.md"
+  },
+  {
+    "name": "165 - CA smell 0 (sound)",
+    "title": "CA smell 0 (sound)",
+    "id": 165,
+    "role": "Bloodstream copy of map CA channel 0 (sound) for smell navigation",
+    "docFile": "165 - CA smell 0 (sound).md"
+  },
+  {
+    "name": "166 - CA smell 1 (light)",
+    "title": "CA smell 1 (light)",
+    "id": 166,
+    "role": "Bloodstream copy of map CA channel 1 (light) for smell navigation",
+    "docFile": "166 - CA smell 1 (light).md"
+  },
+  {
+    "name": "167 - CA smell 2 (heat)",
+    "title": "CA smell 2 (heat)",
+    "id": 167,
+    "role": "Bloodstream copy of map CA channel 2 (heat) for smell navigation",
+    "docFile": "167 - CA smell 2 (heat).md"
+  },
+  {
+    "name": "168 - CA smell 3 (water)",
+    "title": "CA smell 3 (water)",
+    "id": 168,
+    "role": "Bloodstream copy of map CA channel 3 (water) for smell navigation",
+    "docFile": "168 - CA smell 3 (water).md"
+  },
+  {
+    "name": "169 - CA smell 4 (nutrient)",
+    "title": "CA smell 4 (nutrient)",
+    "id": 169,
+    "role": "Bloodstream copy of map CA channel 4 (nutrient) for smell navigation",
+    "docFile": "169 - CA smell 4 (nutrient).md"
+  },
+  {
+    "name": "170 - CA smell 5 (water)",
+    "title": "CA smell 5 (water)",
+    "id": 170,
+    "role": "Bloodstream copy of map CA channel 5 (water) for smell navigation",
+    "docFile": "170 - CA smell 5 (water).md"
+  },
+  {
+    "name": "171 - CA smell 6 (protein)",
+    "title": "CA smell 6 (protein)",
+    "id": 171,
+    "role": "Bloodstream copy of map CA channel 6 (protein food) for smell navigation",
+    "docFile": "171 - CA smell 6 (protein).md"
+  },
+  {
+    "name": "172 - CA smell 7 (carbohydrate)",
+    "title": "CA smell 7 (carbohydrate)",
+    "id": 172,
+    "role": "Bloodstream copy of map CA channel 7 (carbohydrate food) for smell navigation",
+    "docFile": "172 - CA smell 7 (carbohydrate).md"
+  },
+  {
+    "name": "173 - CA smell 8 (fat)",
+    "title": "CA smell 8 (fat)",
+    "id": 173,
+    "role": "Bloodstream copy of map CA channel 8 (fatty food) for smell navigation",
+    "docFile": "173 - CA smell 8 (fat).md"
+  },
+  {
+    "name": "174 - CA smell 9 (flowers)",
+    "title": "CA smell 9 (flowers)",
+    "id": 174,
+    "role": "Bloodstream copy of map CA channel 9 (flowers) for smell navigation",
+    "docFile": "174 - CA smell 9 (flowers).md"
+  },
+  {
+    "name": "175 - CA smell 10 (machinery)",
+    "title": "CA smell 10 (machinery)",
+    "id": 175,
+    "role": "Bloodstream copy of map CA channel 10 (machinery) for smell navigation",
+    "docFile": "175 - CA smell 10 (machinery).md"
+  },
+  {
+    "name": "176 - CA smell 11",
+    "title": "CA smell 11",
+    "id": 176,
+    "role": "Bloodstream copy of map CA channel 11 (eggs) for smell navigation",
+    "docFile": "176 - CA smell 11.md"
+  },
+  {
+    "name": "177 - CA smell 12 (Norn)",
+    "title": "CA smell 12 (Norn)",
+    "id": 177,
+    "role": "Bloodstream copy of map CA channel 12 (norn scent) for smell navigation",
+    "docFile": "177 - CA smell 12 (Norn).md"
+  },
+  {
+    "name": "178 - CA smell 13 (Grendel)",
+    "title": "CA smell 13 (Grendel)",
+    "id": 178,
+    "role": "Bloodstream copy of map CA channel 13 (grendel scent) for smell navigation",
+    "docFile": "178 - CA smell 13 (Grendel).md"
+  },
+  {
+    "name": "179 - CA smell 14 (Ettin)",
+    "title": "CA smell 14 (Ettin)",
+    "id": 179,
+    "role": "Bloodstream copy of map CA channel 14 (ettin scent) for smell navigation",
+    "docFile": "179 - CA smell 14 (Ettin).md"
+  },
+  {
+    "name": "180 - CA smell 15 (Norn home)",
+    "title": "CA smell 15 (Norn home)",
+    "id": 180,
+    "role": "Bloodstream copy of map CA channel 15 (norn home territory)",
+    "docFile": "180 - CA smell 15 (Norn home).md"
+  },
+  {
+    "name": "181 - CA smell 16 (Grendel home)",
+    "title": "CA smell 16 (Grendel home)",
+    "id": 181,
+    "role": "Bloodstream copy of map CA channel 16 (grendel home territory)",
+    "docFile": "181 - CA smell 16 (Grendel home).md"
+  },
+  {
+    "name": "182 - CA smell 17 (Ettin home)",
+    "title": "CA smell 17 (Ettin home)",
+    "id": 182,
+    "role": "Bloodstream copy of map CA channel 17 (ettin home territory)",
+    "docFile": "182 - CA smell 17 (Ettin home).md"
+  },
+  {
+    "name": "183 - CA smell 18",
+    "title": "CA smell 18",
+    "id": 183,
+    "role": "Bloodstream copy of map CA channel 18 (detectors and gadgets)",
+    "docFile": "183 - CA smell 18.md"
+  },
+  {
+    "name": "184 - CA smell 19",
+    "title": "CA smell 19",
+    "id": 184,
+    "role": "Bloodstream copy of map CA channel 19; no meaning assigned in vanilla C3",
+    "docFile": "184 - CA smell 19.md"
+  },
+  {
+    "name": "187 - Stress (H4C)",
+    "title": "Stress (H4C)",
+    "id": 187,
+    "role": "Per-cause stress marker: chronic hunger for carbohydrate, feeding total Stress",
+    "docFile": "187 - Stress (H4C).md"
+  },
+  {
+    "name": "188 - Stress (H4P)",
+    "title": "Stress (H4P)",
+    "id": 188,
+    "role": "Per-cause stress marker: chronic hunger for protein, feeding total Stress",
+    "docFile": "188 - Stress (H4P).md"
+  },
+  {
+    "name": "189 - Stress (H4F)",
+    "title": "Stress (H4F)",
+    "id": 189,
+    "role": "Per-cause stress marker: chronic hunger for fat, feeding total Stress",
+    "docFile": "189 - Stress (H4F).md"
+  },
+  {
+    "name": "190 - Stress (Anger)",
+    "title": "Stress (Anger)",
+    "id": 190,
+    "role": "Per-cause stress marker: chronic anger, feeding total Stress",
+    "docFile": "190 - Stress (Anger).md"
+  },
+  {
+    "name": "191 - Stress (Fear)",
+    "title": "Stress (Fear)",
+    "id": 191,
+    "role": "Per-cause stress marker: chronic fear, feeding total Stress",
+    "docFile": "191 - Stress (Fear).md"
+  },
+  {
+    "name": "192 - Stress (Pain)",
+    "title": "Stress (Pain)",
+    "id": 192,
+    "role": "Per-cause stress marker: chronic pain, feeding total Stress",
+    "docFile": "192 - Stress (Pain).md"
+  },
+  {
+    "name": "193 - Stress (Sleep)",
+    "title": "Stress (Sleep)",
+    "id": 193,
+    "role": "Per-cause stress marker: chronic unmet sleep, feeding total Stress",
+    "docFile": "193 - Stress (Sleep).md"
+  },
+  {
+    "name": "194 - Stress (Tired)",
+    "title": "Stress (Tired)",
+    "id": 194,
+    "role": "Per-cause stress marker: chronic tiredness, feeding total Stress",
+    "docFile": "194 - Stress (Tired).md"
+  },
+  {
+    "name": "195 - Stress (Crowded)",
+    "title": "Stress (Crowded)",
+    "id": 195,
+    "role": "Per-cause stress marker: chronic crowding, feeding total Stress",
+    "docFile": "195 - Stress (Crowded).md"
+  },
+  {
+    "name": "198 - Brain chemical 1",
+    "title": "Brain chemical 1",
+    "id": 198,
+    "role": "Blame gate for the drive→concept tract, pulsed when an action fails",
+    "docFile": "198 - Brain chemical 1.md"
+  },
+  {
+    "name": "199 - Up",
+    "title": "Up",
+    "id": 199,
+    "role": "Navigation drive: urge to go up",
+    "docFile": "199 - Up.md"
+  },
+  {
+    "name": "200 - Down",
+    "title": "Down",
+    "id": 200,
+    "role": "Navigation drive: urge to go down",
+    "docFile": "200 - Down.md"
+  },
+  {
+    "name": "201 - Exit",
+    "title": "Exit",
+    "id": 201,
+    "role": "Navigation drive: urge to leave the current room",
+    "docFile": "201 - Exit.md"
+  },
+  {
+    "name": "202 - Enter",
+    "title": "Enter",
+    "id": 202,
+    "role": "Navigation drive: urge to go inside",
+    "docFile": "202 - Enter.md"
+  },
+  {
+    "name": "203 - Wait",
+    "title": "Wait",
+    "id": 203,
+    "role": "Navigation drive: urge to stay put",
+    "docFile": "203 - Wait.md"
+  },
+  {
+    "name": "204 - Reward",
+    "title": "Reward",
+    "id": 204,
+    "role": "Positive reinforcement; strengthens what the creature just did",
+    "docFile": "204 - Reward.md"
+  },
+  {
+    "name": "205 - Punishment",
+    "title": "Punishment",
+    "id": 205,
+    "role": "Negative reinforcement; weakens what the creature just did",
+    "docFile": "205 - Punishment.md"
+  },
+  {
+    "name": "206 - Brain chemical 9",
+    "title": "Brain chemical 9",
+    "id": 206,
+    "role": "Reserved brain-bus slot; never written or read in the stock genome",
+    "docFile": "206 - Brain chemical 9.md"
+  },
+  {
+    "name": "207 - Brain chemical 10",
+    "title": "Brain chemical 10",
+    "id": 207,
+    "role": "Reserved brain-bus slot for custom genomes",
+    "docFile": "207 - Brain chemical 10.md"
+  },
+  {
+    "name": "208 - Brain chemical 11",
+    "title": "Brain chemical 11",
+    "id": 208,
+    "role": "Reserved brain-bus slot for custom genomes",
+    "docFile": "208 - Brain chemical 11.md"
+  },
+  {
+    "name": "209 - Brain chemical 12",
+    "title": "Brain chemical 12",
+    "id": 209,
+    "role": "Reserved brain-bus slot for custom genomes",
+    "docFile": "209 - Brain chemical 12.md"
+  },
+  {
+    "name": "210 - Brain chemical 13",
+    "title": "Brain chemical 13",
+    "id": 210,
+    "role": "Reserved brain-bus slot for custom genomes",
+    "docFile": "210 - Brain chemical 13.md"
+  },
+  {
+    "name": "211 - Brain chemical 14",
+    "title": "Brain chemical 14",
+    "id": 211,
+    "role": "Reserved brain-bus slot for custom genomes",
+    "docFile": "211 - Brain chemical 14.md"
+  },
+  {
+    "name": "212 - Pre-REM sleep",
+    "title": "Pre-REM sleep",
+    "id": 212,
+    "role": "Engine flag raised for one tick before dreaming starts",
+    "docFile": "212 - Pre-REM sleep.md"
+  },
+  {
+    "name": "213 - REM sleep",
+    "title": "REM sleep",
+    "id": 213,
+    "role": "Engine flag raised for the whole dreaming / instinct-processing phase",
+    "docFile": "213 - REM sleep.md"
+  }
+]

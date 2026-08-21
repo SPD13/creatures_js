@@ -1,0 +1,1415 @@
+{
+  "description": "Maps agent classifiers (family genus species) to the scripts that create or update them.",
+  "classifiers": {
+    "1 1 18": [
+      {
+        "script": "dev tool",
+        "type": "Creation"
+      }
+    ],
+    "1 1 39": [
+      {
+        "script": "C3_airlock_scripts",
+        "type": "Modification"
+      }
+    ],
+    "1 1 58": [
+      {
+        "script": "babel_fast_info",
+        "type": "Creation"
+      }
+    ],
+    "1 1 59": [
+      {
+        "script": "dev tool",
+        "type": "Creation"
+      }
+    ],
+    "1 1 44": [
+      {
+        "script": "C3_airlock_scripts",
+        "type": "Modification"
+      }
+    ],
+    "1 1 46": [
+      {
+        "script": "C3_airlock_scripts",
+        "type": "Creation"
+      },
+      {
+        "script": "power to the shee starship",
+        "type": "Creation"
+      }
+    ],
+    "1 1 43": [
+      {
+        "script": "DS welcome screen",
+        "type": "Creation"
+      },
+      {
+        "script": "ds gui - creaturemenu",
+        "type": "Creation"
+      }
+    ],
+    "1 1 47": [
+      {
+        "script": "C3_creator",
+        "type": "Creation"
+      }
+    ],
+    "1 1 50": [
+      {
+        "script": "C3_airlock_scripts",
+        "type": "Modification"
+      }
+    ],
+    "3 3 21": [
+      {
+        "script": "C3_creator",
+        "type": "Modification"
+      }
+    ],
+    "1 1 95": [
+      {
+        "script": "DS Pointer scripts",
+        "type": "Creation"
+      }
+    ],
+    "1 1 100": [
+      {
+        "script": "DS agent help",
+        "type": "Creation"
+      },
+      {
+        "script": "DS blueprint agent scripts",
+        "type": "Modification"
+      },
+      {
+        "script": "DS Blueprint Agent Export As Pray File",
+        "type": "Modification"
+      }
+    ],
+    "1 1 114": [
+      {
+        "script": "C3_grendel_rainmaker",
+        "type": "Modification"
+      }
+    ],
+    "1 1 121": [
+      {
+        "script": "dev tool",
+        "type": "Creation"
+      }
+    ],
+    "1 1 123": [
+      {
+        "script": "DS pointer activate stimming norns",
+        "type": "Creation"
+      }
+    ],
+    "1 1 143": [
+      {
+        "script": "dev tool",
+        "type": "Creation"
+      }
+    ],
+    "1 1 150": [
+      {
+        "script": "!meso environment",
+        "type": "Creation"
+      }
+    ],
+    "1 1 157": [
+      {
+        "script": "contact book",
+        "type": "Creation"
+      }
+    ],
+    "1 3 0": [
+      {
+        "script": "new_ds_fav_places",
+        "type": "Creation"
+      }
+    ],
+    "1 4 0": [
+      {
+        "script": "new_ds_fav_places",
+        "type": "Creation"
+      }
+    ],
+    "2 0 0": [
+      {
+        "script": "power to the shee starship",
+        "type": "Behavior"
+      },
+      {
+        "script": "z_DS creaturesAffectingAnimals",
+        "type": "Behavior"
+      }
+    ],
+    "2 1 1": [
+      {
+        "script": "DS Pointer scripts",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS connecting agent pointer change",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS creaturesAffectingHand",
+        "type": "Behavior"
+      }
+    ],
+    "2 2 22": [
+      {
+        "script": "doors",
+        "type": "Creation"
+      }
+    ],
+    "2 2 23": [
+      {
+        "script": "doors",
+        "type": "Creation"
+      }
+    ],
+    "2 2 24": [
+      {
+        "script": "doors",
+        "type": "Creation"
+      }
+    ],
+    "2 2 25": [
+      {
+        "script": "doors",
+        "type": "Creation"
+      }
+    ],
+    "2 2 26": [
+      {
+        "script": "doors",
+        "type": "Creation"
+      }
+    ],
+    "2 2 27": [
+      {
+        "script": "doors",
+        "type": "Creation"
+      }
+    ],
+    "2 3 12": [
+      {
+        "script": "trapper",
+        "type": "Creation"
+      }
+    ],
+    "2 3 15": [
+      {
+        "script": "empathic vendor",
+        "type": "Creation"
+      },
+      {
+        "script": "mini empathic vendor",
+        "type": "Creation"
+      },
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "2 3 16": [
+      {
+        "script": "tuba",
+        "type": "Creation"
+      }
+    ],
+    "2 3 17": [
+      {
+        "script": "justanut pod",
+        "type": "Creation"
+      }
+    ],
+    "2 3 18": [
+      {
+        "script": "explodonut",
+        "type": "Creation"
+      }
+    ],
+    "2 4 13": [
+      {
+        "script": "bramboo",
+        "type": "Creation"
+      }
+    ],
+    "2 5 5": [
+      {
+        "script": "trapper",
+        "type": "Creation"
+      }
+    ],
+    "2 7 6": [
+      {
+        "script": "bramboo",
+        "type": "Creation"
+      }
+    ],
+    "2 7 7": [
+      {
+        "script": "explodonut",
+        "type": "Creation"
+      }
+    ],
+    "2 8 6": [
+      {
+        "script": "empathic vendor",
+        "type": "Creation"
+      },
+      {
+        "script": "mini empathic vendor",
+        "type": "Creation"
+      },
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "2 8 7": [
+      {
+        "script": "lemon pod",
+        "type": "Creation"
+      }
+    ],
+    "2 8 8": [
+      {
+        "script": "bramboo",
+        "type": "Creation"
+      },
+      {
+        "script": "bramboo_patch",
+        "type": "Modification"
+      }
+    ],
+    "2 22 1": [
+      {
+        "script": "c3_incubator_recreator",
+        "type": "Creation"
+      },
+      {
+        "script": "c3_incubator_recreator",
+        "type": "Modification"
+      }
+    ],
+    "2 22 2": [
+      {
+        "script": "c3_incubator_recreator",
+        "type": "Creation"
+      }
+    ],
+    "2 22 3": [
+      {
+        "script": "c3_incubator_recreator",
+        "type": "Creation"
+      }
+    ],
+    "2 22 4": [
+      {
+        "script": "heatpan incubator",
+        "type": "Creation"
+      }
+    ],
+    "2 10 52": [
+      {
+        "script": "carrot pod",
+        "type": "Creation"
+      }
+    ],
+    "2 10 51": [
+      {
+        "script": "tuba",
+        "type": "Creation"
+      }
+    ],
+    "2 10 53": [
+      {
+        "script": "justanut pod",
+        "type": "Creation"
+      }
+    ],
+    "2 10 54": [
+      {
+        "script": "lemon pod",
+        "type": "Creation"
+      }
+    ],
+    "2 10 56": [
+      {
+        "script": "explodonut",
+        "type": "Creation"
+      }
+    ],
+    "2 11 7": [
+      {
+        "script": "empathic vendor",
+        "type": "Creation"
+      },
+      {
+        "script": "mini empathic vendor",
+        "type": "Creation"
+      },
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "2 11 8": [
+      {
+        "script": "tuba",
+        "type": "Creation"
+      }
+    ],
+    "2 11 9": [
+      {
+        "script": "carrot pod",
+        "type": "Creation"
+      }
+    ],
+    "2 12 21": [
+      {
+        "script": "nav lift",
+        "type": "Creation"
+      }
+    ],
+    "2 14 8": [
+      {
+        "script": "stinger pod",
+        "type": "Creation"
+      }
+    ],
+    "2 15 24": [
+      {
+        "script": "snotrock",
+        "type": "Creation"
+      }
+    ],
+    "2 17 7": [
+      {
+        "script": "stinger pod",
+        "type": "Creation"
+      }
+    ],
+    "2 17 8": [
+      {
+        "script": "stinger pod",
+        "type": "Creation"
+      }
+    ],
+    "2 21 17": [
+      {
+        "script": "musicola",
+        "type": "Creation"
+      }
+    ],
+    "2 21 18": [
+      {
+        "script": "commedia",
+        "type": "Creation"
+      }
+    ],
+    "2 21 20": [
+      {
+        "script": "robot toy",
+        "type": "Creation"
+      }
+    ],
+    "2 21 21": [
+      {
+        "script": "training dummy",
+        "type": "Creation"
+      }
+    ],
+    "2 23 3": [
+      {
+        "script": "empathic vendor",
+        "type": "Creation"
+      }
+    ],
+    "2 23 4": [
+      {
+        "script": "carrot pod",
+        "type": "Creation"
+      }
+    ],
+    "2 23 5": [
+      {
+        "script": "justanut pod",
+        "type": "Creation"
+      }
+    ],
+    "2 23 6": [
+      {
+        "script": "lemon pod",
+        "type": "Creation"
+      }
+    ],
+    "2 23 8": [
+      {
+        "script": "commedia",
+        "type": "Creation"
+      }
+    ],
+    "2 23 9": [
+      {
+        "script": "mini empathic vendor",
+        "type": "Creation"
+      }
+    ],
+    "2 32 23": [
+      {
+        "script": "DS bacteria",
+        "type": "Creation"
+      },
+      {
+        "script": "ds_bacteria_patch",
+        "type": "Modification"
+      }
+    ],
+    "3 1 3": [
+      {
+        "script": "nav lift",
+        "type": "Creation"
+      },
+      {
+        "script": "lift_patch",
+        "type": "Modification"
+      }
+    ],
+    "3 1 4": [
+      {
+        "script": "capillata umbilical",
+        "type": "Creation"
+      },
+      {
+        "script": "umbilical_fix",
+        "type": "Modification"
+      }
+    ],
+    "3 1 5": [
+      {
+        "script": "capillata umbilical",
+        "type": "Creation"
+      },
+      {
+        "script": "umbilical_fix",
+        "type": "Modification"
+      }
+    ],
+    "3 2 2": [
+      {
+        "script": "portable teleporter",
+        "type": "Creation"
+      }
+    ],
+    "3 2 3": [
+      {
+        "script": "portable teleporter",
+        "type": "Creation"
+      }
+    ],
+    "3 3 100": [
+      {
+        "script": "holistic learning machine",
+        "type": "Creation"
+      },
+      {
+        "script": "hlm_nerf",
+        "type": "Modification"
+      }
+    ],
+    "3 3 101": [
+      {
+        "script": "NEW portal dispensor",
+        "type": "Creation"
+      }
+    ],
+    "3 3 102": [
+      {
+        "script": "Norn Egg layer",
+        "type": "Creation"
+      }
+    ],
+    "3 3 104": [
+      {
+        "script": "comms camera screens",
+        "type": "Creation"
+      }
+    ],
+    "3 3 103": [
+      {
+        "script": "Norn Egg layer",
+        "type": "Creation"
+      },
+      {
+        "script": "muco_added_features_2",
+        "type": "Modification"
+      }
+    ],
+    "3 4 0": [
+      {
+        "script": "DS creatureBreeding",
+        "type": "Behavior"
+      },
+      {
+        "script": "zzz_grendel_upgrade_ds",
+        "type": "Behavior"
+      }
+    ],
+    "3 4 1": [
+      {
+        "script": "Norn Egg layer",
+        "type": "Creation"
+      },
+      {
+        "script": "DS creatureBreeding",
+        "type": "Behavior"
+      }
+    ],
+    "3 4 2": [
+      {
+        "script": "DS creatureBreeding",
+        "type": "Behavior"
+      }
+    ],
+    "3 4 3": [
+      {
+        "script": "DS creatureBreeding",
+        "type": "Behavior"
+      }
+    ],
+    "3 8 50": [
+      {
+        "script": "comms camera units",
+        "type": "Creation"
+      }
+    ],
+    "3 8 64": [
+      {
+        "script": "hoverdoc",
+        "type": "Creation"
+      }
+    ],
+    "3 9 1": [
+      {
+        "script": "NEW portal dispensor",
+        "type": "Creation"
+      },
+      {
+        "script": "NEW portals",
+        "type": "Creation"
+      }
+    ],
+    "3 5 1": [
+      {
+        "script": "DS Home smell emitters",
+        "type": "Creation"
+      }
+    ],
+    "3 5 2": [
+      {
+        "script": "DS Home smell emitters",
+        "type": "Creation"
+      }
+    ],
+    "3 6 1": [
+      {
+        "script": "DS Home smell emitters",
+        "type": "Creation"
+      }
+    ],
+    "3 7 1": [
+      {
+        "script": "DS Home smell emitters",
+        "type": "Creation"
+      }
+    ],
+    "4 0 0": [
+      {
+        "script": "DS HoldingHandsControlScripts",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS Pointer scripts",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS creatureBreeding",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS creatureDecisions",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS creatureDoneTo",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Behavior"
+      },
+      {
+        "script": "DS creatureToCreature",
+        "type": "Behavior"
+      },
+      {
+        "script": "zzzz_CreatureHasBeenDropped",
+        "type": "Behavior"
+      },
+      {
+        "script": "zzz_grendel_upgrade_ds",
+        "type": "Behavior"
+      }
+    ],
+    "4 2 0": [
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Behavior"
+      },
+      {
+        "script": "zzz_grendel_upgrade_ds",
+        "type": "Behavior"
+      }
+    ],
+    "4 3 0": [
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Behavior"
+      }
+    ],
+    "1 1 56": [
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Creation"
+      },
+      {
+        "script": "DS death",
+        "type": "Behavior"
+      }
+    ],
+    "1 1 151": [
+      {
+        "script": "!meso environment",
+        "type": "Creation"
+      }
+    ],
+    "1 1 152": [
+      {
+        "script": "carrot pod",
+        "type": "Creation"
+      },
+      {
+        "script": "portable teleporter",
+        "type": "Creation"
+      }
+    ],
+    "1 1 153": [
+      {
+        "script": "portable teleporter",
+        "type": "Creation"
+      }
+    ],
+    "1 1 154": [
+      {
+        "script": "containment chamber",
+        "type": "Creation"
+      }
+    ],
+    "1 1 155": [
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "1 1 156": [
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "1 1 191": [
+      {
+        "script": "containment chamber",
+        "type": "Creation"
+      }
+    ],
+    "1 1 172": [
+      {
+        "script": "commedia",
+        "type": "Creation"
+      }
+    ],
+    "1 1 174": [
+      {
+        "script": "holistic learning machine",
+        "type": "Creation"
+      }
+    ],
+    "1 1 175": [
+      {
+        "script": "holistic learning machine",
+        "type": "Creation"
+      }
+    ],
+    "1 1 176": [
+      {
+        "script": "explodonut",
+        "type": "Creation"
+      }
+    ],
+    "1 1 178": [
+      {
+        "script": "lift_cutaway",
+        "type": "Creation"
+      }
+    ],
+    "1 1 179": [
+      {
+        "script": "warning icons",
+        "type": "Creation"
+      }
+    ],
+    "1 1 180": [
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "1 1 161": [
+      {
+        "script": "Norn Egg layer",
+        "type": "Creation"
+      }
+    ],
+    "1 1 162": [
+      {
+        "script": "tuba",
+        "type": "Creation"
+      }
+    ],
+    "1 1 163": [
+      {
+        "script": "snotrock",
+        "type": "Creation"
+      }
+    ],
+    "1 1 164": [
+      {
+        "script": "warning icons",
+        "type": "Creation"
+      }
+    ],
+    "1 1 184": [
+      {
+        "script": "immigrant checker",
+        "type": "Creation"
+      },
+      {
+        "script": "zzz_grendel_upgrade_ds",
+        "type": "Modification"
+      }
+    ],
+    "1 1 185": [
+      {
+        "script": "agent injector",
+        "type": "Creation"
+      }
+    ],
+    "1 1 190": [
+      {
+        "script": "comms camera screens",
+        "type": "Creation"
+      }
+    ],
+    "1 1 192": [
+      {
+        "script": "capillata umbilical",
+        "type": "Creation"
+      }
+    ],
+    "1 1 193": [
+      {
+        "script": "tooltips",
+        "type": "Creation"
+      }
+    ],
+    "1 1 194": [
+      {
+        "script": "stinger pod",
+        "type": "Creation"
+      }
+    ],
+    "1 1 195": [
+      {
+        "script": "power to the shee starship",
+        "type": "Creation"
+      }
+    ],
+    "1 1 198": [
+      {
+        "script": "comms camera screens",
+        "type": "Creation"
+      }
+    ],
+    "1 1 199": [
+      {
+        "script": "system notification",
+        "type": "Creation"
+      }
+    ],
+    "1 1 200": [
+      {
+        "script": "system notification",
+        "type": "Creation"
+      }
+    ],
+    "1 1 201": [
+      {
+        "script": "babel_connection_information",
+        "type": "Creation"
+      }
+    ],
+    "1 1 202": [
+      {
+        "script": "holistic learning machine",
+        "type": "Creation"
+      }
+    ],
+    "1 1 203": [
+      {
+        "script": "lift ca linkers",
+        "type": "Creation"
+      }
+    ],
+    "1 1 205": [
+      {
+        "script": "message centre",
+        "type": "Creation"
+      }
+    ],
+    "1 1 206": [
+      {
+        "script": "message centre",
+        "type": "Creation"
+      }
+    ],
+    "1 1 207": [
+      {
+        "script": "message centre",
+        "type": "Creation"
+      }
+    ],
+    "1 1 209": [
+      {
+        "script": "chat - the interpreters",
+        "type": "Creation"
+      }
+    ],
+    "1 1 212": [
+      {
+        "script": "chat - the interpreters",
+        "type": "Creation"
+      }
+    ],
+    "1 1 213": [
+      {
+        "script": "chat - the interpreters",
+        "type": "Creation"
+      }
+    ],
+    "1 1 210": [
+      {
+        "script": "chat - chat module",
+        "type": "Creation"
+      },
+      {
+        "script": "chat - chat request indicator",
+        "type": "Creation"
+      },
+      {
+        "script": "chat - chat scripts",
+        "type": "Creation"
+      },
+      {
+        "script": "chat - in chat invitation manager",
+        "type": "Creation"
+      }
+    ],
+    "1 1 215": [
+      {
+        "script": "chat - in chat invitation manager",
+        "type": "Creation"
+      }
+    ],
+    "1 1 217": [
+      {
+        "script": "chat - chat scripts",
+        "type": "Creation"
+      }
+    ],
+    "1 1 214": [
+      {
+        "script": "chat - the interpreters",
+        "type": "Creation"
+      },
+      {
+        "script": "chat - chat request indicator",
+        "type": "Creation"
+      }
+    ],
+    "1 1 211": [
+      {
+        "script": "chat - chat module",
+        "type": "Creation"
+      }
+    ],
+    "1 1 216": [
+      {
+        "script": "message centre",
+        "type": "Creation"
+      }
+    ],
+    "1 1 223": [
+      {
+        "script": "hoverdoc",
+        "type": "Creation"
+      }
+    ],
+    "1 1 224": [
+      {
+        "script": "zzz_click_to_go_online",
+        "type": "Creation"
+      },
+      {
+        "script": "login_disabler",
+        "type": "Modification"
+      }
+    ],
+    "1 1 225": [
+      {
+        "script": "new_ds_fav_places",
+        "type": "Creation"
+      }
+    ],
+    "1 1 226": [
+      {
+        "script": "autorecovery",
+        "type": "Creation"
+      }
+    ],
+    "1 1 300": [
+      {
+        "script": "creature_warning",
+        "type": "Creation"
+      }
+    ],
+    "1 1 301": [
+      {
+        "script": "muco_added_features_2",
+        "type": "Creation"
+      }
+    ],
+    "1 1 165": [
+      {
+        "script": "arch",
+        "type": "Creation"
+      },
+      {
+        "script": "bramboo_patch",
+        "type": "Modification"
+      }
+    ],
+    "1 1 167": [
+      {
+        "script": "waterspouts",
+        "type": "Creation"
+      }
+    ],
+    "1 1 168": [
+      {
+        "script": "waterspouts",
+        "type": "Creation"
+      }
+    ],
+    "1 1 170": [
+      {
+        "script": "hoverdoc",
+        "type": "Creation"
+      },
+      {
+        "script": "creature care kit scripts",
+        "type": "Modification"
+      }
+    ],
+    "1 1 220": [
+      {
+        "script": "creature care kit scripts",
+        "type": "Creation"
+      }
+    ],
+    "1 1 221": [
+      {
+        "script": "workshop liftmask",
+        "type": "Creation"
+      }
+    ],
+    "1 1 171": [
+      {
+        "script": "!meso environment",
+        "type": "Creation"
+      }
+    ],
+    "1 2 1": [
+      {
+        "script": "DS norn indicator",
+        "type": "Creation"
+      }
+    ],
+    "1 2 46": [
+      {
+        "script": "creature_warning",
+        "type": "Creation"
+      },
+      {
+        "script": "warning icons",
+        "type": "Creation"
+      }
+    ],
+    "1 2 47": [
+      {
+        "script": "contact buttons",
+        "type": "Creation"
+      }
+    ],
+    "1 2 2": [
+      {
+        "script": "DS object of attention indicator",
+        "type": "Creation"
+      }
+    ],
+    "1 2 3": [
+      {
+        "script": "DS textentry",
+        "type": "Creation"
+      }
+    ],
+    "1 2 4": [
+      {
+        "script": "DS agent help",
+        "type": "Creation"
+      }
+    ],
+    "1 2 5": [
+      {
+        "script": "DS agent help",
+        "type": "Creation"
+      }
+    ],
+    "1 2 6": [
+      {
+        "script": "DS keyboard handler",
+        "type": "Creation"
+      }
+    ],
+    "1 2 7": [
+      {
+        "script": "DS autosave",
+        "type": "Creation"
+      }
+    ],
+    "1 2 8": [
+      {
+        "script": "DS keyboard handler",
+        "type": "Creation"
+      }
+    ],
+    "1 2 9": [
+      {
+        "script": "DS speech bubble factory",
+        "type": "Creation"
+      },
+      {
+        "script": "login_disabler",
+        "type": "Creation"
+      }
+    ],
+    "1 2 10": [
+      {
+        "script": "DS speech bubble factory",
+        "type": "Creation"
+      }
+    ],
+    "1 2 11": [
+      {
+        "script": "ds gui - inventory",
+        "type": "Creation"
+      }
+    ],
+    "1 2 12": [
+      {
+        "script": "ds gui - options",
+        "type": "Creation"
+      }
+    ],
+    "1 2 13": [
+      {
+        "script": "ds gui - creaturemenu",
+        "type": "Creation"
+      }
+    ],
+    "1 2 14": [
+      {
+        "script": "ds gui - topleft",
+        "type": "Creation"
+      },
+      {
+        "script": "login_disabler",
+        "type": "Modification"
+      }
+    ],
+    "1 2 32": [
+      {
+        "script": "ds gui - creaturemenu",
+        "type": "Creation"
+      },
+      {
+        "script": "import_dialog_patch",
+        "type": "Modification"
+      }
+    ],
+    "1 2 35": [
+      {
+        "script": "ds gui - creaturemenu",
+        "type": "Creation"
+      }
+    ],
+    "1 2 39": [
+      {
+        "script": "ds gui - creaturemenu",
+        "type": "Creation"
+      }
+    ],
+    "1 2 40": [
+      {
+        "script": "ds gui - creaturemenu",
+        "type": "Creation"
+      }
+    ],
+    "1 2 22": [
+      {
+        "script": "power to the shee starship",
+        "type": "Creation"
+      }
+    ],
+    "1 2 23": [
+      {
+        "script": "DS creature history",
+        "type": "Creation"
+      },
+      {
+        "script": "DS agent help",
+        "type": "Creation"
+      },
+      {
+        "script": "ds gui - topleft",
+        "type": "Creation"
+      }
+    ],
+    "1 2 29": [
+      {
+        "script": "DS creature history",
+        "type": "Creation"
+      }
+    ],
+    "1 2 33": [
+      {
+        "script": "DS blueprint agent scripts",
+        "type": "Creation"
+      }
+    ],
+    "1 2 34": [
+      {
+        "script": "ds gui - options",
+        "type": "Creation"
+      }
+    ],
+    "1 2 24": [
+      {
+        "script": "DS life event factory - PHOTOGRAPHS THE DEAD",
+        "type": "Creation"
+      },
+      {
+        "script": "life_events_update",
+        "type": "Modification"
+      }
+    ],
+    "1 2 25": [
+      {
+        "script": "DS life event factory - PHOTOGRAPHS THE DEAD",
+        "type": "Creation"
+      },
+      {
+        "script": "life_events_update",
+        "type": "Creation"
+      },
+      {
+        "script": "life_events_update_2",
+        "type": "Modification"
+      }
+    ],
+    "1 2 37": [
+      {
+        "script": "DS life event factory - PHOTOGRAPHS THE DEAD",
+        "type": "Creation"
+      },
+      {
+        "script": "life_events_update",
+        "type": "Creation"
+      }
+    ],
+    "1 2 26": [
+      {
+        "script": "DS welcome screen",
+        "type": "Creation"
+      },
+      {
+        "script": "zzz_gamestart_login",
+        "type": "Creation"
+      },
+      {
+        "script": "login_disabler",
+        "type": "Creation"
+      }
+    ],
+    "1 2 28": [
+      {
+        "script": "DS creatureDecisions",
+        "type": "Creation"
+      },
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Creation"
+      },
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Behavior"
+      }
+    ],
+    "1 2 41": [
+      {
+        "script": "DS creatureInvoluntary",
+        "type": "Creation"
+      },
+      {
+        "script": "DS creatureBubbles",
+        "type": "Behavior"
+      }
+    ],
+    "1 2 42": [
+      {
+        "script": "new keyboard handler",
+        "type": "Creation"
+      }
+    ],
+    "1 2 201": [
+      {
+        "script": "DS Frame rater",
+        "type": "Creation"
+      }
+    ],
+    "1 2 210": [
+      {
+        "script": "comms screen",
+        "type": "Creation"
+      },
+      {
+        "script": "chat - chat module",
+        "type": "Modification"
+      },
+      {
+        "script": "message centre",
+        "type": "Modification"
+      }
+    ],
+    "1 2 219": [
+      {
+        "script": "comms screen",
+        "type": "Creation"
+      }
+    ],
+    "1 2 202": [
+      {
+        "script": "DS wolf control",
+        "type": "Creation"
+      },
+      {
+        "script": "wolf_patch",
+        "type": "Modification"
+      }
+    ],
+    "1 2 203": [
+      {
+        "script": "DS CAOS command line",
+        "type": "Creation"
+      }
+    ],
+    "1 2 205": [
+      {
+        "script": "keycode displayer",
+        "type": "Creation"
+      }
+    ],
+    "1 2 206": [
+      {
+        "script": "ds gui - topleft",
+        "type": "Creation"
+      },
+      {
+        "script": "zzz_gamestart_login",
+        "type": "Creation"
+      },
+      {
+        "script": "login_disabler",
+        "type": "Modification"
+      }
+    ],
+    "1 2 208": [
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "1 2 209": [
+      {
+        "script": "workshop screen",
+        "type": "Creation"
+      }
+    ],
+    "1 2 500": [
+      {
+        "script": "DS magic profiler",
+        "type": "Creation"
+      }
+    ],
+    "1 2 1000": [
+      {
+        "script": "DS world switcher",
+        "type": "Creation"
+      }
+    ],
+    "1 2 1001": [
+      {
+        "script": "DS world switcher",
+        "type": "Creation"
+      }
+    ]
+  }
+}

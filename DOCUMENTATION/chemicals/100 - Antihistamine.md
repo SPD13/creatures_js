@@ -1,0 +1,120 @@
+# 100 - Antihistamine
+
+Antihistamine is chemical slot 100 in the Creatures 3 chemistry and is the game's dedicated **antidote reactant** for the two histamine toxins — [Histamine A (073)](073%20-%20Histamine%20A.md) and [Histamine B (074)](074%20-%20Histamine%20B.md). Unlike most entries in the chemistry, Antihistamine has **no endogenous source** anywhere in the standard creature genome: it is not emitted by any organ, not produced by any reaction, and not released by any receptor. Its single, exclusive job is to be delivered into a creature's bloodstream from an outside agent — canonically the **Cough Syrup** potion and, more weakly, the **General Cure** potion from the Materia Medica Creature Disk — where it immediately burns down any Histamine A or Histamine B the creature is carrying. Because of this, Antihistamine is the clearest example in the game of a **"pharmacological-only" chemical**: it exists in the chemistry purely as the reagent half of an antidote reaction, with no biological role whatsoever.
+
+Functionally, Antihistamine pairs with the two histamines through a matched pair of very-fast 1:1 clearance reactions hard-wired into the standard genome:
+
+- **Reaction 74** (gene 153): `1× Histamine A [73] + 1× Antihistamine [100] → (nothing)`
+- **Reaction 75** (gene 154): `1× Histamine B [74] + 1× Antihistamine [100] → (nothing)`
+
+Both reactions have a **Very-short half-life of 10 ticks** (decay rate 0.93127, ~0.33 seconds of real play per halving at 30 tps), making them among the fastest antidote reactions in the entire genome. A single dose of Antihistamine therefore neutralises *both* histamines simultaneously — which is why the Cough Syrup catalogue text advertises a cure for *"coughing and sneezing"* as a combined syndrome rather than two separate treatments. The chemical itself has **no receptors**: there is no locus in any creature organ that reads chemical 100, no drive it affects, no metabolic process it modulates, no injury wire it triggers. The only way Antihistamine can change a creature's state is by consuming a histamine molecule, and when no histamine is present the dose simply lingers in the bloodstream until passive decay clears it.
+
+Passive decay for Antihistamine is **Long** at 6,045 ticks (decay rate 0.99989, ~3 minutes 20 seconds of real play per halving at 30 tps), which is one of the longer passive half-lives in the chemistry. This is deliberate: because Antihistamine has no physiological effect of its own, leaving a residual dose in the creature's blood is harmless — the excess cannot cause any side effect and it is available to immediately consume any subsequent histamine production (for example, the trickle of Histamine A/B released by the immune system when reaction 92 or 93 burns antigen into antibody). In practice, a single Cough Syrup dose therefore provides not only an instant symptom-relief effect but also several minutes of **prophylactic coverage** against further histamine production, silently neutralising the immune system's inflammatory by-product as the antibody response runs to completion.
+
+The clinical gestalt is clean: Antihistamine is the **"cure chemical"** for the two histamines. It is delivered from outside the creature, consumed 1:1 with whichever histamine is present, and has no other game-mechanical fingerprint. A player rarely ever sees chemical 100 rise meaningfully in the chemistry panel, because the moment it enters a bloodstream containing Histamine A or Histamine B the Very-short reaction burns through it almost instantly; and in a healthy creature with no histamines, the Long passive decay quietly fades any residue over a few minutes.
+
+## Sources
+
+| # | Mechanism | Origin | Trigger / Formula | Notes |
+|---|-----------|--------|-------------------|-------|
+| 1 | **Cough Syrup potion** | Materia Medica Creature Disk — `Materia Medica.catalogue:115-116` | Creature drinks the potion; its bite-event script deposits Antihistamine into the blood | The canonical, strongly-dosed source. The in-game catalogue text is explicit: *"This syrup is to cure Creatures who are coughing and sneezing. It contains Antihistamine which breaks down Histamine A & B in the bloodstream."* Cough Syrup delivers a large Antihistamine dose that is more than sufficient to immediately clear any typical Histamine A or B load — the coughing / sneezing stops within a fraction of a second as reactions 74 and 75 burn through the histamine |
+| 2 | **General Cure potion** | Materia Medica Creature Disk — `Materia Medica.catalogue:146` | Creature drinks the potion; its bite-event script deposits Antihistamine alongside several other antidote reactants | The multi-purpose potion treats the documented toxin list *"Histamine A & B, cyanide, carbon monoxide, ATP decoupler, heavy metals and glycotoxin"*. Antihistamine is one of the reactants it delivers (alongside Sodium Thiosulphate, Antioxidant, EDTA, Arnica, etc.). The Antihistamine dose in a single General Cure bottle is **weaker** than a Cough Syrup bottle, so clearing a heavy histamine load with General Cure may take several bottles — but the biochemical pathway (reactions 74 and 75) is identical |
+| 3 | **Community potions and agents** | User-made `.agents` / `.cob` files | `CHEM TARG 100 <amount>` on bite or swallow events | Modders shipping custom cough/sneeze remedies, allergy relievers or antihistamine-themed food items deliver chemical 100 directly. Because the effect pathway (reactions 74 and 75) is fully documented and the chemical has no side effects, Antihistamine is a safe and predictable chemical for community pharma content |
+| 4 | **CAOS injection** | — | `CHEM TARG 100 <amount>` from scripts or the debug console | The route used for testing the Antihistamine reactions. Because Antihistamine has a Long passive half-life (6,045 ticks) and no receptors, an injected dose with no histamines present will sit inertly in the bloodstream for ~20 minutes of real play, providing extended prophylactic coverage against any subsequent histamine production |
+| 5 | **No endogenous source** | — | — | Critically, Antihistamine has **no biological source** in the standard genome. No organ emits it, no reaction produces it, no receptor releases it. It exists exclusively as the reactant half of reactions 74 and 75. This is consistent with its role as a **delivered medicine**, not a natural body chemical — the creature can only obtain it by swallowing an external potion |
+
+## Usage
+
+| # | Mechanism | Gene | Reaction | Formula / Effect | Half-life | Notes |
+|---|-----------|------|----------|------------------|-----------|-------|
+| 1 | **Histamine A clearance reaction** (primary effect pathway) | 153 (reaction 74, Baby onwards) | Somatic reaction | `1× Histamine A [73] + 1× Antihistamine [100] → (nothing)` | 10 ticks ("Very short", decay rate 0.931) | The stock-genome clearance pathway for Histamine A. Each activation consumes one unit of Histamine A with one unit of Antihistamine and produces no products — a clean 1:1 neutralisation. The Very-short half-life (10 ticks, ~0.33 s at 30 tps) is among the fastest antidote reactions in the whole genome, so any Antihistamine delivered to a coughing creature burns down its Histamine A within a fraction of a second, stopping the cough reflex (LOC_INVOLUNTARY2) almost immediately |
+| 2 | **Histamine B clearance reaction** (primary effect pathway) | 154 (reaction 75, Baby onwards) | Somatic reaction | `1× Histamine B [74] + 1× Antihistamine [100] → (nothing)` | 10 ticks ("Very short", decay rate 0.931) | Exactly parallels reaction 74 for Histamine B. Consumes one unit of Histamine B with one unit of Antihistamine and produces no products. Combined with reaction 74, this means a single dose of Antihistamine simultaneously clears **both** histamine toxins — the biochemical reason the Cough Syrup is advertised as curing *"coughing and sneezing"* (i.e. both the cough reflex driven by Histamine A and the shiver / sneeze reflex driven by Histamine B) from a single bottle |
+| 3 | **No receptors** | — | — | — | — | Antihistamine has **no entry in the receptor table** for chemical 100. No creature locus reads the chemical's concentration, so it has no direct effect on the creature — no drive modulation, no metabolic modulation, no involuntary actions, no injury wire. Its entire game-mechanical footprint is the pair of clearance reactions above |
+| 4 | **No emitters** | — | — | — | — | Antihistamine has **no entry in the emitter table** either. No organ produces it endogenously, confirming that the chemical is purely a "delivered medicine" that enters the creature only from outside agents |
+| 5 | **Passive decay** | — | — | — | 6,045 ticks ("Long", decay rate 0.99989) | The fallback clearance pathway. ~3 min 20 s of real play time per halving at 30 tps — one of the longer passive half-lives in the chemistry. Because Antihistamine has no side effects, the long passive decay is deliberately benign: it leaves a residual dose sitting inertly in the bloodstream after the initial histamine has been cleared, providing **prophylactic coverage** against any further histamine production (e.g. from an ongoing immune response) for several minutes |
+| 6 | **Diagnostic invisibility** | Medical Scanner / Medical Pod | — | — | — | Unlike the histamines, heavy metals, glycotoxin, etc., Antihistamine is **not listed** in the Medical Pod's toxin panel because it is not a toxin. The Materia Medica ChemicalNames catalogue entry 158 labels chemical 100 as "Antihistamine" for the chemistry panel display, but the medical computers do not raise alarms about its presence — as expected for a medicinal reactant with no physiological effect |
+
+The usage profile is minimalist by design: **two symmetric reactions, no receptors, no emitters, long-and-harmless passive decay**. Antihistamine is arguably the simplest chemical in the entire genome — its effect is defined entirely by what it consumes, not by what it does.
+
+## Role in Game Mechanics
+
+### The antidote design pattern: a chemical that is purely a reactant
+
+Antihistamine exemplifies a small but important class of chemicals in the Creatures 3 chemistry: **pharmacological-only** chemicals with no biological role. Other examples of this pattern include Sodium Thiosulphate (chemical 96, cyanide antidote), EDTA (chemical 97, heavy-metal chelator) and Arnica (chemical 98, glycotoxin antidote). All four are delivered exclusively from outside the creature, all four have no receptors and no emitters, and all four exist in the chemistry only as the reactant half of a 1:1 clearance reaction against a specific toxin. Antihistamine is the most widely-used member of this family because the two histamines it cures are the two most commonly-observed bacterial chemicals in the game (see the Histamine A and Histamine B documentation for why: reactions 92 and 93 produce them as endogenous by-products of *any* Antigen-0 or Antigen-1 immune response, not just when the bacterium itself is carrying one of them).
+
+This design has several notable consequences:
+
+- **Predictable player experience**: a potion containing Antihistamine has a single, well-defined effect — "clear Histamine A and B". There are no side effects to explain, no dosage thresholds to teach, no injury risks to warn about. The Cough Syrup does exactly what its label says.
+- **Safe overdose**: because Antihistamine has no receptors, there is no physiological response to an excessive dose. A creature cannot be harmed by too much Antihistamine — any excess simply waits inertly in the bloodstream until further histamine appears, then reacts with it, or decays harmlessly over a few minutes.
+- **Combined cures are easy**: because Antihistamine is a reactant with no side effects, it can be safely included in multi-reactant potions like the General Cure without worrying about interactions with the other reactants. The General Cure packs Antihistamine, Sodium Thiosulphate, Antioxidant, EDTA, Arnica and more into a single bottle and each reactant operates independently on its target toxin.
+
+### The matched-pair reactions: one dose cures two symptoms
+
+The two clearance reactions (74 and 75) are deliberately identical in shape: same stoichiometry (1:1 Antihistamine), same rate (Very-short, 10 ticks, decay rate 0.931), same null product set, same gene onset (Baby). This symmetry is the biochemical basis for the Cough Syrup's dual advertising:
+
+> This syrup is to cure Creatures who are coughing and sneezing. It contains Antihistamine which breaks down Histamine A & B in the bloodstream.
+
+A single Cough Syrup bottle delivers a pool of Antihistamine. When the bottle enters a creature suffering from simultaneous Histamine A and Histamine B elevation (which is the typical case — bacterial immune responses often fire both reactions 92 and 93 in parallel), the Antihistamine pool is consumed by both reactions competitively. Because both reactions run at the same rate, the pool is drawn down roughly equally by each, and both histamine loads fall in lockstep. Within seconds of the syrup arriving, both symptoms — cough (Histamine A → LOC_INVOLUNTARY2) and shiver/sneeze (Histamine B → LOC_INVOLUNTARY3) — stop at the same time.
+
+If only one histamine is elevated, the corresponding reaction fires exclusively and the other reaction simply does not trigger (no Histamine to react with), so the Antihistamine is consumed solely by the active histamine. The remaining Antihistamine then sits in the bloodstream under its Long passive decay, providing ongoing coverage if any further histamine arrives during the ~3-minute passive-decay window.
+
+### Very-short reaction rate: why the cure feels instant
+
+The Very-short half-life of 10 ticks (decay rate 0.931) on reactions 74 and 75 is one of the fastest standard reaction rates in the genome — for comparison:
+
+- **Very short** (10 ticks, 0.931): Antihistamine clearance reactions — antidote pathway.
+- **Short** (~50-60 ticks): typical digestive and immune reactions.
+- **Medium** (~500 ticks): metabolic reactions, hormone conversions.
+- **Long** (~6000 ticks): slow-building biochemical gradients.
+
+At 0.33 s per halving, a dose of Antihistamine burns through roughly 99% of a matched Histamine load in under three seconds of real play. This is intentional game feel: the player wants to see an immediate response to giving a creature medicine. When a coughing creature swallows Cough Syrup, the cough reflex should stop visibly and audibly before the player has finished watching the animation. The Very-short reaction rate delivers this by ensuring the histamine load drops below the receptor threshold (16) within a handful of ticks.
+
+This also means that **dosing is rarely a problem in practice**: even a modest Antihistamine delivery (e.g. from a single General Cure bottle) is enough to break through a moderate histamine load within seconds. Only a creature suffering from a continuously-dosed bacterial infection with OV16 = 73 or 74 will see a long-running symptom, because in that case the bacterium is injecting more histamine every tick while the Antihistamine is being consumed. For transient immune-response histamine spikes, a single Cough Syrup bottle is decisively curative.
+
+### Long passive decay: prophylactic coverage and safety margin
+
+The Long passive half-life of 6,045 ticks (~3 min 20 s at 30 tps) serves two roles:
+
+1. **Prophylactic coverage**: after the initial histamine load has been cleared, any residual Antihistamine stays in the bloodstream for several minutes. If the creature is still fighting off an Antigen-0 or Antigen-1 bacterial infection, reactions 92 and 93 will continue to produce small amounts of Histamine B / A as antibody-response by-products. The residual Antihistamine immediately consumes these as they appear, preventing the cough / sneeze symptoms from returning until the antibody response has fully suppressed the bacterium.
+2. **Safety margin**: if the player accidentally over-doses a creature with Antihistamine (e.g. by hand-feeding multiple Cough Syrup bottles in quick succession), the excess is genuinely harmless because the chemical has no receptors and no side effects. The slow passive decay simply means the overdose residue takes ~20 minutes to fully clear (about six half-lives), but this carries no cost to the creature.
+
+Compare this with chemicals that do have receptors: an overdose of Sleepiness drive, for example, would cause a creature to fall asleep repeatedly; an overdose of Pain would cause persistent injury signals. Antihistamine's receptor-less design makes overdose impossible to turn into a symptom, which is exactly the right property for a medicinal reactant.
+
+### Interaction with the bacterial infection loop
+
+Because Antihistamine is the cure for the two endogenously-produced immune-response histamines (A and B), it plays a useful role in the **bacterial infection loop** even when the bacterium itself is not a histamine carrier. The full loop with Cough Syrup intervention looks like this:
+
+1. **Bacterium injects Antigen 0 or Antigen 1** (0.02 units per tick, every tick while active).
+2. **Reaction 92 or 93 fires** on accumulated antigen, producing 12 units of Antibody 0 or 1 **plus** 1 unit of Histamine B or A.
+3. **Histamine exceeds receptor threshold (16)**, firing the shiver / sneeze (LOC_INVOLUNTARY3) or cough (LOC_INVOLUNTARY2) reflex.
+4. **Player delivers Cough Syrup** (Antihistamine dose enters bloodstream).
+5. **Reaction 74 and/or 75 fires immediately**, burning down histamine below threshold within seconds — **symptoms stop**.
+6. **Residual Antihistamine remains in bloodstream** (Long passive decay, ~3 min half-life).
+7. **Antibody production continues** in reactions 92 / 93, with their histamine by-products being silently consumed by the residual Antihistamine.
+8. **Antibody accumulates** and eventually suppresses the bacterium below its dormancy threshold.
+9. **Antigen injection stops**, reactions 92 / 93 stop firing, no further histamine produced.
+10. **Residual Antihistamine decays passively** over the subsequent minutes.
+
+The intervention at step 4 is clean: Cough Syrup stops the symptoms without disrupting the immune response. The antibody production continues unimpeded because Antihistamine only reacts with the histamines, not with any of the antigens, antibodies or other immune-system chemicals. This is a well-designed pharmacology: the player can give symptomatic relief without interfering with the creature's biological response to the infection.
+
+### Why Antihistamine has no receptors — the "pure reactant" design rationale
+
+It would be easy to imagine a designer adding, say, a sedation receptor to Antihistamine (real-world antihistamines do cause drowsiness), but the Creatures 3 chemistry deliberately avoids this. The reason is modular simplicity: because Antihistamine is used in multiple potions (Cough Syrup, General Cure, and any community cough-remedy agents), adding a receptor effect would make every potion carrying Antihistamine also carry that effect as a side effect. By keeping Antihistamine strictly as a reactant, the designers ensure that potions can combine it freely with other chemicals without producing unintended interactions.
+
+This also means the **effect of a potion is exactly the sum of its reactant effects** — a property that community pharma authors exploit extensively. You can mix Antihistamine with Antioxidant, Sodium Thiosulphate and EDTA in a single potion and the result is a clean multi-toxin cure with no surprise side effects, because none of these reactant-only chemicals have receptors. This is why the General Cure can pack so many cures into one bottle.
+
+### Strategic / gameplay implications
+
+- **Cough Syrup is the go-to fast cure**: because reactions 74 and 75 are Very-short, Cough Syrup is one of the most instantly-responsive potions in the game. A player hearing a cough and feeding a bottle of Cough Syrup will see the coughing stop within seconds — highly satisfying, responsive gameplay.
+- **General Cure covers histamines as a bonus**: players who keep a General Cure supply on hand are implicitly covered against histamine symptoms as well, even without a dedicated Cough Syrup stockpile. The General Cure's Antihistamine content is weaker, so clearing a heavy histamine load may take several bottles.
+- **No overdose risk**: players can safely dose a creature with multiple Cough Syrup bottles without worrying about side effects. The excess Antihistamine simply waits in the bloodstream as prophylactic coverage.
+- **Ignoring cough / sneeze is also viable**: because the histamines themselves are harmless (no injury wire, see the Histamine A and B docs) and their passive decay is Long (1,241 ticks, ~41 s half-life), an un-medicated cough or sneeze resolves on its own within a minute or two. Cough Syrup provides immediate symptom relief but is not strictly necessary for the creature's health.
+- **Community cough potions are easy to make**: modders shipping custom cough remedies need only deliver Antihistamine via a `CHEM TARG 100 <amount>` command in the bite event — the clearance reactions in the creature's standard genome do all the work.
+
+### Diagnostic visibility
+
+Antihistamine appears in the chemistry panel (Materia Medica ChemicalNames catalogue entry 158 labels it "Antihistamine") but is not flagged by the Medical Pod or Medical Scanner as a toxin. If a player examines a creature that has recently taken Cough Syrup, they may briefly see chemical 100 rising in the chemistry panel before it is consumed by reactions 74 and 75, and a residual non-zero reading may persist for a few minutes as the Long passive decay drains any excess. This is purely informational — the residual dose has no effect on the creature.
+
+## Summary
+
+Antihistamine is chemical 100 and the stock genome's dedicated antidote reactant for the two histamine toxins, Histamine A (073) and Histamine B (074). It has **no endogenous source**, **no receptors**, **no emitters** — it exists in the chemistry purely as the reactant half of two symmetric 1:1 clearance reactions: reaction 74 (gene 153) `Histamine A + Antihistamine → (nothing)` and reaction 75 (gene 154) `Histamine B + Antihistamine → (nothing)`. Both reactions share the same Very-short half-life (10 ticks, decay rate 0.931), so any Antihistamine delivered to a coughing or sneezing creature burns through both histamines almost instantly, stopping the cough (LOC_INVOLUNTARY2) and shiver / sneeze (LOC_INVOLUNTARY3) reflexes within seconds. The canonical delivery vehicles are the **Cough Syrup** potion (strong single-purpose dose) and the **General Cure** potion (weaker multi-reactant bottle), both from the Materia Medica Creature Disk — the Cough Syrup's catalogue text explicitly names the chemical: *"It contains Antihistamine which breaks down Histamine A & B in the bloodstream."* Passive decay is **Long** at 6,045 ticks (~3 min 20 s per halving at 30 tps), providing several minutes of prophylactic coverage against further histamine production (from the ongoing immune response in reactions 92 and 93) after the initial symptomatic dose has been consumed. Because Antihistamine has no receptors and no side effects, overdose is genuinely harmless — the excess sits inertly in the bloodstream awaiting further histamine or eventual decay. This "pure reactant" design (shared with Sodium Thiosulphate, EDTA, Arnica, Antioxidant and the other Materia-Medica antidote reactants) keeps pharmacology predictable and composable: potions can freely combine multiple reactants without surprise interactions, which is why the General Cure can pack Antihistamine, Sodium Thiosulphate, Antioxidant, EDTA and Arnica into a single bottle. Antihistamine is therefore the simplest and most elegant chemical in the genome — defined entirely by what it *consumes*, not by what it *does* — and the biochemical underpinning of the Cough Syrup, one of the most satisfying and responsive player-facing medicines in Creatures 3.

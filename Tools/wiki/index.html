@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures 3 Documentation</title>
+
+    <!-- Shared Tools Navigation (top bar) -->
+    <link rel="stylesheet" href="../shared-nav.css">
+
+    <!-- Wiki Styles -->
+    <link rel="stylesheet" href="css/wiki.css">
+    <link rel="stylesheet" href="css/markdown.css">
+</head>
+<body>
+    <!-- Main Layout -->
+    <div class="wiki-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="wiki-sidebar" id="sidebar">
+            <div class="wiki-sidebar-search">
+                <div class="wiki-search-input-wrapper">
+                    <input type="text"
+                           class="wiki-search-input"
+                           id="searchInput"
+                           placeholder="Search..."
+                           autocomplete="off">
+                    <button class="wiki-search-clear" id="searchClear" aria-label="Clear search">&times;</button>
+                </div>
+            </div>
+            <div class="wiki-sidebar-article-count" id="articleCount"></div>
+            <nav class="wiki-nav" id="navigation">
+                <!-- Navigation tree will be rendered here -->
+                <div class="wiki-nav-loading">Loading navigation...</div>
+            </nav>
+            <div class="wiki-sidebar-footer">
+                <button class="wiki-collapse-btn" id="collapseAll">Collapse All</button>
+            </div>
+        </aside>
+
+        <!-- Mobile menu toggle (floats above content on small screens) -->
+        <button class="wiki-menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Overlay for mobile -->
+        <div class="wiki-overlay" id="overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="wiki-content" id="content">
+            <!-- Article content will be rendered here -->
+            <div class="wiki-content-loading">
+                <div class="wiki-loading-spinner"></div>
+                <p>Loading article...</p>
+            </div>
+        </main>
+
+        <!-- Table of Contents (right sidebar) -->
+        <aside class="wiki-toc" id="toc">
+            <h3 class="wiki-toc-title">On This Page</h3>
+            <nav class="wiki-toc-nav" id="tocNav">
+                <!-- TOC will be generated from article headings -->
+            </nav>
+        </aside>
+    </div>
+
+    <!-- Search Results Overlay -->
+    <div class="wiki-search-results" id="searchResults">
+        <div class="wiki-search-results-header">
+            <span class="wiki-search-results-count" id="searchCount">0 results</span>
+            <button class="wiki-search-results-close" id="searchClose">&times;</button>
+        </div>
+        <div class="wiki-search-results-list" id="searchList">
+            <!-- Search results will be rendered here -->
+        </div>
+    </div>
+
+    <!-- Shared Tools Navigation (top bar - injects itself into body) -->
+    <script src="../shared-nav.js"></script>
+
+    <!-- Vendor Libraries -->
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/highlight.min.js"></script>
+    <script src="lib/highlight-languages.min.js"></script>
+    <script src="lib/highlight-cpp.min.js"></script>
+    <script src="lib/highlight-json.min.js"></script>
+    <script src="lib/minisearch.min.js"></script>
+
+    <!-- Wiki Application Modules -->
+    <script src="js/wiki-router.js"></script>
+    <script src="js/wiki-navigation.js"></script>
+    <script src="js/wiki-search.js"></script>
+    <script src="js/wiki-renderer.js"></script>
+    <script src="js/wiki-app.js"></script>
+</body>
+</html>

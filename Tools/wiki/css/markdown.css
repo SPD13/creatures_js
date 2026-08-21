@@ -1,0 +1,581 @@
+/**
+ * Creatures 3 Documentation Wiki - Markdown Content Styles
+ * Aligned with Tools/script-docs .docs-content theme.
+ */
+
+/* Article Content Container */
+.wiki-article-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--wiki-text);
+}
+
+/* Headings */
+.wiki-article-content h1,
+.wiki-article-content h2,
+.wiki-article-content h3,
+.wiki-article-content h4,
+.wiki-article-content h5,
+.wiki-article-content h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--wiki-text-strong);
+    scroll-margin-top: calc(var(--wiki-nav-height) + 20px);
+}
+
+.wiki-article-content h1 {
+    font-size: 24px;
+    border-bottom: 1px solid var(--wiki-border);
+    padding-bottom: 8px;
+    margin: 24px 0 16px 0;
+}
+
+.wiki-article-content h1:first-child {
+    margin-top: 0;
+}
+
+.wiki-article-content h2 {
+    font-size: 20px;
+    border-bottom: 1px solid var(--wiki-border-soft);
+    padding-bottom: 6px;
+    margin: 20px 0 12px 0;
+}
+
+.wiki-article-content h3 {
+    font-size: 16px;
+    color: var(--wiki-text-secondary);
+    margin: 16px 0 10px 0;
+}
+
+.wiki-article-content h4 {
+    font-size: 14px;
+    color: var(--wiki-text-muted);
+    margin: 12px 0 8px 0;
+}
+
+.wiki-article-content h5,
+.wiki-article-content h6 {
+    font-size: 13px;
+    color: var(--wiki-text-muted);
+}
+
+/* Heading Anchors */
+.wiki-article-content h1:hover .heading-anchor,
+.wiki-article-content h2:hover .heading-anchor,
+.wiki-article-content h3:hover .heading-anchor,
+.wiki-article-content h4:hover .heading-anchor {
+    opacity: 1;
+}
+
+.heading-anchor {
+    opacity: 0;
+    margin-left: 8px;
+    color: var(--wiki-text-faint);
+    text-decoration: none;
+    font-weight: normal;
+    transition: opacity var(--wiki-transition);
+}
+
+.heading-anchor:hover {
+    color: var(--wiki-accent);
+}
+
+/* Paragraphs */
+.wiki-article-content p {
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+
+.wiki-article-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Links */
+.wiki-article-content a {
+    color: #63b3ed;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: var(--wiki-transition);
+}
+
+.wiki-article-content a:hover {
+    text-decoration: underline;
+}
+
+/* Cross-reference to another article. Marked with a small "open in new tab"
+   glyph so it reads as leaving the current page before you click it. */
+.wiki-article-content a.wiki-article-link::after {
+    content: "\2197";           /* ↗ */
+    font-size: 0.8em;
+    margin-left: 0.15em;
+    opacity: 0.65;
+    vertical-align: baseline;
+}
+
+.wiki-article-content a.wiki-article-link:hover::after {
+    opacity: 1;
+}
+
+/* A reference whose target is not in the catalogue: shown as text, not a link,
+   so nobody clicks through to "Article not found". Hover explains why. */
+.wiki-article-content .wiki-article-link-broken {
+    color: var(--wiki-text-secondary);
+    border-bottom: 1px dotted var(--wiki-text-secondary);
+    cursor: help;
+}
+
+.wiki-article-content strong {
+    color: var(--wiki-text-strong);
+}
+
+.wiki-article-content em {
+    color: var(--wiki-text-secondary);
+}
+
+/* Lists */
+.wiki-article-content ul,
+.wiki-article-content ol {
+    padding-left: 24px;
+    margin: 0 0 12px 0;
+}
+
+.wiki-article-content li {
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+.wiki-article-content li > ul,
+.wiki-article-content li > ol {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+/* Task Lists */
+.wiki-article-content ul.task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wiki-article-content .task-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.wiki-article-content .task-list-item input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+/* Blockquotes */
+.wiki-article-content blockquote {
+    border-left: 3px solid var(--wiki-accent);
+    margin: 0 0 16px 0;
+    padding: 8px 16px;
+    background: var(--wiki-accent-soft);
+    color: var(--wiki-text-secondary);
+}
+
+.wiki-article-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.wiki-article-content blockquote blockquote {
+    margin-top: 12px;
+}
+
+/* Inline Code */
+.wiki-article-content code {
+    background: var(--wiki-code-bg);
+    color: var(--wiki-code-color);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--wiki-font-mono);
+    font-size: 0.9em;
+}
+
+/* Code Blocks */
+.wiki-article-content pre {
+    background: var(--wiki-code-bg);
+    border: 1px solid var(--wiki-border);
+    border-radius: 4px;
+    padding: 12px 16px;
+    overflow-x: auto;
+    margin: 0 0 16px 0;
+}
+
+.wiki-article-content pre code {
+    background: none;
+    padding: 0;
+    color: var(--wiki-text);
+    font-size: 13px;
+    line-height: 1.5;
+    border: none;
+}
+
+/* Syntax Highlighting (highlight.js integration) */
+.wiki-article-content pre code.hljs {
+    display: block;
+    padding: 0;
+    background: transparent;
+}
+
+/* Custom highlight.js theme to match script-docs / wiki dark colors */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name {
+    color: #81e6d9;
+}
+
+.hljs-string,
+.hljs-attr {
+    color: #fbd38d;
+}
+
+.hljs-number,
+.hljs-literal {
+    color: #fc8181;
+}
+
+.hljs-comment {
+    color: var(--wiki-text-faint);
+    font-style: italic;
+}
+
+.hljs-function .hljs-keyword,
+.hljs-function {
+    color: #b794f4;
+}
+
+.hljs-title,
+.hljs-title.function_ {
+    color: #90cdf4;
+}
+
+.hljs-params {
+    color: var(--wiki-text);
+}
+
+.hljs-variable,
+.hljs-template-variable {
+    color: #f687b3;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+    color: var(--wiki-success);
+}
+
+.hljs-meta {
+    color: var(--wiki-text-muted);
+}
+
+.hljs-regexp {
+    color: #f6ad55;
+}
+
+.hljs-symbol {
+    color: #9f7aea;
+}
+
+/* Tables */
+.wiki-article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 16px 0;
+    font-size: 13px;
+}
+
+.wiki-article-content th {
+    background: var(--wiki-bg-header);
+    color: var(--wiki-text-strong);
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid var(--wiki-border);
+    font-weight: 600;
+}
+
+.wiki-article-content td {
+    padding: 6px 12px;
+    border: 1px solid var(--wiki-border);
+    color: var(--wiki-text-secondary);
+}
+
+.wiki-article-content tr:nth-child(even) {
+    background: var(--wiki-bg-row-alt);
+}
+
+.wiki-article-content tr:hover {
+    background: var(--wiki-accent-soft);
+}
+
+/* Horizontal Rule */
+.wiki-article-content hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--wiki-border);
+}
+
+/* Images */
+.wiki-article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+.wiki-article-content img[alt] {
+    display: block;
+}
+
+/* Figure with caption */
+.wiki-article-content figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.wiki-article-content figcaption {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--wiki-text-faint);
+    font-style: italic;
+}
+
+/* Definition Lists */
+.wiki-article-content dl {
+    margin: 0 0 1em 0;
+}
+
+.wiki-article-content dt {
+    font-weight: 600;
+    margin-top: 1em;
+    color: var(--wiki-text-strong);
+}
+
+.wiki-article-content dt:first-child {
+    margin-top: 0;
+}
+
+.wiki-article-content dd {
+    margin: 0.25em 0 0 1.5em;
+    color: var(--wiki-text-secondary);
+}
+
+/* Abbreviations */
+.wiki-article-content abbr {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+/* Keyboard Input */
+.wiki-article-content kbd {
+    display: inline-block;
+    padding: 2px 6px;
+    font-family: var(--wiki-font-mono);
+    font-size: 0.875em;
+    color: var(--wiki-text);
+    background: var(--wiki-code-bg);
+    border: 1px solid var(--wiki-border);
+    border-radius: 4px;
+    box-shadow: 0 1px 0 var(--wiki-border);
+}
+
+/* Mark/Highlight */
+.wiki-article-content mark {
+    background: var(--wiki-accent-soft);
+    color: var(--wiki-accent);
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+
+/* Subscript and Superscript */
+.wiki-article-content sub,
+.wiki-article-content sup {
+    font-size: 0.75em;
+}
+
+/* Alerts/Callouts (GitHub style) */
+.wiki-article-content .alert {
+    padding: 12px 16px;
+    margin: 1em 0;
+    border-radius: 4px;
+    border-left: 4px solid;
+}
+
+.wiki-article-content .alert-note {
+    background: var(--wiki-accent-soft);
+    border-left-color: var(--wiki-accent);
+}
+
+.wiki-article-content .alert-warning {
+    background: rgba(237, 137, 54, 0.1);
+    border-left-color: var(--wiki-warning);
+}
+
+.wiki-article-content .alert-danger {
+    background: rgba(252, 129, 129, 0.1);
+    border-left-color: var(--wiki-error);
+}
+
+.wiki-article-content .alert-success {
+    background: rgba(104, 211, 145, 0.1);
+    border-left-color: var(--wiki-success);
+}
+
+.wiki-article-content .alert-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--wiki-text-strong);
+}
+
+/* ASCII Diagrams / Preformatted Text */
+.wiki-article-content pre.ascii-diagram {
+    background: var(--wiki-bg-sidebar);
+    border: 1px solid var(--wiki-border);
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.wiki-article-content pre.ascii-diagram code {
+    color: var(--wiki-text);
+}
+
+/* Details/Summary (collapsible sections) */
+.wiki-article-content details {
+    margin: 1em 0;
+    padding: 10px 14px;
+    background: var(--wiki-bg-header);
+    border-radius: 4px;
+    border: 1px solid var(--wiki-border);
+}
+
+.wiki-article-content summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--wiki-text);
+    padding: 4px 0;
+}
+
+.wiki-article-content summary:hover {
+    color: var(--wiki-accent);
+}
+
+.wiki-article-content details[open] summary {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--wiki-border);
+}
+
+/* Footnotes */
+.wiki-article-content .footnotes {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid var(--wiki-border);
+    font-size: 13px;
+    color: var(--wiki-text-muted);
+}
+
+.wiki-article-content .footnotes ol {
+    padding-left: 1.5em;
+}
+
+.wiki-article-content .footnote-ref {
+    font-size: 0.75em;
+    vertical-align: super;
+}
+
+/* Table of Contents (inline) */
+.wiki-article-content .toc {
+    background: var(--wiki-bg-header);
+    border: 1px solid var(--wiki-border);
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+.wiki-article-content .toc-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--wiki-text-strong);
+}
+
+.wiki-article-content .toc ul {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+.wiki-article-content .toc li {
+    margin-bottom: 4px;
+}
+
+/* Video Embeds */
+.wiki-article-content .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 1em 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.wiki-article-content .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Empty Content Message */
+.wiki-article-content:empty::after {
+    content: "No content available.";
+    color: var(--wiki-text-faint);
+    font-style: italic;
+}
+
+/* First paragraph emphasis */
+.wiki-article-content > p:first-child {
+    font-size: 1.05em;
+    color: var(--wiki-text-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .wiki-article-content {
+        font-size: 13px;
+    }
+
+    .wiki-article-content h1 {
+        font-size: 20px;
+    }
+
+    .wiki-article-content h2 {
+        font-size: 17px;
+    }
+
+    .wiki-article-content h3 {
+        font-size: 15px;
+    }
+
+    .wiki-article-content pre {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .wiki-article-content table {
+        font-size: 12px;
+    }
+
+    .wiki-article-content th,
+    .wiki-article-content td {
+        padding: 6px 8px;
+    }
+
+    /* Make tables scrollable on mobile */
+    .wiki-article-content .table-wrapper {
+        overflow-x: auto;
+        margin: 0 -16px 1em -16px;
+        padding: 0 16px;
+    }
+}

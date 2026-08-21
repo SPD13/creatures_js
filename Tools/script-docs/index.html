@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Docs - Creatures 3</title>
+    <link rel="stylesheet" href="../shared-nav.css">
+    <link rel="stylesheet" href="../../Libraries/caos-preview.css">
+    <link rel="stylesheet" href="../../Libraries/caos-modal.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tool header: title + asset pack selector -->
+    <div class="tool-header">
+        <div class="tool-header-title">Script Documentation</div>
+        <div class="tool-header-controls">
+            <label class="asset-pack-label" for="assetPackSelect">Asset Pack</label>
+            <select id="assetPackSelect" class="asset-pack-select" title="Choose which asset pack's scripts to browse">
+                <option value="C3">Creatures 3</option>
+                <option value="DS">Docking Station</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="script-docs-app">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-tabs">
+                <button class="sidebar-tab active" data-sidebar="scripts">Scripts</button>
+                <button class="sidebar-tab" data-sidebar="classifiers">Classifiers</button>
+            </div>
+
+            <!-- Scripts panel -->
+            <div class="sidebar-panel active" id="scriptsPanel">
+                <div class="sidebar-search">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" class="sidebar-search-input" placeholder="Search scripts..." autofocus>
+                        <button class="search-clear hidden" id="searchClear">&times;</button>
+                    </div>
+                    <div class="search-count" id="searchCount"></div>
+                </div>
+                <div class="script-list" id="scriptList"></div>
+            </div>
+
+            <!-- Classifiers panel -->
+            <div class="sidebar-panel" id="classifiersPanel">
+                <div class="sidebar-search">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="classifierSearchInput" class="sidebar-search-input" placeholder="Search classifiers (e.g. 2 14)...">
+                        <button class="search-clear hidden" id="classifierSearchClear">&times;</button>
+                    </div>
+                    <div class="search-count" id="classifierSearchCount"></div>
+                </div>
+                <div class="classifier-list" id="classifierList"></div>
+            </div>
+        </div>
+
+        <!-- Main Panel -->
+        <div class="main-panel">
+            <!-- Empty state -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">&#128220;</div>
+                <h2>Script Documentation Viewer</h2>
+                <p>Select a script from the sidebar to view its documentation and source code.</p>
+            </div>
+
+            <!-- Content area (hidden until a script is selected) -->
+            <div id="contentArea" class="hidden">
+                <div class="panel-header">
+                    <h1 id="scriptTitle"></h1>
+                    <p class="panel-meta" id="scriptMeta"></p>
+                </div>
+
+                <div class="tab-bar">
+                    <button class="tab-btn active" data-tab="docs">Documentation</button>
+                    <button class="tab-btn" data-tab="script">Script</button>
+                </div>
+
+                <!-- Documentation Tab -->
+                <div class="tab-panel active" id="docsPanel">
+                    <div class="docs-content" id="docsContent">
+                        <p class="loading-message">Loading documentation...</p>
+                    </div>
+                </div>
+
+                <!-- Script Tab -->
+                <div class="tab-panel" id="scriptPanel">
+                    <div class="script-toolbar">
+                        <button class="toolbar-btn" id="collapseAllBtn">Collapse All</button>
+                        <button class="toolbar-btn" id="expandAllBtn">Expand All</button>
+                    </div>
+                    <div class="script-panel-body">
+                        <div class="script-content" id="scriptContent">
+                            <p class="loading-message">Loading script...</p>
+                        </div>
+                        <div class="section-nav" id="sectionNav">
+                            <div class="section-nav-header">Sections</div>
+                            <div class="section-nav-list" id="sectionNavList"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts (order matters) -->
+    <script src="../shared-nav.js"></script>
+    <script src="../../Libraries/cos-parser.js"></script>
+    <script src="../../Libraries/caos-preview.js"></script>
+    <script src="../../Libraries/caos-command-catalog.js"></script>
+    <script src="../../data/caos-commands-loader.js"></script>
+    <script src="../wiki/lib/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

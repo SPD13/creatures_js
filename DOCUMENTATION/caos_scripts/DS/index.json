@@ -1,0 +1,1026 @@
+[
+  {
+    "name": "!DS splash map",
+    "title": "!DS splash map",
+    "docFile": "!DS splash map.md",
+    "scriptFile": "!DS splash map.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "!DS_game variables",
+    "title": "!DS_game variables",
+    "docFile": "!DS_game variables.md",
+    "scriptFile": "!DS_game variables.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "!kill duplicate Creatures 3 agents",
+    "title": "!kill duplicate Creatures 3 agents",
+    "docFile": "!kill duplicate Creatures 3 agents.md",
+    "scriptFile": "!kill duplicate Creatures 3 agents.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "!map",
+    "title": "!map",
+    "docFile": "!map.md",
+    "scriptFile": "!map.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "!meso environment",
+    "title": "!meso environment",
+    "docFile": "!meso environment.md",
+    "scriptFile": "!meso environment.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "!world_tints",
+    "title": "!world_tints",
+    "docFile": "!world_tints.md",
+    "scriptFile": "!world_tints.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "C3_airlock_scripts",
+    "title": "C3_airlock_scripts",
+    "docFile": "C3_airlock_scripts.md",
+    "scriptFile": "C3_airlock_scripts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "C3_creator",
+    "title": "C3_creator",
+    "docFile": "C3_creator.md",
+    "scriptFile": "C3_creator.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "C3_grendel_rainmaker",
+    "title": "C3_grendel_rainmaker",
+    "docFile": "C3_grendel_rainmaker.md",
+    "scriptFile": "C3_grendel_rainmaker.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS Blueprint Agent Export As Pray File",
+    "title": "DS Blueprint Agent Export As Pray File",
+    "docFile": "DS Blueprint Agent Export As Pray File.md",
+    "scriptFile": "DS Blueprint Agent Export As Pray File.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS CAOS command line",
+    "title": "DS CAOS command line",
+    "docFile": "DS CAOS command line.md",
+    "scriptFile": "DS CAOS command line.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS Frame rater",
+    "title": "DS Frame rater",
+    "docFile": "DS Frame rater.md",
+    "scriptFile": "DS Frame rater.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS HoldingHandsControlScripts",
+    "title": "DS HoldingHandsControlScripts",
+    "docFile": "DS HoldingHandsControlScripts.md",
+    "scriptFile": "DS HoldingHandsControlScripts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS Home smell emitters",
+    "title": "DS Home smell emitters",
+    "docFile": "DS Home smell emitters.md",
+    "scriptFile": "DS Home smell emitters.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS Pointer scripts",
+    "title": "DS Pointer scripts",
+    "docFile": "DS Pointer scripts.md",
+    "scriptFile": "DS Pointer scripts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS agent help",
+    "title": "DS agent help",
+    "docFile": "DS agent help.md",
+    "scriptFile": "DS agent help.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS autosave",
+    "title": "DS autosave",
+    "docFile": "DS autosave.md",
+    "scriptFile": "DS autosave.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS bacteria",
+    "title": "DS bacteria",
+    "docFile": "DS bacteria.md",
+    "scriptFile": "DS bacteria.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS blueprint agent scripts",
+    "title": "DS blueprint agent scripts",
+    "docFile": "DS blueprint agent scripts.md",
+    "scriptFile": "DS blueprint agent scripts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS connecting agent pointer change",
+    "title": "DS connecting agent pointer change",
+    "docFile": "DS connecting agent pointer change.md",
+    "scriptFile": "DS connecting agent pointer change.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creature history",
+    "title": "DS creature history",
+    "docFile": "DS creature history.md",
+    "scriptFile": "DS creature history.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureBreeding",
+    "title": "DS creatureBreeding",
+    "docFile": "DS creatureBreeding.md",
+    "scriptFile": "DS creatureBreeding.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureBubbles",
+    "title": "DS creatureBubbles",
+    "docFile": "DS creatureBubbles.md",
+    "scriptFile": "DS creatureBubbles.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureDecisions",
+    "title": "DS creatureDecisions",
+    "docFile": "DS creatureDecisions.md",
+    "scriptFile": "DS creatureDecisions.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureDoneTo",
+    "title": "DS creatureDoneTo",
+    "docFile": "DS creatureDoneTo.md",
+    "scriptFile": "DS creatureDoneTo.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureInvoluntary",
+    "title": "DS creatureInvoluntary",
+    "docFile": "DS creatureInvoluntary.md",
+    "scriptFile": "DS creatureInvoluntary.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureObjectVariables",
+    "title": "DS creatureObjectVariables",
+    "docFile": "DS creatureObjectVariables.md",
+    "scriptFile": "DS creatureObjectVariables.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creatureToCreature",
+    "title": "DS creatureToCreature",
+    "docFile": "DS creatureToCreature.md",
+    "scriptFile": "DS creatureToCreature.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS creaturesAffectingHand",
+    "title": "DS creaturesAffectingHand",
+    "docFile": "DS creaturesAffectingHand.md",
+    "scriptFile": "DS creaturesAffectingHand.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS death",
+    "title": "DS death",
+    "docFile": "DS death.md",
+    "scriptFile": "DS death.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS disable debug keys",
+    "title": "DS disable debug keys",
+    "docFile": "DS disable debug keys.md",
+    "scriptFile": "DS disable debug keys.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "DS keyboard handler",
+    "title": "DS keyboard handler",
+    "docFile": "DS keyboard handler.md",
+    "scriptFile": "DS keyboard handler.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS life event factory - PHOTOGRAPHS THE DEAD",
+    "title": "DS life event factory - PHOTOGRAPHS THE DEAD",
+    "docFile": "DS life event factory - PHOTOGRAPHS THE DEAD.md",
+    "scriptFile": "DS life event factory - PHOTOGRAPHS THE DEAD.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS magic profiler",
+    "title": "DS magic profiler",
+    "docFile": "DS magic profiler.md",
+    "scriptFile": "DS magic profiler.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS norn indicator",
+    "title": "DS norn indicator",
+    "docFile": "DS norn indicator.md",
+    "scriptFile": "DS norn indicator.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS object of attention indicator",
+    "title": "DS object of attention indicator",
+    "docFile": "DS object of attention indicator.md",
+    "scriptFile": "DS object of attention indicator.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS pointer activate stimming norns",
+    "title": "DS pointer activate stimming norns",
+    "docFile": "DS pointer activate stimming norns.md",
+    "scriptFile": "DS pointer activate stimming norns.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS pointer",
+    "title": "DS pointer",
+    "docFile": "DS pointer.md",
+    "scriptFile": "DS pointer.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS scroll settings",
+    "title": "DS scroll settings",
+    "docFile": "DS scroll settings.md",
+    "scriptFile": "DS scroll settings.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "DS speech bubble factory",
+    "title": "DS speech bubble factory",
+    "docFile": "DS speech bubble factory.md",
+    "scriptFile": "DS speech bubble factory.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS textentry",
+    "title": "DS textentry",
+    "docFile": "DS textentry.md",
+    "scriptFile": "DS textentry.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS welcome screen",
+    "title": "DS welcome screen",
+    "docFile": "DS welcome screen.md",
+    "scriptFile": "DS welcome screen.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS wolf control",
+    "title": "DS wolf control",
+    "docFile": "DS wolf control.md",
+    "scriptFile": "DS wolf control.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "DS world switcher",
+    "title": "DS world switcher",
+    "docFile": "DS world switcher.md",
+    "scriptFile": "DS world switcher.cos",
+    "scriptDir": "000 Switcher",
+    "hasScript": true
+  },
+  {
+    "name": "NEW portal dispensor",
+    "title": "NEW portal dispensor",
+    "docFile": "NEW portal dispensor.md",
+    "scriptFile": "NEW portal dispensor.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "NEW portals",
+    "title": "NEW portals",
+    "docFile": "NEW portals.md",
+    "scriptFile": "NEW portals.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "Norn Egg layer",
+    "title": "Norn Egg layer",
+    "docFile": "Norn Egg layer.md",
+    "scriptFile": "Norn Egg layer.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "agent injector",
+    "title": "Agent injector",
+    "docFile": "agent injector.md",
+    "scriptFile": "agent injector.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "arch",
+    "title": "Arch",
+    "docFile": "arch.md",
+    "scriptFile": "arch.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "autorecovery",
+    "title": "Autorecovery",
+    "docFile": "autorecovery.md",
+    "scriptFile": "autorecovery.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "babel_connection_information",
+    "title": "Babel_connection_information",
+    "docFile": "babel_connection_information.md",
+    "scriptFile": "babel_connection_information.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "babel_fast_info",
+    "title": "Babel_fast_info",
+    "docFile": "babel_fast_info.md",
+    "scriptFile": "babel_fast_info.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "bramboo",
+    "title": "Bramboo",
+    "docFile": "bramboo.md",
+    "scriptFile": "bramboo.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "bramboo_patch",
+    "title": "Bramboo_patch",
+    "docFile": "bramboo_patch.md",
+    "scriptFile": "bramboo_patch.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "c3_incubator_recreator",
+    "title": "C3_incubator_recreator",
+    "docFile": "c3_incubator_recreator.md",
+    "scriptFile": "c3_incubator_recreator.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "capillata umbilical",
+    "title": "Capillata umbilical",
+    "docFile": "capillata umbilical.md",
+    "scriptFile": "capillata umbilical.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "carrot pod",
+    "title": "Carrot pod",
+    "docFile": "carrot pod.md",
+    "scriptFile": "carrot pod.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "chat - chat module",
+    "title": "Chat - chat module",
+    "docFile": "chat - chat module.md",
+    "scriptFile": "chat - chat module.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "chat - chat request indicator",
+    "title": "Chat - chat request indicator",
+    "docFile": "chat - chat request indicator.md",
+    "scriptFile": "chat - chat request indicator.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "chat - chat scripts",
+    "title": "Chat - chat scripts",
+    "docFile": "chat - chat scripts.md",
+    "scriptFile": "chat - chat scripts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "chat - in chat invitation manager",
+    "title": "Chat - in chat invitation manager",
+    "docFile": "chat - in chat invitation manager.md",
+    "scriptFile": "chat - in chat invitation manager.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "chat - the interpreters",
+    "title": "Chat - the interpreters",
+    "docFile": "chat - the interpreters.md",
+    "scriptFile": "chat - the interpreters.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "commedia",
+    "title": "Commedia",
+    "docFile": "commedia.md",
+    "scriptFile": "commedia.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "comms camera screens",
+    "title": "Comms camera screens",
+    "docFile": "comms camera screens.md",
+    "scriptFile": "comms camera screens.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "comms camera units",
+    "title": "Comms camera units",
+    "docFile": "comms camera units.md",
+    "scriptFile": "comms camera units.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "comms screen",
+    "title": "Comms screen",
+    "docFile": "comms screen.md",
+    "scriptFile": "comms screen.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "contact book",
+    "title": "Contact book",
+    "docFile": "contact book.md",
+    "scriptFile": "contact book.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "contact buttons",
+    "title": "Contact buttons",
+    "docFile": "contact buttons.md",
+    "scriptFile": "contact buttons.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "containment chamber",
+    "title": "Containment chamber",
+    "docFile": "containment chamber.md",
+    "scriptFile": "containment chamber.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "creature care kit scripts",
+    "title": "Creature care kit scripts",
+    "docFile": "creature care kit scripts.md",
+    "scriptFile": "creature care kit scripts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "creature_warning",
+    "title": "Creature_warning",
+    "docFile": "creature_warning.md",
+    "scriptFile": "creature_warning.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "dev tool",
+    "title": "Dev tool",
+    "docFile": "dev tool.md",
+    "scriptFile": "dev tool.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "doors",
+    "title": "Doors",
+    "docFile": "doors.md",
+    "scriptFile": "doors.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "ds gui - creaturemenu",
+    "title": "Ds gui - creaturemenu",
+    "docFile": "ds gui - creaturemenu.md",
+    "scriptFile": "ds gui - creaturemenu.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "ds gui - inventory",
+    "title": "Ds gui - inventory",
+    "docFile": "ds gui - inventory.md",
+    "scriptFile": "ds gui - inventory.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "ds gui - options",
+    "title": "Ds gui - options",
+    "docFile": "ds gui - options.md",
+    "scriptFile": "ds gui - options.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "ds gui - topleft",
+    "title": "Ds gui - topleft",
+    "docFile": "ds gui - topleft.md",
+    "scriptFile": "ds gui - topleft.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "ds_bacteria_patch",
+    "title": "Ds_bacteria_patch",
+    "docFile": "ds_bacteria_patch.md",
+    "scriptFile": "ds_bacteria_patch.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "empathic vendor",
+    "title": "Empathic vendor",
+    "docFile": "empathic vendor.md",
+    "scriptFile": "empathic vendor.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "explodonut",
+    "title": "Explodonut",
+    "docFile": "explodonut.md",
+    "scriptFile": "explodonut.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "heatpan incubator",
+    "title": "Heatpan incubator",
+    "docFile": "heatpan incubator.md",
+    "scriptFile": "heatpan incubator.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "hlm_nerf",
+    "title": "Hlm_nerf",
+    "docFile": "hlm_nerf.md",
+    "scriptFile": "hlm_nerf.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "holistic learning machine",
+    "title": "Holistic learning machine",
+    "docFile": "holistic learning machine.md",
+    "scriptFile": "holistic learning machine.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "hoverdoc",
+    "title": "Hoverdoc",
+    "docFile": "hoverdoc.md",
+    "scriptFile": "hoverdoc.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "immigrant checker",
+    "title": "Immigrant checker",
+    "docFile": "immigrant checker.md",
+    "scriptFile": "immigrant checker.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "import_dialog_patch",
+    "title": "Import_dialog_patch",
+    "docFile": "import_dialog_patch.md",
+    "scriptFile": "import_dialog_patch.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "justanut pod",
+    "title": "Justanut pod",
+    "docFile": "justanut pod.md",
+    "scriptFile": "justanut pod.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "keycode displayer",
+    "title": "Keycode displayer",
+    "docFile": "keycode displayer.md",
+    "scriptFile": "keycode displayer.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "lemon pod",
+    "title": "Lemon pod",
+    "docFile": "lemon pod.md",
+    "scriptFile": "lemon pod.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "life_events_update",
+    "title": "Life_events_update",
+    "docFile": "life_events_update.md",
+    "scriptFile": "life_events_update.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "life_events_update_2",
+    "title": "Life_events_update_2",
+    "docFile": "life_events_update_2.md",
+    "scriptFile": "life_events_update_2.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "lift ca linkers",
+    "title": "Lift ca linkers",
+    "docFile": "lift ca linkers.md",
+    "scriptFile": "lift ca linkers.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "lift_cutaway",
+    "title": "Lift_cutaway",
+    "docFile": "lift_cutaway.md",
+    "scriptFile": "lift_cutaway.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "lift_patch",
+    "title": "Lift_patch",
+    "docFile": "lift_patch.md",
+    "scriptFile": "lift_patch.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "login_disabler",
+    "title": "Login_disabler",
+    "docFile": "login_disabler.md",
+    "scriptFile": "login_disabler.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "message centre",
+    "title": "Message centre",
+    "docFile": "message centre.md",
+    "scriptFile": "message centre.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "mini empathic vendor",
+    "title": "Mini empathic vendor",
+    "docFile": "mini empathic vendor.md",
+    "scriptFile": "mini empathic vendor.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "muco_added_features_2",
+    "title": "Muco_added_features_2",
+    "docFile": "muco_added_features_2.md",
+    "scriptFile": "muco_added_features_2.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "musicola",
+    "title": "Musicola",
+    "docFile": "musicola.md",
+    "scriptFile": "musicola.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "nav lift",
+    "title": "Nav lift",
+    "docFile": "nav lift.md",
+    "scriptFile": "nav lift.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "new keyboard handler",
+    "title": "New keyboard handler",
+    "docFile": "new keyboard handler.md",
+    "scriptFile": "new keyboard handler.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "new_ds_fav_places",
+    "title": "New_ds_fav_places",
+    "docFile": "new_ds_fav_places.md",
+    "scriptFile": "new_ds_fav_places.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "portable teleporter",
+    "title": "Portable teleporter",
+    "docFile": "portable teleporter.md",
+    "scriptFile": "portable teleporter.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "power to the shee starship",
+    "title": "Power to the shee starship",
+    "docFile": "power to the shee starship.md",
+    "scriptFile": "power to the shee starship.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "random user contact",
+    "title": "Random user contact",
+    "docFile": "random user contact.md",
+    "scriptFile": "random user contact.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "reinject_updated_agents",
+    "title": "Reinject_updated_agents",
+    "docFile": "reinject_updated_agents.md",
+    "scriptFile": "reinject_updated_agents.cos",
+    "scriptDir": "dsbuild 195",
+    "hasScript": true
+  },
+  {
+    "name": "robot toy",
+    "title": "Robot toy",
+    "docFile": "robot toy.md",
+    "scriptFile": "robot toy.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "snotrock",
+    "title": "Snotrock",
+    "docFile": "snotrock.md",
+    "scriptFile": "snotrock.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "stinger pod",
+    "title": "Stinger pod",
+    "docFile": "stinger pod.md",
+    "scriptFile": "stinger pod.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "system notification",
+    "title": "System notification",
+    "docFile": "system notification.md",
+    "scriptFile": "system notification.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "tooltips",
+    "title": "Tooltips",
+    "docFile": "tooltips.md",
+    "scriptFile": "tooltips.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "training dummy",
+    "title": "Training dummy",
+    "docFile": "training dummy.md",
+    "scriptFile": "training dummy.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "trapper",
+    "title": "Trapper",
+    "docFile": "trapper.md",
+    "scriptFile": "trapper.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "tuba",
+    "title": "Tuba",
+    "docFile": "tuba.md",
+    "scriptFile": "tuba.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "umbilical_fix",
+    "title": "Umbilical_fix",
+    "docFile": "umbilical_fix.md",
+    "scriptFile": "umbilical_fix.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "warning icons",
+    "title": "Warning icons",
+    "docFile": "warning icons.md",
+    "scriptFile": "warning icons.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "waterspouts",
+    "title": "Waterspouts",
+    "docFile": "waterspouts.md",
+    "scriptFile": "waterspouts.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "wolf_patch",
+    "title": "Wolf_patch",
+    "docFile": "wolf_patch.md",
+    "scriptFile": "wolf_patch.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "workshop liftmask",
+    "title": "Workshop liftmask",
+    "docFile": "workshop liftmask.md",
+    "scriptFile": "workshop liftmask.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "workshop screen",
+    "title": "Workshop screen",
+    "docFile": "workshop screen.md",
+    "scriptFile": "workshop screen.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "z_DS agent smells",
+    "title": "Z_DS agent smells",
+    "docFile": "z_DS agent smells.md",
+    "scriptFile": "z_DS agent smells.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "z_DS creaturesAffectingAnimals",
+    "title": "Z_DS creaturesAffectingAnimals",
+    "docFile": "z_DS creaturesAffectingAnimals.md",
+    "scriptFile": "z_DS creaturesAffectingAnimals.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "zz mesa light and heat",
+    "title": "Zz mesa light and heat",
+    "docFile": "zz mesa light and heat.md",
+    "scriptFile": "zz mesa light and heat.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "zzz_click_to_go_online",
+    "title": "Zzz_click_to_go_online",
+    "docFile": "zzz_click_to_go_online.md",
+    "scriptFile": "zzz_click_to_go_online.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "zzz_gamestart_login",
+    "title": "Zzz_gamestart_login",
+    "docFile": "zzz_gamestart_login.md",
+    "scriptFile": "zzz_gamestart_login.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "zzz_grendel_upgrade_ds",
+    "title": "Zzz_grendel_upgrade_ds",
+    "docFile": "zzz_grendel_upgrade_ds.md",
+    "scriptFile": "zzz_grendel_upgrade_ds.cos",
+    "scriptDir": "010 Docking Station Patches",
+    "hasScript": true
+  },
+  {
+    "name": "zzzy_CheckCreatureDropScript",
+    "title": "Zzzy_CheckCreatureDropScript",
+    "docFile": "zzzy_CheckCreatureDropScript.md",
+    "scriptFile": "zzzy_CheckCreatureDropScript.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  },
+  {
+    "name": "zzzz_CreatureHasBeenDropped",
+    "title": "Zzzz_CreatureHasBeenDropped",
+    "docFile": "zzzz_CreatureHasBeenDropped.md",
+    "scriptFile": "zzzz_CreatureHasBeenDropped.cos",
+    "scriptDir": "010 Docking Station",
+    "hasScript": true
+  }
+]

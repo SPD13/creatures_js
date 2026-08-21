@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures Web Rebuild</title>
+
+    <!-- Site favicon: the Launcher header logo, same as the static launcher page.
+         dist builds ship it at assets/launcher-icon.png (build-vendor.mjs); the
+         dev server maps this path to Launcher/assets/icon.png (backend/server.js). -->
+    <link rel="icon" type="image/png" href="assets/launcher-icon.png">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* ---- Loading Screen ---- */
+        #loadingScreen {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
+            transition: opacity 0.5s ease;
+        }
+
+        #loadingScreen.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #loadingLogo {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 24px;
+            animation: pulse 2s ease-in-out infinite;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50%      { transform: scale(1.05); opacity: 1; }
+        }
+
+        #loadingText {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        #loadingProgress {
+            width: 280px;
+            height: 5px;
+            background: #333;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        #loadingProgressBar {
+            height: 100%;
+            background: linear-gradient(90deg, #4a90e2, #5aa0f2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        #loadingStatus {
+            color: #999;
+            font-size: 13px;
+            min-height: 18px;
+        }
+
+        /* ---- Game Container (fullscreen) ---- */
+        #gameContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            z-index: 1;
+        }
+
+        #gameCanvas {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            cursor: none;  /* Hide default cursor - game renders PointerAgent sprite */
+        }
+
+        /* Debug console container - populated by ModularDebugConsole */
+        #debugConsole { }
+    </style>
+
+    <!-- CAOS Preview CSS for syntax highlighting -->
+    <link rel="stylesheet" href="assets/caos-preview.css">
+
+    <!-- Developer config — the SAME file the Launcher generates (Main_Game/config.dev.js),
+    served by the backend at /config.dev.js in dist mode so settings apply to BOTH dev and
+    dist. Optional: the page runs on GlobalConfig defaults if it is absent. -->
+    <script>globalThis.__STATIC_BUILD__ = true; globalThis.__OPFS_WRITE_WORKER_URL__ = 'assets/opfs-write-worker.js';</script>
+    <script src="config.dev.js"></script>
+    <!-- Static build: localStorage-backed settings, seeded BEFORE GlobalConfig loads -->
+    <script src="assets/static-config-store.js"></script>
+    <!-- Main page: always load bootstrap & catalogue (config may disable these for test pages) -->
+    <script>
+        if (!window.devConfig) window.devConfig = {};
+        if (!window.devConfig.loading) window.devConfig.loading = {};
+        window.devConfig.loading.loadBootstrap = true;
+        window.devConfig.loading.loadCatalogue = true;
+        window.devConfig.loading.initializeWorld = true;
+    </script>
+    <!-- Build flags (the app bundle has them baked in via esbuild; stamped here for any
+    non-bundled runtime read). DIST_BUILD switches the debug console to the bundled CSS. -->
+    <script>globalThis.NORNAI_BUILD_INCLUDED = false; globalThis.HELP_CHAT_BUILD_INCLUDED = false; globalThis.DIST_BUILD = true; globalThis.GA_MEASUREMENT_ID = "G-3TER5JQRCK";</script>
+
+    <!-- Vendor / globals (Tier 1 minified) — exact load order + module-ness preserved; pako local -->
+    <script src="assets/vendor/GlobalConfig.min.js"></script>
+    <script src="assets/vendor/PathResolver.min.js"></script>
+    <script src="assets/vendor/AnalyticsLoader.min.js"></script>
+    <script src="assets/vendor/LogManager.min.js" type="module"></script>
+    <script src="assets/vendor/caos-commands-loader.min.js"></script>
+    <script src="assets/vendor/script-events.min.js" type="module"></script>
+    <script src="assets/vendor/pako.min.js"></script>
+    <script src="assets/vendor/creatures-file-formats.min.js"></script>
+    <script src="assets/vendor/cos-parser.min.js"></script>
+    <script src="assets/vendor/caos-preview.min.js"></script>
+    <script src="assets/vendor/caos-debugger.min.js"></script>
+    <script src="assets/vendor/creatures-chemicals.min.js"></script>
+    <!-- In-browser backend: emulates /api and serves /Assets from OPFS -->
+    <script src="assets/static-backend.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <!-- src is set dynamically once an asset pack is chosen (AssetPackChooser) -->
+        <img id="loadingLogo" alt="Creatures 3">
+        <div id="loadingText">Creatures Web Rebuild</div>
+        <div id="loadingProgress">
+            <div id="loadingProgressBar"></div>
+        </div>
+        <div id="loadingStatus">Initializing...</div>
+    </div>
+
+    <!-- Game Container -->
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Debug Console Container (populated by ModularDebugConsole) -->
+    <!-- Hidden by default; DebugManager.show() reveals it via the debug-console-active class -->
+    <div id="debugConsole" class="debug-console" style="display:none"></div>
+
+    <script type="module" src="assets/app.min.js"></script>
+</body>
+</html>

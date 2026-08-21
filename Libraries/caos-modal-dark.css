@@ -1,0 +1,309 @@
+/**
+ * CAOS Command Modal — Dark Theme Override
+ *
+ * Layered on top of caos-modal.css for Main Game pages so the popup matches
+ * the FloatingMenu / FloatingWindow palette (#1e1e1e / #2a2a2a / #ccc / #4CAF50).
+ * Tools/* pages do NOT load this file and keep the original light theme.
+ *
+ * Only color/background/border rules are overridden. Layout, spacing, and the
+ * type-coded badges (.caos-command-type[data-type=...]) are inherited from the
+ * base file unchanged.
+ */
+
+/* ===== Backdrop ===== */
+.caos-command-modal {
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+/* ===== Window ===== */
+.caos-modal-content {
+    background: #1e1e1e;
+    color: #ccc;
+    border: 1px solid #555;
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Header (titlebar) ===== */
+.caos-modal-header {
+    background: #2a2a2a;
+    color: #ccc;
+    border-bottom: 1px solid #444;
+    border-radius: 6px 6px 0 0;
+    padding: 10px 16px;
+}
+
+.caos-modal-header h2 {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Courier New', Consolas, Menlo, monospace;
+    letter-spacing: 0.3px;
+}
+
+/* ===== Close button (matches fw-minimize) ===== */
+.caos-modal-close {
+    background: #444;
+    border: 1px solid #666;
+    border-radius: 3px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1;
+    padding: 2px 8px;
+    top: 8px;
+    right: 10px;
+    opacity: 1;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.caos-modal-close:hover {
+    background: #555;
+    color: #fff;
+    border-color: #777;
+    opacity: 1;
+}
+
+/* ===== Body ===== */
+.caos-modal-body {
+    background: #1e1e1e;
+    color: #ccc;
+    padding: 18px 22px;
+}
+
+.caos-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+.caos-modal-body::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+.caos-modal-body::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+.caos-modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ===== Command details ===== */
+.caos-command-details {
+    color: #ccc;
+}
+
+.caos-command-header {
+    border-bottom: 1px solid #444;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    gap: 12px;
+}
+
+.caos-command-name {
+    color: #FF9800;
+    font-size: 1.55rem;
+    letter-spacing: 0.5px;
+}
+
+.caos-command-category {
+    background: #2a2a2a;
+    color: #999;
+    border: 1px solid #444;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.55rem;
+}
+
+/* Section spacing/headings */
+.caos-command-syntax,
+.caos-command-parameters,
+.caos-command-description,
+.caos-command-example,
+.caos-command-implementation {
+    margin-bottom: 18px;
+}
+
+.caos-command-syntax h4,
+.caos-command-parameters h4,
+.caos-command-description h4,
+.caos-command-example h4,
+.caos-command-implementation h4 {
+    color: #999;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+}
+
+/* ===== Syntax ===== */
+.caos-syntax-code {
+    background: #252525;
+    color: #FF9800;
+    border-left: 3px solid #4CAF50;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-family: 'Courier New', Consolas, Menlo, monospace;
+}
+
+/* ===== Parameters ===== */
+.caos-parameter-item {
+    background: #252525;
+    border-left: 3px solid #4CAF50;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+}
+
+.caos-param-name {
+    color: #FF9800;
+}
+
+.caos-param-type {
+    color: #888;
+}
+
+.caos-param-description {
+    color: #bbb;
+    line-height: 1.5;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* ===== Description ===== */
+.caos-description-text {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ===== Example ===== */
+.caos-example-code {
+    background: #0d0d0d;
+    color: #d4d4d4;
+    border-left: 3px solid #4CAF50;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* ===== Implementation ===== */
+.caos-handler-code {
+    background: #252525;
+    color: #888;
+    border-left: 3px solid #555;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+/* ===== Error ===== */
+.caos-command-error {
+    color: #F44336;
+    font-size: 14px;
+}
+
+/* ===== Classification (used by CAOS preview classification popup) ===== */
+.classification-hierarchy {
+    background: #252525;
+    border-left: 3px solid #4CAF50;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.classification-hierarchy .family-info,
+.classification-hierarchy .genus-info,
+.classification-hierarchy .species-info,
+.classification-hierarchy .wildcard-info {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin: 6px 0;
+    padding: 5px 10px;
+}
+
+.classification-hierarchy .family-info {
+    background: rgba(33, 150, 243, 0.15);
+    border-left: 3px solid #2196F3;
+}
+.classification-hierarchy .genus-info {
+    background: rgba(76, 175, 80, 0.15);
+    border-left: 3px solid #4CAF50;
+}
+.classification-hierarchy .species-info {
+    background: rgba(255, 152, 0, 0.15);
+    border-left: 3px solid #FF9800;
+}
+.classification-hierarchy .wildcard-info {
+    background: rgba(156, 39, 176, 0.15);
+    border-left: 3px solid #9C27B0;
+}
+
+/* Classifier search inputs */
+.classifier-search-input {
+    background: #252525;
+    color: #ccc;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 8px 10px;
+}
+
+.classifier-search-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.classifier-search-stats {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.classifier-results-container {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.classifier-match {
+    border-bottom: 1px solid #333;
+    transition: background-color 0.15s ease;
+}
+
+.classifier-match:hover {
+    background: #2a2a2a;
+}
+
+.classifier-class-number {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.classifier-name {
+    color: #ccc;
+}
+
+.classifier-hierarchy .family-info,
+.classifier-hierarchy .genus-info,
+.classifier-hierarchy .species-info {
+    background: #252525;
+    color: #aaa;
+    border: none;
+}
+
+.classifier-contributor {
+    color: #888;
+}
+
+.no-classifiers {
+    color: #888;
+}
+
+.warning {
+    color: #FF9800;
+}
+
+/* Clickable classification token in CAOS preview */
+.caos-clickable-classification:hover {
+    background: rgba(76, 175, 80, 0.18);
+}
